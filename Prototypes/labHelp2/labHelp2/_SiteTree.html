@@ -1,0 +1,158 @@
+<HTML><HEAD><meta http-equiv="content-type" content="text/html; charset=utf-8"><meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" /><link href="Resources/axurerpprototype.css" type="text/css" rel="stylesheet"></HEAD>
+<BODY>
+<A href=# onclick='parent.CloseSitemap()' style='font-size:8pt'>Close Frames</A><br><br>
+
+<SCRIPT LANGUAGE="JavaScript">
+image1 = new Image();
+image1.src = 'Resources/plus.gif';
+
+function CloseSitemap()
+{
+	parent.URL = parent.mainFrame.URL
+}
+
+function ToggleDiv(node, id)
+{
+	sibling = document.getElementById(id);
+	if (sibling.style.display == 'none')
+	{
+		if (node.childNodes.length > 0)
+		{
+			if (node.childNodes[0].tagName == "IMG")
+			{
+				node.childNodes[0].src = "Resources/minus.gif";
+			}
+		}
+
+		sibling.style.display = '';
+	}
+	else
+	{
+		if (node.childNodes.length > 0)
+		{
+			if (node.childNodes[0].tagName == "IMG")
+			{
+				node.childNodes[0].src = "Resources/plus.gif";
+			}
+		}
+		sibling.style.display = 'none';
+	}
+}
+
+var currentPage = null;
+
+function highlight(id)
+{
+	if (currentPage != null)
+	{
+		currentPage.style.backgroundColor = '#EEEEFF';
+		currentPage.style.paddingLeft = '0px';
+		currentPage.style.paddingRight = '0px';
+		currentPage.style.border = '0px solid #666666';
+	}
+	
+	currentPage = document.getElementById(id);
+    if (currentPage) {
+	    currentPage.style.backgroundColor = '#DDDDDD';
+	    currentPage.style.paddingLeft = '3px';
+	    currentPage.style.paddingRight = '3px';
+	    currentPage.style.border = '1px solid #666666';
+    }
+}
+
+</SCRIPT>
+<TABLE BORDER="0" cellspacing="0" cellpadding="0">
+	<TR>
+		<TD nowrap><A onclick="ToggleDiv(this, 'd6a238be9ce214d28935aeed7554dca5b')"><IMG SRC="Resources/minus.gif"></A>&nbsp;&nbsp;<A onclick="parent.mainFrame.location='Lab_help.html'"><IMG class="plusminus" SRC="Resources/page.gif" border=0><SPAN id="p6a238be9ce214d28935aeed7554dca5b">Lab help</SPAN></A><DIV id="d6a238be9ce214d28935aeed7554dca5b">
+<TABLE BORDER="0" cellspacing="0" cellpadding="0">
+	<TR>
+		<TD WIDTH="30" nowrap>&nbsp;</TD>
+		<TD nowrap><A onclick="parent.mainFrame.location='Help_page.html'"><IMG class="plusminus" SRC="Resources/page.gif" border=0><SPAN id="p08ebf5acc78b401b8f3ddfa81b58f4f1">Help page</SPAN></A><DIV id="td08ebf5acc78b401b8f3ddfa81b58f4f1">
+			</DIV>
+		</TD>
+	</TR>
+</TABLE>
+<TABLE BORDER="0" cellspacing="0" cellpadding="0">
+	<TR>
+		<TD WIDTH="30" nowrap>&nbsp;</TD>
+		<TD nowrap><A onclick="parent.mainFrame.location='Quote_change_for_limited_colors.html'"><IMG class="plusminus" SRC="Resources/page.gif" border=0><SPAN id="pfa75730694404383a38017b89bc1cfed">Quote change for limited colors</SPAN></A><DIV id="tdfa75730694404383a38017b89bc1cfed">
+			</DIV>
+		</TD>
+	</TR>
+</TABLE>
+<TABLE BORDER="0" cellspacing="0" cellpadding="0">
+	<TR>
+		<TD WIDTH="30" nowrap>&nbsp;</TD>
+		<TD nowrap><A onclick="parent.mainFrame.location='Error_message_change.html'"><IMG class="plusminus" SRC="Resources/page.gif" border=0><SPAN id="pabcb0e5882184d52a10ae24167d027fd">Error message change</SPAN></A><DIV id="tdabcb0e5882184d52a10ae24167d027fd">
+			</DIV>
+		</TD>
+	</TR>
+</TABLE>
+<TABLE BORDER="0" cellspacing="0" cellpadding="0">
+	<TR>
+		<TD WIDTH="30" nowrap>&nbsp;</TD>
+		<TD nowrap><A onclick="parent.mainFrame.location='Upload_sandbox.html'"><IMG class="plusminus" SRC="Resources/page.gif" border=0><SPAN id="pa3b28cd02e304cbe872b7ff386ccbd1c">Upload sandbox</SPAN></A><DIV id="tda3b28cd02e304cbe872b7ff386ccbd1c">
+			</DIV>
+		</TD>
+	</TR>
+</TABLE>
+<TABLE BORDER="0" cellspacing="0" cellpadding="0">
+	<TR>
+		<TD WIDTH="13" nowrap>&nbsp;</TD>
+		<TD nowrap><A onclick="ToggleDiv(this, 'd2ccfab1df0194797a469c83478509b28')"><IMG SRC="Resources/minus.gif"></A>&nbsp;&nbsp;<A onclick="parent.mainFrame.location='Purchase_path.html'"><IMG class="plusminus" SRC="Resources/page.gif" border=0><SPAN id="p2ccfab1df0194797a469c83478509b28">Purchase path</SPAN></A><DIV id="d2ccfab1df0194797a469c83478509b28">
+<TABLE BORDER="0" cellspacing="0" cellpadding="0">
+	<TR>
+		<TD WIDTH="30" nowrap>&nbsp;</TD>
+		<TD nowrap><A onclick="parent.mainFrame.location='variation1.html'"><IMG class="plusminus" SRC="Resources/page.gif" border=0><SPAN id="pe860b5ceab824aaf9d7f49368c3d78e7">variation1</SPAN></A><DIV id="tde860b5ceab824aaf9d7f49368c3d78e7">
+			</DIV>
+		</TD>
+	</TR>
+</TABLE>
+<TABLE BORDER="0" cellspacing="0" cellpadding="0">
+	<TR>
+		<TD WIDTH="30" nowrap>&nbsp;</TD>
+		<TD nowrap><A onclick="parent.mainFrame.location='variation_2.html'"><IMG class="plusminus" SRC="Resources/page.gif" border=0><SPAN id="pd6e6c25bf7e04658a3a2c095eaa1d1b0">variation 2</SPAN></A><DIV id="tdd6e6c25bf7e04658a3a2c095eaa1d1b0">
+			</DIV>
+		</TD>
+	</TR>
+</TABLE>
+<TABLE BORDER="0" cellspacing="0" cellpadding="0">
+	<TR>
+		<TD WIDTH="30" nowrap>&nbsp;</TD>
+		<TD nowrap><A onclick="parent.mainFrame.location='variation_3.html'"><IMG class="plusminus" SRC="Resources/page.gif" border=0><SPAN id="pc87adc9665c9416385a27d4521ec2d07">variation 3</SPAN></A><DIV id="tdc87adc9665c9416385a27d4521ec2d07">
+			</DIV>
+		</TD>
+	</TR>
+</TABLE>
+<TABLE BORDER="0" cellspacing="0" cellpadding="0">
+	<TR>
+		<TD WIDTH="30" nowrap>&nbsp;</TD>
+		<TD nowrap><A onclick="parent.mainFrame.location='Copy_of_variation_3.html'"><IMG class="plusminus" SRC="Resources/page.gif" border=0><SPAN id="pb20fff031f534921b8dd40bec1ec8204">Copy of variation 3</SPAN></A><DIV id="tdb20fff031f534921b8dd40bec1ec8204">
+			</DIV>
+		</TD>
+	</TR>
+</TABLE>
+			</DIV>
+		</TD>
+	</TR>
+</TABLE>
+<TABLE BORDER="0" cellspacing="0" cellpadding="0">
+	<TR>
+		<TD WIDTH="30" nowrap>&nbsp;</TD>
+		<TD nowrap><A onclick="parent.mainFrame.location='Saved.html'"><IMG class="plusminus" SRC="Resources/page.gif" border=0><SPAN id="p3f424f25096a4c57a2d1039ec785bce9">Saved</SPAN></A><DIV id="td3f424f25096a4c57a2d1039ec785bce9">
+			</DIV>
+		</TD>
+	</TR>
+</TABLE>
+<TABLE BORDER="0" cellspacing="0" cellpadding="0">
+	<TR>
+		<TD WIDTH="30" nowrap>&nbsp;</TD>
+		<TD nowrap><A onclick="parent.mainFrame.location='New_Page_1.html'"><IMG class="plusminus" SRC="Resources/page.gif" border=0><SPAN id="p3a29699c6f1f46fba35618c6608c0207">New Page 1</SPAN></A><DIV id="td3a29699c6f1f46fba35618c6608c0207">
+			</DIV>
+		</TD>
+	</TR>
+</TABLE>
+			</DIV>
+		</TD>
+	</TR>
+</TABLE></BODY></HTML>
