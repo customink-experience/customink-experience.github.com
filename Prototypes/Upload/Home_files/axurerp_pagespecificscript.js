@@ -41,10 +41,10 @@ function PopulateVariables(value) {
   value = value.replace(/\[\[printOption\]\]/g, $printOption);
   value = value.replace(/\[\[showWhite\]\]/g, $showWhite);
   value = value.replace(/\[\[PageName\]\]/g, PageName);
-  value = value.replace(/\[\[GenDay\]\]/g, '30');
-  value = value.replace(/\[\[GenMonth\]\]/g, '6');
-  value = value.replace(/\[\[GenMonthName\]\]/g, 'June');
-  value = value.replace(/\[\[GenDayOfWeek\]\]/g, 'Thursday');
+  value = value.replace(/\[\[GenDay\]\]/g, '8');
+  value = value.replace(/\[\[GenMonth\]\]/g, '7');
+  value = value.replace(/\[\[GenMonthName\]\]/g, 'July');
+  value = value.replace(/\[\[GenDayOfWeek\]\]/g, 'Friday');
   value = value.replace(/\[\[GenYear\]\]/g, '2011');
   value = value.replace(/\[\[Day\]\]/g, d.getDate());
   value = value.replace(/\[\[Month\]\]/g, d.getMonth() + 1);

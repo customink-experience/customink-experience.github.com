@@ -41,10 +41,10 @@ function PopulateVariables(value) {
   value = value.replace(/\[\[printOption\]\]/g, $printOption);
   value = value.replace(/\[\[showWhite\]\]/g, $showWhite);
   value = value.replace(/\[\[PageName\]\]/g, PageName);
-  value = value.replace(/\[\[GenDay\]\]/g, '30');
-  value = value.replace(/\[\[GenMonth\]\]/g, '6');
-  value = value.replace(/\[\[GenMonthName\]\]/g, 'June');
-  value = value.replace(/\[\[GenDayOfWeek\]\]/g, 'Thursday');
+  value = value.replace(/\[\[GenDay\]\]/g, '8');
+  value = value.replace(/\[\[GenMonth\]\]/g, '7');
+  value = value.replace(/\[\[GenMonthName\]\]/g, 'July');
+  value = value.replace(/\[\[GenDayOfWeek\]\]/g, 'Friday');
   value = value.replace(/\[\[GenYear\]\]/g, '2011');
   value = value.replace(/\[\[Day\]\]/g, d.getDate());
   value = value.replace(/\[\[Month\]\]/g, d.getMonth() + 1);
@@ -65,1011 +65,871 @@ SetGlobalVariableValue('$colorCount', '0');
 }
 
 var u270 = document.getElementById('u270');
+gv_vAlignTable['u270'] = 'center';
+var u271 = document.getElementById('u271');
 
-u270.style.cursor = 'pointer';
-if (bIE) u270.attachEvent("onclick", Clicku270);
-else u270.addEventListener("click", Clicku270, true);
-function Clicku270(e)
+u271.style.cursor = 'pointer';
+if (bIE) u271.attachEvent("onclick", Clicku271);
+else u271.addEventListener("click", Clicku271, true);
+function Clicku271(e)
 {
 windowEvent = e;
 
 
 if (true) {
 
-	SetPanelState('u261', 'pd3u261','none','',500,'none','',500);
+	SetPanelState('u262', 'pd3u262','none','',500,'none','',500);
 
 SetGlobalVariableValue('$colorCount', '' + (GetNum(GetGlobalVariableValue('$colorCount')) + GetNum(1)) + '');
 
-SetWidgetRichText('u485', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">' + (GetGlobalVariableValue('$colorCount')) + ' colors selected</span></p>');
+SetWidgetRichText('u486', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">' + (GetGlobalVariableValue('$colorCount')) + ' colors selected</span></p>');
 
 }
 
 }
 
-if (bIE) u270.attachEvent("onmouseout", MouseOutu270);
-else u270.addEventListener("mouseout", MouseOutu270, true);
-function MouseOutu270(e)
+if (bIE) u271.attachEvent("onmouseout", MouseOutu271);
+else u271.addEventListener("mouseout", MouseOutu271, true);
+function MouseOutu271(e)
 {
 windowEvent = e;
 
-if (!IsTrueMouseOut('u270',e)) return;
+if (!IsTrueMouseOut('u271',e)) return;
 if (true) {
 
-	SetPanelState('u261', 'pd0u261','none','',500,'none','',500);
+	SetPanelState('u262', 'pd0u262','none','',500,'none','',500);
 
-SetWidgetRichText('u486', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">&nbsp;</span></p>');
-
-}
+SetWidgetRichText('u487', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">&nbsp;</span></p>');
 
 }
 
-var u271 = document.getElementById('u271');
-gv_vAlignTable['u271'] = 'center';
+}
+
 var u272 = document.getElementById('u272');
+gv_vAlignTable['u272'] = 'center';
+var u273 = document.getElementById('u273');
 
-if (bIE) u272.attachEvent("onmouseover", MouseOveru272);
-else u272.addEventListener("mouseover", MouseOveru272, true);
-function MouseOveru272(e)
+if (bIE) u273.attachEvent("onmouseover", MouseOveru273);
+else u273.addEventListener("mouseover", MouseOveru273, true);
+function MouseOveru273(e)
 {
 windowEvent = e;
 
-if (!IsTrueMouseOver('u272',e)) return;
+if (!IsTrueMouseOver('u273',e)) return;
 if (true) {
 
-	SetPanelState('u261', 'pd1u261','none','',500,'none','',500);
+	SetPanelState('u262', 'pd1u262','none','',500,'none','',500);
 
-SetWidgetRichText('u486', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">Light Grey</span></p>');
-
-}
+SetWidgetRichText('u487', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">Light Grey</span></p>');
 
 }
 
-var u273 = document.getElementById('u273');
-gv_vAlignTable['u273'] = 'center';
+}
+
 var u274 = document.getElementById('u274');
-
+gv_vAlignTable['u274'] = 'center';
 var u275 = document.getElementById('u275');
 
 var u276 = document.getElementById('u276');
-gv_vAlignTable['u276'] = 'center';
-var u277 = document.getElementById('u277');
 
-u277.style.cursor = 'pointer';
-if (bIE) u277.attachEvent("onclick", Clicku277);
-else u277.addEventListener("click", Clicku277, true);
-function Clicku277(e)
+var u277 = document.getElementById('u277');
+gv_vAlignTable['u277'] = 'center';
+var u278 = document.getElementById('u278');
+
+u278.style.cursor = 'pointer';
+if (bIE) u278.attachEvent("onclick", Clicku278);
+else u278.addEventListener("click", Clicku278, true);
+function Clicku278(e)
 {
 windowEvent = e;
 
 
 if (true) {
 
-	SetPanelState('u274', 'pd1u274','none','',500,'none','',500);
+	SetPanelState('u275', 'pd1u275','none','',500,'none','',500);
 
 SetGlobalVariableValue('$colorCount', '' + (GetGlobalVariableValue('$colorCount') - GetNum(1)) + '');
 
-SetWidgetRichText('u485', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">' + (GetGlobalVariableValue('$colorCount')) + ' colors selected</span></p>');
+SetWidgetRichText('u486', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">' + (GetGlobalVariableValue('$colorCount')) + ' colors selected</span></p>');
 
 }
 
 }
 
-if (bIE) u277.attachEvent("onmouseout", MouseOutu277);
-else u277.addEventListener("mouseout", MouseOutu277, true);
-function MouseOutu277(e)
+if (bIE) u278.attachEvent("onmouseout", MouseOutu278);
+else u278.addEventListener("mouseout", MouseOutu278, true);
+function MouseOutu278(e)
 {
 windowEvent = e;
 
-if (!IsTrueMouseOut('u277',e)) return;
+if (!IsTrueMouseOut('u278',e)) return;
 if (true) {
 
-	SetPanelState('u274', 'pd2u274','none','',500,'none','',500);
+	SetPanelState('u275', 'pd2u275','none','',500,'none','',500);
 
-SetWidgetRichText('u486', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">&nbsp;</span></p>');
-
-}
+SetWidgetRichText('u487', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">&nbsp;</span></p>');
 
 }
 
-var u278 = document.getElementById('u278');
-gv_vAlignTable['u278'] = 'center';
+}
+
 var u279 = document.getElementById('u279');
-
-if (bIE) u279.attachEvent("onmouseover", MouseOveru279);
-else u279.addEventListener("mouseover", MouseOveru279, true);
-function MouseOveru279(e)
-{
-windowEvent = e;
-
-if (!IsTrueMouseOver('u279',e)) return;
-if (true) {
-
-	SetPanelState('u274', 'pd3u274','none','',500,'none','',500);
-
-SetWidgetRichText('u486', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">&nbsp;</span></p>');
-
-}
-
-}
-
+gv_vAlignTable['u279'] = 'center';
 var u631 = document.getElementById('u631');
 
 var u632 = document.getElementById('u632');
-gv_vAlignTable['u632'] = 'center';
-var u633 = document.getElementById('u633');
 
-u633.style.cursor = 'pointer';
-if (bIE) u633.attachEvent("onclick", Clicku633);
-else u633.addEventListener("click", Clicku633, true);
-function Clicku633(e)
+var u633 = document.getElementById('u633');
+gv_vAlignTable['u633'] = 'center';
+var u634 = document.getElementById('u634');
+
+u634.style.cursor = 'pointer';
+if (bIE) u634.attachEvent("onclick", Clicku634);
+else u634.addEventListener("click", Clicku634, true);
+function Clicku634(e)
 {
 windowEvent = e;
 
 
 if (true) {
 
-	SetPanelState('u630', 'pd1u630','none','',500,'none','',500);
+	SetPanelState('u631', 'pd1u631','none','',500,'none','',500);
 
 SetGlobalVariableValue('$colorCount', '' + (GetGlobalVariableValue('$colorCount') - GetNum(1)) + '');
 
-SetWidgetRichText('u485', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">' + (GetGlobalVariableValue('$colorCount')) + ' colors selected</span></p>');
+SetWidgetRichText('u486', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">' + (GetGlobalVariableValue('$colorCount')) + ' colors selected</span></p>');
 
 }
 
 }
 
-if (bIE) u633.attachEvent("onmouseout", MouseOutu633);
-else u633.addEventListener("mouseout", MouseOutu633, true);
-function MouseOutu633(e)
+if (bIE) u634.attachEvent("onmouseout", MouseOutu634);
+else u634.addEventListener("mouseout", MouseOutu634, true);
+function MouseOutu634(e)
 {
 windowEvent = e;
 
-if (!IsTrueMouseOut('u633',e)) return;
+if (!IsTrueMouseOut('u634',e)) return;
 if (true) {
 
-	SetPanelState('u630', 'pd2u630','none','',500,'none','',500);
+	SetPanelState('u631', 'pd2u631','none','',500,'none','',500);
 
-SetWidgetRichText('u486', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">&nbsp;</span></p>');
-
-}
+SetWidgetRichText('u487', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">&nbsp;</span></p>');
 
 }
 
-var u634 = document.getElementById('u634');
-gv_vAlignTable['u634'] = 'center';
+}
+
 var u635 = document.getElementById('u635');
-
-if (bIE) u635.attachEvent("onmouseover", MouseOveru635);
-else u635.addEventListener("mouseover", MouseOveru635, true);
-function MouseOveru635(e)
-{
-windowEvent = e;
-
-if (!IsTrueMouseOver('u635',e)) return;
-if (true) {
-
-	SetPanelState('u630', 'pd3u630','none','',500,'none','',500);
-
-SetWidgetRichText('u486', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">Light Blue</span></p>');
-
-}
-
-}
-
+gv_vAlignTable['u635'] = 'center';
 var u636 = document.getElementById('u636');
-gv_vAlignTable['u636'] = 'center';
+
+if (bIE) u636.attachEvent("onmouseover", MouseOveru636);
+else u636.addEventListener("mouseover", MouseOveru636, true);
+function MouseOveru636(e)
+{
+windowEvent = e;
+
+if (!IsTrueMouseOver('u636',e)) return;
+if (true) {
+
+	SetPanelState('u631', 'pd3u631','none','',500,'none','',500);
+
+SetWidgetRichText('u487', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">Light Blue</span></p>');
+
+}
+
+}
+
 var u637 = document.getElementById('u637');
-
+gv_vAlignTable['u637'] = 'center';
 var u638 = document.getElementById('u638');
-gv_vAlignTable['u638'] = 'center';
+
 var u639 = document.getElementById('u639');
-
-u639.style.cursor = 'pointer';
-if (bIE) u639.attachEvent("onclick", Clicku639);
-else u639.addEventListener("click", Clicku639, true);
-function Clicku639(e)
-{
-windowEvent = e;
-
-
-if (true) {
-
-	SetPanelState('u630', 'pd3u630','none','',500,'none','',500);
-
-SetGlobalVariableValue('$colorCount', '' + (GetNum(GetGlobalVariableValue('$colorCount')) + GetNum(1)) + '');
-
-SetWidgetRichText('u485', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">' + (GetGlobalVariableValue('$colorCount')) + ' colors selected</span></p>');
-
-}
-
-}
-
-if (bIE) u639.attachEvent("onmouseout", MouseOutu639);
-else u639.addEventListener("mouseout", MouseOutu639, true);
-function MouseOutu639(e)
-{
-windowEvent = e;
-
-if (!IsTrueMouseOut('u639',e)) return;
-if (true) {
-
-	SetPanelState('u630', 'pd0u630','none','',500,'none','',500);
-
-SetWidgetRichText('u486', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">&nbsp;</span></p>');
-
-}
-
-}
-
+gv_vAlignTable['u639'] = 'center';
 var u280 = document.getElementById('u280');
-gv_vAlignTable['u280'] = 'center';
+
+if (bIE) u280.attachEvent("onmouseover", MouseOveru280);
+else u280.addEventListener("mouseover", MouseOveru280, true);
+function MouseOveru280(e)
+{
+windowEvent = e;
+
+if (!IsTrueMouseOver('u280',e)) return;
+if (true) {
+
+	SetPanelState('u275', 'pd3u275','none','',500,'none','',500);
+
+SetWidgetRichText('u487', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">&nbsp;</span></p>');
+
+}
+
+}
+
 var u281 = document.getElementById('u281');
-
+gv_vAlignTable['u281'] = 'center';
 var u282 = document.getElementById('u282');
-gv_vAlignTable['u282'] = 'center';
-var u283 = document.getElementById('u283');
 
-u283.style.cursor = 'pointer';
-if (bIE) u283.attachEvent("onclick", Clicku283);
-else u283.addEventListener("click", Clicku283, true);
-function Clicku283(e)
+var u283 = document.getElementById('u283');
+gv_vAlignTable['u283'] = 'center';
+var u284 = document.getElementById('u284');
+
+u284.style.cursor = 'pointer';
+if (bIE) u284.attachEvent("onclick", Clicku284);
+else u284.addEventListener("click", Clicku284, true);
+function Clicku284(e)
 {
 windowEvent = e;
 
 
 if (true) {
 
-	SetPanelState('u274', 'pd3u274','none','',500,'none','',500);
+	SetPanelState('u275', 'pd3u275','none','',500,'none','',500);
 
 SetGlobalVariableValue('$colorCount', '' + (GetNum(GetGlobalVariableValue('$colorCount')) + GetNum(1)) + '');
 
-SetWidgetRichText('u485', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">' + (GetGlobalVariableValue('$colorCount')) + ' colors selected</span></p>');
+SetWidgetRichText('u486', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">' + (GetGlobalVariableValue('$colorCount')) + ' colors selected</span></p>');
 
 }
 
 }
 
-if (bIE) u283.attachEvent("onmouseout", MouseOutu283);
-else u283.addEventListener("mouseout", MouseOutu283, true);
-function MouseOutu283(e)
+if (bIE) u284.attachEvent("onmouseout", MouseOutu284);
+else u284.addEventListener("mouseout", MouseOutu284, true);
+function MouseOutu284(e)
 {
 windowEvent = e;
 
-if (!IsTrueMouseOut('u283',e)) return;
+if (!IsTrueMouseOut('u284',e)) return;
 if (true) {
 
-	SetPanelState('u274', 'pd0u274','none','',500,'none','',500);
+	SetPanelState('u275', 'pd0u275','none','',500,'none','',500);
 
-SetWidgetRichText('u486', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">&nbsp;</span></p>');
-
-}
+SetWidgetRichText('u487', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">&nbsp;</span></p>');
 
 }
 
-var u284 = document.getElementById('u284');
-gv_vAlignTable['u284'] = 'center';
+}
+
 var u285 = document.getElementById('u285');
+gv_vAlignTable['u285'] = 'center';
+var u286 = document.getElementById('u286');
 
-if (bIE) u285.attachEvent("onmouseover", MouseOveru285);
-else u285.addEventListener("mouseover", MouseOveru285, true);
-function MouseOveru285(e)
+if (bIE) u286.attachEvent("onmouseover", MouseOveru286);
+else u286.addEventListener("mouseover", MouseOveru286, true);
+function MouseOveru286(e)
 {
 windowEvent = e;
 
-if (!IsTrueMouseOver('u285',e)) return;
+if (!IsTrueMouseOver('u286',e)) return;
 if (true) {
 
-	SetPanelState('u274', 'pd1u274','none','',500,'none','',500);
+	SetPanelState('u275', 'pd1u275','none','',500,'none','',500);
 
-SetWidgetRichText('u486', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">Grey</span></p>');
-
-}
+SetWidgetRichText('u487', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">Grey</span></p>');
 
 }
 
-var u286 = document.getElementById('u286');
-gv_vAlignTable['u286'] = 'center';
+}
+
 var u287 = document.getElementById('u287');
-
+gv_vAlignTable['u287'] = 'center';
 var u288 = document.getElementById('u288');
 
 var u289 = document.getElementById('u289');
-gv_vAlignTable['u289'] = 'center';
-var u641 = document.getElementById('u641');
 
-if (bIE) u641.attachEvent("onmouseover", MouseOveru641);
-else u641.addEventListener("mouseover", MouseOveru641, true);
-function MouseOveru641(e)
+var u641 = document.getElementById('u641');
+gv_vAlignTable['u641'] = 'center';
+var u642 = document.getElementById('u642');
+
+if (bIE) u642.attachEvent("onmouseover", MouseOveru642);
+else u642.addEventListener("mouseover", MouseOveru642, true);
+function MouseOveru642(e)
 {
 windowEvent = e;
 
-if (!IsTrueMouseOver('u641',e)) return;
+if (!IsTrueMouseOver('u642',e)) return;
 if (true) {
 
-	SetPanelState('u630', 'pd1u630','none','',500,'none','',500);
+	SetPanelState('u631', 'pd1u631','none','',500,'none','',500);
 
-SetWidgetRichText('u486', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">Light Blue</span></p>');
-
-}
+SetWidgetRichText('u487', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">Light Blue</span></p>');
 
 }
 
-var u642 = document.getElementById('u642');
-gv_vAlignTable['u642'] = 'center';
+}
+
 var u643 = document.getElementById('u643');
-
+gv_vAlignTable['u643'] = 'center';
 var u644 = document.getElementById('u644');
 
 var u645 = document.getElementById('u645');
-gv_vAlignTable['u645'] = 'center';
+
 var u646 = document.getElementById('u646');
-
-u646.style.cursor = 'pointer';
-if (bIE) u646.attachEvent("onclick", Clicku646);
-else u646.addEventListener("click", Clicku646, true);
-function Clicku646(e)
-{
-windowEvent = e;
-
-
-if (true) {
-
-	SetPanelState('u643', 'pd1u643','none','',500,'none','',500);
-
-SetGlobalVariableValue('$colorCount', '' + (GetGlobalVariableValue('$colorCount') - GetNum(1)) + '');
-
-SetWidgetRichText('u485', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">' + (GetGlobalVariableValue('$colorCount')) + ' colors selected</span></p>');
-
-}
-
-}
-
-if (bIE) u646.attachEvent("onmouseout", MouseOutu646);
-else u646.addEventListener("mouseout", MouseOutu646, true);
-function MouseOutu646(e)
-{
-windowEvent = e;
-
-if (!IsTrueMouseOut('u646',e)) return;
-if (true) {
-
-	SetPanelState('u643', 'pd2u643','none','',500,'none','',500);
-
-SetWidgetRichText('u486', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">&nbsp;</span></p>');
-
-}
-
-}
-
+gv_vAlignTable['u646'] = 'center';
 var u647 = document.getElementById('u647');
-gv_vAlignTable['u647'] = 'center';
-var u648 = document.getElementById('u648');
 
-if (bIE) u648.attachEvent("onmouseover", MouseOveru648);
-else u648.addEventListener("mouseover", MouseOveru648, true);
-function MouseOveru648(e)
-{
-windowEvent = e;
-
-if (!IsTrueMouseOver('u648',e)) return;
-if (true) {
-
-	SetPanelState('u643', 'pd3u643','none','',500,'none','',500);
-
-SetWidgetRichText('u486', '<p style="text-align:left;"><span style="font-family:Lucida Grande;font-size:11px;font-weight:normal;font-style:normal;text-decoration:none;color:#000000;">Turquoise</span></p>');
-
-}
-
-}
-
-var u490 = document.getElementById('u490');
-
-u490.style.cursor = 'pointer';
-if (bIE) u490.attachEvent("onclick", Clicku490);
-else u490.addEventListener("click", Clicku490, true);
-function Clicku490(e)
+u647.style.cursor = 'pointer';
+if (bIE) u647.attachEvent("onclick", Clicku647);
+else u647.addEventListener("click", Clicku647, true);
+function Clicku647(e)
 {
 windowEvent = e;
 
 
 if (true) {
 
-	SetPanelState('u487', 'pd1u487','none','',500,'none','',500);
+	SetPanelState('u644', 'pd1u644','none','',500,'none','',500);
 
 SetGlobalVariableValue('$colorCount', '' + (GetGlobalVariableValue('$colorCount') - GetNum(1)) + '');
 
-SetWidgetRichText('u485', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">' + (GetGlobalVariableValue('$colorCount')) + ' colors selected</span></p>');
+SetWidgetRichText('u486', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">' + (GetGlobalVariableValue('$colorCount')) + ' colors selected</span></p>');
 
 }
 
 }
 
-if (bIE) u490.attachEvent("onmouseout", MouseOutu490);
-else u490.addEventListener("mouseout", MouseOutu490, true);
-function MouseOutu490(e)
+if (bIE) u647.attachEvent("onmouseout", MouseOutu647);
+else u647.addEventListener("mouseout", MouseOutu647, true);
+function MouseOutu647(e)
 {
 windowEvent = e;
 
-if (!IsTrueMouseOut('u490',e)) return;
+if (!IsTrueMouseOut('u647',e)) return;
 if (true) {
 
-	SetPanelState('u487', 'pd2u487','none','',500,'none','',500);
+	SetPanelState('u644', 'pd2u644','none','',500,'none','',500);
 
-SetWidgetRichText('u486', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">&nbsp;</span></p>');
-
-}
+SetWidgetRichText('u487', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">&nbsp;</span></p>');
 
 }
 
+}
+
+var u648 = document.getElementById('u648');
+gv_vAlignTable['u648'] = 'center';
+var u490 = document.getElementById('u490');
+gv_vAlignTable['u490'] = 'center';
 var u491 = document.getElementById('u491');
-gv_vAlignTable['u491'] = 'center';
+
+u491.style.cursor = 'pointer';
+if (bIE) u491.attachEvent("onclick", Clicku491);
+else u491.addEventListener("click", Clicku491, true);
+function Clicku491(e)
+{
+windowEvent = e;
+
+
+if (true) {
+
+	SetPanelState('u488', 'pd1u488','none','',500,'none','',500);
+
+SetGlobalVariableValue('$colorCount', '' + (GetGlobalVariableValue('$colorCount') - GetNum(1)) + '');
+
+SetWidgetRichText('u486', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">' + (GetGlobalVariableValue('$colorCount')) + ' colors selected</span></p>');
+
+}
+
+}
+
+if (bIE) u491.attachEvent("onmouseout", MouseOutu491);
+else u491.addEventListener("mouseout", MouseOutu491, true);
+function MouseOutu491(e)
+{
+windowEvent = e;
+
+if (!IsTrueMouseOut('u491',e)) return;
+if (true) {
+
+	SetPanelState('u488', 'pd2u488','none','',500,'none','',500);
+
+SetWidgetRichText('u487', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">&nbsp;</span></p>');
+
+}
+
+}
+
 var u492 = document.getElementById('u492');
-
-if (bIE) u492.attachEvent("onmouseover", MouseOveru492);
-else u492.addEventListener("mouseover", MouseOveru492, true);
-function MouseOveru492(e)
-{
-windowEvent = e;
-
-if (!IsTrueMouseOver('u492',e)) return;
-if (true) {
-
-	SetPanelState('u487', 'pd3u487','none','',500,'none','',500);
-
-SetWidgetRichText('u486', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">Gold</span></p>');
-
-}
-
-}
-
+gv_vAlignTable['u492'] = 'center';
 var u493 = document.getElementById('u493');
-gv_vAlignTable['u493'] = 'center';
+
+if (bIE) u493.attachEvent("onmouseover", MouseOveru493);
+else u493.addEventListener("mouseover", MouseOveru493, true);
+function MouseOveru493(e)
+{
+windowEvent = e;
+
+if (!IsTrueMouseOver('u493',e)) return;
+if (true) {
+
+	SetPanelState('u488', 'pd3u488','none','',500,'none','',500);
+
+SetWidgetRichText('u487', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">Gold</span></p>');
+
+}
+
+}
+
 var u494 = document.getElementById('u494');
-
+gv_vAlignTable['u494'] = 'center';
 var u495 = document.getElementById('u495');
-gv_vAlignTable['u495'] = 'center';
+
 var u496 = document.getElementById('u496');
-
-u496.style.cursor = 'pointer';
-if (bIE) u496.attachEvent("onclick", Clicku496);
-else u496.addEventListener("click", Clicku496, true);
-function Clicku496(e)
-{
-windowEvent = e;
-
-
-if (true) {
-
-	SetPanelState('u487', 'pd3u487','none','',500,'none','',500);
-
-SetGlobalVariableValue('$colorCount', '' + (GetNum(GetGlobalVariableValue('$colorCount')) + GetNum(1)) + '');
-
-SetWidgetRichText('u485', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">' + (GetGlobalVariableValue('$colorCount')) + ' colors selected</span></p>');
-
-}
-
-}
-
-if (bIE) u496.attachEvent("onmouseout", MouseOutu496);
-else u496.addEventListener("mouseout", MouseOutu496, true);
-function MouseOutu496(e)
-{
-windowEvent = e;
-
-if (!IsTrueMouseOut('u496',e)) return;
-if (true) {
-
-	SetPanelState('u487', 'pd0u487','none','',500,'none','',500);
-
-SetWidgetRichText('u486', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">&nbsp;</span></p>');
-
-}
-
-}
-
+gv_vAlignTable['u496'] = 'center';
 var u100 = document.getElementById('u100');
 gv_vAlignTable['u100'] = 'center';
 var u101 = document.getElementById('u101');
 
-u101.style.cursor = 'pointer';
-if (bIE) u101.attachEvent("onclick", Clicku101);
-else u101.addEventListener("click", Clicku101, true);
-function Clicku101(e)
-{
-windowEvent = e;
-
-
-if (true) {
-
-SetWidgetSelected('u101');
-}
-
-}
-
-if (bIE) u101.attachEvent("onmouseover", MouseOveru101);
-else u101.addEventListener("mouseover", MouseOveru101, true);
-function MouseOveru101(e)
-{
-windowEvent = e;
-
-if (!IsTrueMouseOver('u101',e)) return;
-if (true) {
-
-	SetPanelState('u98', 'pd1u98','none','',500,'none','',500);
-
-SetWidgetRichText('u59', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;"> Charity Pink</span></p>');
-
-}
-
-}
-
-if (bIE) u101.attachEvent("onmouseout", MouseOutu101);
-else u101.addEventListener("mouseout", MouseOutu101, true);
-function MouseOutu101(e)
-{
-windowEvent = e;
-
-if (!IsTrueMouseOut('u101',e)) return;
-if (true) {
-
-	SetPanelState('u98', 'pd0u98','none','',500,'none','',500);
-
-SetWidgetRichText('u59', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">&nbsp;</span></p>');
-
-}
-
-}
-
 var u102 = document.getElementById('u102');
-gv_vAlignTable['u102'] = 'center';
-var u290 = document.getElementById('u290');
 
-u290.style.cursor = 'pointer';
-if (bIE) u290.attachEvent("onclick", Clicku290);
-else u290.addEventListener("click", Clicku290, true);
-function Clicku290(e)
+var u290 = document.getElementById('u290');
+gv_vAlignTable['u290'] = 'center';
+var u291 = document.getElementById('u291');
+
+u291.style.cursor = 'pointer';
+if (bIE) u291.attachEvent("onclick", Clicku291);
+else u291.addEventListener("click", Clicku291, true);
+function Clicku291(e)
 {
 windowEvent = e;
 
 
 if (true) {
 
-	SetPanelState('u287', 'pd1u287','none','',500,'none','',500);
+	SetPanelState('u288', 'pd1u288','none','',500,'none','',500);
 
 SetGlobalVariableValue('$colorCount', '' + (GetGlobalVariableValue('$colorCount') - GetNum(1)) + '');
 
-SetWidgetRichText('u485', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">' + (GetGlobalVariableValue('$colorCount')) + ' colors selected</span></p>');
+SetWidgetRichText('u486', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">' + (GetGlobalVariableValue('$colorCount')) + ' colors selected</span></p>');
 
 }
 
 }
 
-if (bIE) u290.attachEvent("onmouseout", MouseOutu290);
-else u290.addEventListener("mouseout", MouseOutu290, true);
-function MouseOutu290(e)
+if (bIE) u291.attachEvent("onmouseout", MouseOutu291);
+else u291.addEventListener("mouseout", MouseOutu291, true);
+function MouseOutu291(e)
 {
 windowEvent = e;
 
-if (!IsTrueMouseOut('u290',e)) return;
+if (!IsTrueMouseOut('u291',e)) return;
 if (true) {
 
-	SetPanelState('u287', 'pd2u287','none','',500,'none','',500);
+	SetPanelState('u288', 'pd2u288','none','',500,'none','',500);
 
-SetWidgetRichText('u486', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">&nbsp;</span></p>');
-
-}
+SetWidgetRichText('u487', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">&nbsp;</span></p>');
 
 }
 
-var u291 = document.getElementById('u291');
-gv_vAlignTable['u291'] = 'center';
+}
+
 var u292 = document.getElementById('u292');
-
-if (bIE) u292.attachEvent("onmouseover", MouseOveru292);
-else u292.addEventListener("mouseover", MouseOveru292, true);
-function MouseOveru292(e)
-{
-windowEvent = e;
-
-if (!IsTrueMouseOver('u292',e)) return;
-if (true) {
-
-	SetPanelState('u287', 'pd3u287','none','',500,'none','',500);
-
-SetWidgetRichText('u486', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">White</span></p>');
-
-}
-
-}
-
+gv_vAlignTable['u292'] = 'center';
 var u293 = document.getElementById('u293');
-gv_vAlignTable['u293'] = 'center';
+
+if (bIE) u293.attachEvent("onmouseover", MouseOveru293);
+else u293.addEventListener("mouseover", MouseOveru293, true);
+function MouseOveru293(e)
+{
+windowEvent = e;
+
+if (!IsTrueMouseOver('u293',e)) return;
+if (true) {
+
+	SetPanelState('u288', 'pd3u288','none','',500,'none','',500);
+
+SetWidgetRichText('u487', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">White</span></p>');
+
+}
+
+}
+
 var u294 = document.getElementById('u294');
-
+gv_vAlignTable['u294'] = 'center';
 var u295 = document.getElementById('u295');
-gv_vAlignTable['u295'] = 'center';
+
 var u296 = document.getElementById('u296');
-
-u296.style.cursor = 'pointer';
-if (bIE) u296.attachEvent("onclick", Clicku296);
-else u296.addEventListener("click", Clicku296, true);
-function Clicku296(e)
-{
-windowEvent = e;
-
-
-if (true) {
-
-	SetPanelState('u287', 'pd3u287','none','',500,'none','',500);
-
-SetGlobalVariableValue('$colorCount', '' + (GetNum(GetGlobalVariableValue('$colorCount')) + GetNum(1)) + '');
-
-SetWidgetRichText('u485', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">' + (GetGlobalVariableValue('$colorCount')) + ' colors selected</span></p>');
-
-}
-
-}
-
-if (bIE) u296.attachEvent("onmouseout", MouseOutu296);
-else u296.addEventListener("mouseout", MouseOutu296, true);
-function MouseOutu296(e)
-{
-windowEvent = e;
-
-if (!IsTrueMouseOut('u296',e)) return;
-if (true) {
-
-	SetPanelState('u287', 'pd0u287','none','',500,'none','',500);
-
-SetWidgetRichText('u486', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">&nbsp;</span></p>');
-
-}
-
-}
-
+gv_vAlignTable['u296'] = 'center';
 var u297 = document.getElementById('u297');
-gv_vAlignTable['u297'] = 'center';
-var u298 = document.getElementById('u298');
 
-if (bIE) u298.attachEvent("onmouseover", MouseOveru298);
-else u298.addEventListener("mouseover", MouseOveru298, true);
-function MouseOveru298(e)
-{
-windowEvent = e;
-
-if (!IsTrueMouseOver('u298',e)) return;
-if (true) {
-
-	SetPanelState('u287', 'pd1u287','none','',500,'none','',500);
-
-SetWidgetRichText('u486', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">White</span></p>');
-
-}
-
-}
-
-var u299 = document.getElementById('u299');
-gv_vAlignTable['u299'] = 'center';
-var u651 = document.getElementById('u651');
-gv_vAlignTable['u651'] = 'center';
-var u652 = document.getElementById('u652');
-
-u652.style.cursor = 'pointer';
-if (bIE) u652.attachEvent("onclick", Clicku652);
-else u652.addEventListener("click", Clicku652, true);
-function Clicku652(e)
+u297.style.cursor = 'pointer';
+if (bIE) u297.attachEvent("onclick", Clicku297);
+else u297.addEventListener("click", Clicku297, true);
+function Clicku297(e)
 {
 windowEvent = e;
 
 
 if (true) {
 
-	SetPanelState('u643', 'pd3u643','none','',500,'none','',500);
+	SetPanelState('u288', 'pd3u288','none','',500,'none','',500);
 
 SetGlobalVariableValue('$colorCount', '' + (GetNum(GetGlobalVariableValue('$colorCount')) + GetNum(1)) + '');
 
-SetWidgetRichText('u485', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">' + (GetGlobalVariableValue('$colorCount')) + ' colors selected</span></p>');
+SetWidgetRichText('u486', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">' + (GetGlobalVariableValue('$colorCount')) + ' colors selected</span></p>');
 
 }
 
 }
 
-if (bIE) u652.attachEvent("onmouseout", MouseOutu652);
-else u652.addEventListener("mouseout", MouseOutu652, true);
-function MouseOutu652(e)
+if (bIE) u297.attachEvent("onmouseout", MouseOutu297);
+else u297.addEventListener("mouseout", MouseOutu297, true);
+function MouseOutu297(e)
 {
 windowEvent = e;
 
-if (!IsTrueMouseOut('u652',e)) return;
+if (!IsTrueMouseOut('u297',e)) return;
 if (true) {
 
-	SetPanelState('u643', 'pd0u643','none','',500,'none','',500);
+	SetPanelState('u288', 'pd0u288','none','',500,'none','',500);
 
-SetWidgetRichText('u486', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">&nbsp;</span></p>');
+SetWidgetRichText('u487', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">&nbsp;</span></p>');
+
+}
+
+}
+
+var u298 = document.getElementById('u298');
+gv_vAlignTable['u298'] = 'center';
+var u299 = document.getElementById('u299');
+
+if (bIE) u299.attachEvent("onmouseover", MouseOveru299);
+else u299.addEventListener("mouseover", MouseOveru299, true);
+function MouseOveru299(e)
+{
+windowEvent = e;
+
+if (!IsTrueMouseOver('u299',e)) return;
+if (true) {
+
+	SetPanelState('u288', 'pd1u288','none','',500,'none','',500);
+
+SetWidgetRichText('u487', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">White</span></p>');
 
 }
 
 }
 
+var u651 = document.getElementById('u651');
+
+var u652 = document.getElementById('u652');
+gv_vAlignTable['u652'] = 'center';
 var u653 = document.getElementById('u653');
-gv_vAlignTable['u653'] = 'center';
-var u654 = document.getElementById('u654');
 
-if (bIE) u654.attachEvent("onmouseover", MouseOveru654);
-else u654.addEventListener("mouseover", MouseOveru654, true);
-function MouseOveru654(e)
+u653.style.cursor = 'pointer';
+if (bIE) u653.attachEvent("onclick", Clicku653);
+else u653.addEventListener("click", Clicku653, true);
+function Clicku653(e)
 {
 windowEvent = e;
 
-if (!IsTrueMouseOver('u654',e)) return;
+
 if (true) {
 
-	SetPanelState('u643', 'pd1u643','none','',500,'none','',500);
+	SetPanelState('u644', 'pd3u644','none','',500,'none','',500);
 
-SetWidgetRichText('u486', '<p style="text-align:left;"><span style="font-family:Lucida Grande;font-size:11px;font-weight:normal;font-style:normal;text-decoration:none;color:#000000;">Turquoise</span></p>');
+SetGlobalVariableValue('$colorCount', '' + (GetNum(GetGlobalVariableValue('$colorCount')) + GetNum(1)) + '');
+
+SetWidgetRichText('u486', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">' + (GetGlobalVariableValue('$colorCount')) + ' colors selected</span></p>');
 
 }
 
 }
 
+if (bIE) u653.attachEvent("onmouseout", MouseOutu653);
+else u653.addEventListener("mouseout", MouseOutu653, true);
+function MouseOutu653(e)
+{
+windowEvent = e;
+
+if (!IsTrueMouseOut('u653',e)) return;
+if (true) {
+
+	SetPanelState('u644', 'pd0u644','none','',500,'none','',500);
+
+SetWidgetRichText('u487', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">&nbsp;</span></p>');
+
+}
+
+}
+
+var u654 = document.getElementById('u654');
+gv_vAlignTable['u654'] = 'center';
 var u655 = document.getElementById('u655');
-gv_vAlignTable['u655'] = 'center';
-var u656 = document.getElementById('u656');
 
+if (bIE) u655.attachEvent("onmouseover", MouseOveru655);
+else u655.addEventListener("mouseover", MouseOveru655, true);
+function MouseOveru655(e)
+{
+windowEvent = e;
+
+if (!IsTrueMouseOver('u655',e)) return;
+if (true) {
+
+	SetPanelState('u644', 'pd1u644','none','',500,'none','',500);
+
+SetWidgetRichText('u487', '<p style="text-align:left;"><span style="font-family:Lucida Grande;font-size:11px;font-weight:normal;font-style:normal;text-decoration:none;color:#000000;">Turquoise</span></p>');
+
+}
+
+}
+
+var u656 = document.getElementById('u656');
+gv_vAlignTable['u656'] = 'center';
 var u657 = document.getElementById('u657');
 
 var u658 = document.getElementById('u658');
-gv_vAlignTable['u658'] = 'center';
+
 var u659 = document.getElementById('u659');
-
-u659.style.cursor = 'pointer';
-if (bIE) u659.attachEvent("onclick", Clicku659);
-else u659.addEventListener("click", Clicku659, true);
-function Clicku659(e)
-{
-windowEvent = e;
-
-
-if (true) {
-
-	SetPanelState('u656', 'pd1u656','none','',500,'none','',500);
-
-SetGlobalVariableValue('$colorCount', '' + (GetGlobalVariableValue('$colorCount') - GetNum(1)) + '');
-
-SetWidgetRichText('u485', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">' + (GetGlobalVariableValue('$colorCount')) + ' colors selected</span></p>');
-
-}
-
-}
-
-if (bIE) u659.attachEvent("onmouseout", MouseOutu659);
-else u659.addEventListener("mouseout", MouseOutu659, true);
-function MouseOutu659(e)
-{
-windowEvent = e;
-
-if (!IsTrueMouseOut('u659',e)) return;
-if (true) {
-
-	SetPanelState('u656', 'pd2u656','none','',500,'none','',500);
-
-SetWidgetRichText('u486', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">&nbsp;</span></p>');
-
-}
-
-}
-
+gv_vAlignTable['u659'] = 'center';
 var u9 = document.getElementById('u9');
 
 var u110 = document.getElementById('u110');
 gv_vAlignTable['u110'] = 'center';
 var u111 = document.getElementById('u111');
 
-u111.style.cursor = 'pointer';
-if (bIE) u111.attachEvent("onclick", Clicku111);
-else u111.addEventListener("click", Clicku111, true);
-function Clicku111(e)
-{
-windowEvent = e;
-
-
-if (true) {
-
-SetWidgetSelected('u111');
-}
-
-}
-
-if (bIE) u111.attachEvent("onmouseover", MouseOveru111);
-else u111.addEventListener("mouseover", MouseOveru111, true);
-function MouseOveru111(e)
-{
-windowEvent = e;
-
-if (!IsTrueMouseOver('u111',e)) return;
-if (true) {
-
-	SetPanelState('u108', 'pd1u108','none','',500,'none','',500);
-
-SetWidgetRichText('u59', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;"> Magenta</span></p>');
-
-}
-
-}
-
-if (bIE) u111.attachEvent("onmouseout", MouseOutu111);
-else u111.addEventListener("mouseout", MouseOutu111, true);
-function MouseOutu111(e)
-{
-windowEvent = e;
-
-if (!IsTrueMouseOut('u111',e)) return;
-if (true) {
-
-	SetPanelState('u108', 'pd1u108','none','',500,'none','',500);
-
-SetWidgetRichText('u59', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">&nbsp;</span></p>');
-
-}
-
-}
-
 var u112 = document.getElementById('u112');
-gv_vAlignTable['u112'] = 'center';
-var u113 = document.getElementById('u113');
 
+var u113 = document.getElementById('u113');
+gv_vAlignTable['u113'] = 'center';
 var u114 = document.getElementById('u114');
+
+u114.style.cursor = 'pointer';
+if (bIE) u114.attachEvent("onclick", Clicku114);
+else u114.addEventListener("click", Clicku114, true);
+function Clicku114(e)
+{
+windowEvent = e;
+
+
+if (true) {
+
+SetWidgetSelected('u114');
+}
+
+}
+
+if (bIE) u114.attachEvent("onmouseover", MouseOveru114);
+else u114.addEventListener("mouseover", MouseOveru114, true);
+function MouseOveru114(e)
+{
+windowEvent = e;
+
+if (!IsTrueMouseOver('u114',e)) return;
+if (true) {
+
+	SetPanelState('u111', 'pd1u111','none','',500,'none','',500);
+
+SetWidgetRichText('u62', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;"> Magenta</span></p>');
+
+}
+
+}
+
+if (bIE) u114.attachEvent("onmouseout", MouseOutu114);
+else u114.addEventListener("mouseout", MouseOutu114, true);
+function MouseOutu114(e)
+{
+windowEvent = e;
+
+if (!IsTrueMouseOut('u114',e)) return;
+if (true) {
+
+	SetPanelState('u111', 'pd1u111','none','',500,'none','',500);
+
+SetWidgetRichText('u62', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">&nbsp;</span></p>');
+
+}
+
+}
 
 var u115 = document.getElementById('u115');
 gv_vAlignTable['u115'] = 'center';
 var u116 = document.getElementById('u116');
 
-u116.style.cursor = 'pointer';
-if (bIE) u116.attachEvent("onclick", Clicku116);
-else u116.addEventListener("click", Clicku116, true);
-function Clicku116(e)
-{
-windowEvent = e;
-
-
-if (true) {
-
-SetWidgetSelected('u116');
-}
-
-}
-
-if (bIE) u116.attachEvent("onmouseover", MouseOveru116);
-else u116.addEventListener("mouseover", MouseOveru116, true);
-function MouseOveru116(e)
-{
-windowEvent = e;
-
-if (!IsTrueMouseOver('u116',e)) return;
-if (true) {
-
-	SetPanelState('u113', 'pd1u113','none','',500,'none','',500);
-
-SetWidgetRichText('u59', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;"> Orange</span></p>');
-
-}
-
-}
-
-if (bIE) u116.attachEvent("onmouseout", MouseOutu116);
-else u116.addEventListener("mouseout", MouseOutu116, true);
-function MouseOutu116(e)
-{
-windowEvent = e;
-
-if (!IsTrueMouseOut('u116',e)) return;
-if (true) {
-
-	SetPanelState('u113', 'pd0u113','none','',500,'none','',500);
-
-SetWidgetRichText('u59', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">&nbsp;</span></p>');
-
-}
-
-}
-
 var u117 = document.getElementById('u117');
-gv_vAlignTable['u117'] = 'center';
-var u118 = document.getElementById('u118');
 
+var u118 = document.getElementById('u118');
+gv_vAlignTable['u118'] = 'center';
 var u119 = document.getElementById('u119');
 
+u119.style.cursor = 'pointer';
+if (bIE) u119.attachEvent("onclick", Clicku119);
+else u119.addEventListener("click", Clicku119, true);
+function Clicku119(e)
+{
+windowEvent = e;
+
+
+if (true) {
+
+SetWidgetSelected('u119');
+}
+
+}
+
+if (bIE) u119.attachEvent("onmouseover", MouseOveru119);
+else u119.addEventListener("mouseover", MouseOveru119, true);
+function MouseOveru119(e)
+{
+windowEvent = e;
+
+if (!IsTrueMouseOver('u119',e)) return;
+if (true) {
+
+	SetPanelState('u116', 'pd1u116','none','',500,'none','',500);
+
+SetWidgetRichText('u62', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;"> Orange</span></p>');
+
+}
+
+}
+
+if (bIE) u119.attachEvent("onmouseout", MouseOutu119);
+else u119.addEventListener("mouseout", MouseOutu119, true);
+function MouseOutu119(e)
+{
+windowEvent = e;
+
+if (!IsTrueMouseOut('u119',e)) return;
+if (true) {
+
+	SetPanelState('u116', 'pd0u116','none','',500,'none','',500);
+
+SetWidgetRichText('u62', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">&nbsp;</span></p>');
+
+}
+
+}
+
 var u660 = document.getElementById('u660');
-gv_vAlignTable['u660'] = 'center';
+
+u660.style.cursor = 'pointer';
+if (bIE) u660.attachEvent("onclick", Clicku660);
+else u660.addEventListener("click", Clicku660, true);
+function Clicku660(e)
+{
+windowEvent = e;
+
+
+if (true) {
+
+	SetPanelState('u657', 'pd1u657','none','',500,'none','',500);
+
+SetGlobalVariableValue('$colorCount', '' + (GetGlobalVariableValue('$colorCount') - GetNum(1)) + '');
+
+SetWidgetRichText('u486', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">' + (GetGlobalVariableValue('$colorCount')) + ' colors selected</span></p>');
+
+}
+
+}
+
+if (bIE) u660.attachEvent("onmouseout", MouseOutu660);
+else u660.addEventListener("mouseout", MouseOutu660, true);
+function MouseOutu660(e)
+{
+windowEvent = e;
+
+if (!IsTrueMouseOut('u660',e)) return;
+if (true) {
+
+	SetPanelState('u657', 'pd2u657','none','',500,'none','',500);
+
+SetWidgetRichText('u487', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">&nbsp;</span></p>');
+
+}
+
+}
+
 var u661 = document.getElementById('u661');
-
-if (bIE) u661.attachEvent("onmouseover", MouseOveru661);
-else u661.addEventListener("mouseover", MouseOveru661, true);
-function MouseOveru661(e)
-{
-windowEvent = e;
-
-if (!IsTrueMouseOver('u661',e)) return;
-if (true) {
-
-	SetPanelState('u656', 'pd3u656','none','',500,'none','',500);
-
-SetWidgetRichText('u486', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">Dark Purple</span></p>');
-
-}
-
-}
-
+gv_vAlignTable['u661'] = 'center';
 var u662 = document.getElementById('u662');
-gv_vAlignTable['u662'] = 'center';
+
+if (bIE) u662.attachEvent("onmouseover", MouseOveru662);
+else u662.addEventListener("mouseover", MouseOveru662, true);
+function MouseOveru662(e)
+{
+windowEvent = e;
+
+if (!IsTrueMouseOver('u662',e)) return;
+if (true) {
+
+	SetPanelState('u657', 'pd3u657','none','',500,'none','',500);
+
+SetWidgetRichText('u487', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">Dark Purple</span></p>');
+
+}
+
+}
+
 var u663 = document.getElementById('u663');
-
+gv_vAlignTable['u663'] = 'center';
 var u664 = document.getElementById('u664');
-gv_vAlignTable['u664'] = 'center';
-var u665 = document.getElementById('u665');
 
-u665.style.cursor = 'pointer';
-if (bIE) u665.attachEvent("onclick", Clicku665);
-else u665.addEventListener("click", Clicku665, true);
-function Clicku665(e)
+var u665 = document.getElementById('u665');
+gv_vAlignTable['u665'] = 'center';
+var u666 = document.getElementById('u666');
+
+u666.style.cursor = 'pointer';
+if (bIE) u666.attachEvent("onclick", Clicku666);
+else u666.addEventListener("click", Clicku666, true);
+function Clicku666(e)
 {
 windowEvent = e;
 
 
 if (true) {
 
-	SetPanelState('u656', 'pd3u656','none','',500,'none','',500);
+	SetPanelState('u657', 'pd3u657','none','',500,'none','',500);
 
 SetGlobalVariableValue('$colorCount', '' + (GetNum(GetGlobalVariableValue('$colorCount')) + GetNum(1)) + '');
 
-SetWidgetRichText('u485', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">' + (GetGlobalVariableValue('$colorCount')) + ' colors selected</span></p>');
+SetWidgetRichText('u486', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">' + (GetGlobalVariableValue('$colorCount')) + ' colors selected</span></p>');
 
 }
 
 }
 
-if (bIE) u665.attachEvent("onmouseout", MouseOutu665);
-else u665.addEventListener("mouseout", MouseOutu665, true);
-function MouseOutu665(e)
+if (bIE) u666.attachEvent("onmouseout", MouseOutu666);
+else u666.addEventListener("mouseout", MouseOutu666, true);
+function MouseOutu666(e)
 {
 windowEvent = e;
 
-if (!IsTrueMouseOut('u665',e)) return;
+if (!IsTrueMouseOut('u666',e)) return;
 if (true) {
 
-	SetPanelState('u656', 'pd0u656','none','',500,'none','',500);
+	SetPanelState('u657', 'pd0u657','none','',500,'none','',500);
 
-SetWidgetRichText('u486', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">&nbsp;</span></p>');
-
-}
+SetWidgetRichText('u487', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">&nbsp;</span></p>');
 
 }
 
-var u666 = document.getElementById('u666');
-gv_vAlignTable['u666'] = 'center';
+}
+
 var u667 = document.getElementById('u667');
+gv_vAlignTable['u667'] = 'center';
+var u668 = document.getElementById('u668');
 
-if (bIE) u667.attachEvent("onmouseover", MouseOveru667);
-else u667.addEventListener("mouseover", MouseOveru667, true);
-function MouseOveru667(e)
+if (bIE) u668.attachEvent("onmouseover", MouseOveru668);
+else u668.addEventListener("mouseover", MouseOveru668, true);
+function MouseOveru668(e)
 {
 windowEvent = e;
 
-if (!IsTrueMouseOver('u667',e)) return;
+if (!IsTrueMouseOver('u668',e)) return;
 if (true) {
 
-	SetPanelState('u656', 'pd1u656','none','',500,'none','',500);
+	SetPanelState('u657', 'pd1u657','none','',500,'none','',500);
 
-SetWidgetRichText('u486', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">Dark Purple</span></p>');
-
-}
+SetWidgetRichText('u487', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">Dark Purple</span></p>');
 
 }
 
-var u668 = document.getElementById('u668');
-gv_vAlignTable['u668'] = 'center';
+}
+
 var u669 = document.getElementById('u669');
-
+gv_vAlignTable['u669'] = 'center';
 var u31 = document.getElementById('u31');
 gv_vAlignTable['u31'] = 'top';
 var u32 = document.getElementById('u32');
@@ -1090,17 +950,15 @@ if (true) {
 
 	SetPanelVisibility('u36','','none',500);
 
-	SetPanelVisibility('u714','','none',500);
-
-	SetPanelState('u41', 'pd2u41','none','',500,'none','',500);
+	SetPanelState('u43', 'pd2u43','none','',500,'none','',500);
 
 	SetPanelState('u13', 'pd3u13','none','',500,'none','',500);
 
-SetWidgetSelected('u61');
-SetWidgetNotSelected('u76');
+SetWidgetSelected('u64');
+SetWidgetNotSelected('u79');
 SetGlobalVariableValue('$colorCount', '1');
 
-SetCheckState('u715', false);
+SetCheckState('u716', false);
 
 SetGlobalVariableValue('$printOption', 'single');
 
@@ -1110,9 +968,11 @@ SetGlobalVariableValue('$showWhite', 'no');
 
 	MoveWidgetTo('u38', 2,110,'none',500);
 
-	MoveWidgetTo('u41', 160,245,'none',500);
+	MoveWidgetTo('u43', 160,245,'none',500);
 
 	SetPanelVisibility('u28','hidden','none',500);
+
+	SetPanelVisibility('u41','hidden','none',500);
 
 }
 
@@ -1124,231 +984,231 @@ var u120 = document.getElementById('u120');
 gv_vAlignTable['u120'] = 'center';
 var u121 = document.getElementById('u121');
 
-u121.style.cursor = 'pointer';
-if (bIE) u121.attachEvent("onclick", Clicku121);
-else u121.addEventListener("click", Clicku121, true);
-function Clicku121(e)
-{
-windowEvent = e;
-
-
-if (true) {
-
-SetWidgetSelected('u121');
-}
-
-}
-
-if (bIE) u121.attachEvent("onmouseover", MouseOveru121);
-else u121.addEventListener("mouseover", MouseOveru121, true);
-function MouseOveru121(e)
-{
-windowEvent = e;
-
-if (!IsTrueMouseOver('u121',e)) return;
-if (true) {
-
-	SetPanelState('u118', 'pd1u118','none','',500,'none','',500);
-
-SetWidgetRichText('u59', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;"> Light Orange</span></p>');
-
-}
-
-}
-
-if (bIE) u121.attachEvent("onmouseout", MouseOutu121);
-else u121.addEventListener("mouseout", MouseOutu121, true);
-function MouseOutu121(e)
-{
-windowEvent = e;
-
-if (!IsTrueMouseOut('u121',e)) return;
-if (true) {
-
-	SetPanelState('u118', 'pd0u118','none','',500,'none','',500);
-
-SetWidgetRichText('u59', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">&nbsp;</span></p>');
-
-}
-
-}
-
 var u122 = document.getElementById('u122');
-gv_vAlignTable['u122'] = 'center';
-var u123 = document.getElementById('u123');
 
+var u123 = document.getElementById('u123');
+gv_vAlignTable['u123'] = 'center';
 var u124 = document.getElementById('u124');
+
+u124.style.cursor = 'pointer';
+if (bIE) u124.attachEvent("onclick", Clicku124);
+else u124.addEventListener("click", Clicku124, true);
+function Clicku124(e)
+{
+windowEvent = e;
+
+
+if (true) {
+
+SetWidgetSelected('u124');
+}
+
+}
+
+if (bIE) u124.attachEvent("onmouseover", MouseOveru124);
+else u124.addEventListener("mouseover", MouseOveru124, true);
+function MouseOveru124(e)
+{
+windowEvent = e;
+
+if (!IsTrueMouseOver('u124',e)) return;
+if (true) {
+
+	SetPanelState('u121', 'pd1u121','none','',500,'none','',500);
+
+SetWidgetRichText('u62', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;"> Light Orange</span></p>');
+
+}
+
+}
+
+if (bIE) u124.attachEvent("onmouseout", MouseOutu124);
+else u124.addEventListener("mouseout", MouseOutu124, true);
+function MouseOutu124(e)
+{
+windowEvent = e;
+
+if (!IsTrueMouseOut('u124',e)) return;
+if (true) {
+
+	SetPanelState('u121', 'pd0u121','none','',500,'none','',500);
+
+SetWidgetRichText('u62', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">&nbsp;</span></p>');
+
+}
+
+}
 
 var u125 = document.getElementById('u125');
 gv_vAlignTable['u125'] = 'center';
 var u126 = document.getElementById('u126');
 
-u126.style.cursor = 'pointer';
-if (bIE) u126.attachEvent("onclick", Clicku126);
-else u126.addEventListener("click", Clicku126, true);
-function Clicku126(e)
-{
-windowEvent = e;
-
-
-if (true) {
-
-SetWidgetSelected('u126');
-}
-
-}
-
-if (bIE) u126.attachEvent("onmouseover", MouseOveru126);
-else u126.addEventListener("mouseover", MouseOveru126, true);
-function MouseOveru126(e)
-{
-windowEvent = e;
-
-if (!IsTrueMouseOver('u126',e)) return;
-if (true) {
-
-	SetPanelState('u123', 'pd1u123','none','',500,'none','',500);
-
-SetWidgetRichText('u59', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">Athletic Gold</span></p>');
-
-}
-
-}
-
-if (bIE) u126.attachEvent("onmouseout", MouseOutu126);
-else u126.addEventListener("mouseout", MouseOutu126, true);
-function MouseOutu126(e)
-{
-windowEvent = e;
-
-if (!IsTrueMouseOut('u126',e)) return;
-if (true) {
-
-	SetPanelState('u123', 'pd0u123','none','',500,'none','',500);
-
-SetWidgetRichText('u59', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">&nbsp;</span></p>');
-
-}
-
-}
-
 var u127 = document.getElementById('u127');
-gv_vAlignTable['u127'] = 'center';
-var u128 = document.getElementById('u128');
 
+var u128 = document.getElementById('u128');
+gv_vAlignTable['u128'] = 'center';
 var u129 = document.getElementById('u129');
+
+u129.style.cursor = 'pointer';
+if (bIE) u129.attachEvent("onclick", Clicku129);
+else u129.addEventListener("click", Clicku129, true);
+function Clicku129(e)
+{
+windowEvent = e;
+
+
+if (true) {
+
+SetWidgetSelected('u129');
+}
+
+}
+
+if (bIE) u129.attachEvent("onmouseover", MouseOveru129);
+else u129.addEventListener("mouseover", MouseOveru129, true);
+function MouseOveru129(e)
+{
+windowEvent = e;
+
+if (!IsTrueMouseOver('u129',e)) return;
+if (true) {
+
+	SetPanelState('u126', 'pd1u126','none','',500,'none','',500);
+
+SetWidgetRichText('u62', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">Athletic Gold</span></p>');
+
+}
+
+}
+
+if (bIE) u129.attachEvent("onmouseout", MouseOutu129);
+else u129.addEventListener("mouseout", MouseOutu129, true);
+function MouseOutu129(e)
+{
+windowEvent = e;
+
+if (!IsTrueMouseOut('u129',e)) return;
+if (true) {
+
+	SetPanelState('u126', 'pd0u126','none','',500,'none','',500);
+
+SetWidgetRichText('u62', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">&nbsp;</span></p>');
+
+}
+
+}
 
 var u670 = document.getElementById('u670');
 
 var u671 = document.getElementById('u671');
-gv_vAlignTable['u671'] = 'center';
-var u672 = document.getElementById('u672');
 
-u672.style.cursor = 'pointer';
-if (bIE) u672.attachEvent("onclick", Clicku672);
-else u672.addEventListener("click", Clicku672, true);
-function Clicku672(e)
+var u672 = document.getElementById('u672');
+gv_vAlignTable['u672'] = 'center';
+var u673 = document.getElementById('u673');
+
+u673.style.cursor = 'pointer';
+if (bIE) u673.attachEvent("onclick", Clicku673);
+else u673.addEventListener("click", Clicku673, true);
+function Clicku673(e)
 {
 windowEvent = e;
 
 
 if (true) {
 
-	SetPanelState('u669', 'pd1u669','none','',500,'none','',500);
+	SetPanelState('u670', 'pd1u670','none','',500,'none','',500);
 
 SetGlobalVariableValue('$colorCount', '' + (GetGlobalVariableValue('$colorCount') - GetNum(1)) + '');
 
-SetWidgetRichText('u485', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">' + (GetGlobalVariableValue('$colorCount')) + ' colors selected</span></p>');
+SetWidgetRichText('u486', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">' + (GetGlobalVariableValue('$colorCount')) + ' colors selected</span></p>');
 
 }
 
 }
 
-if (bIE) u672.attachEvent("onmouseout", MouseOutu672);
-else u672.addEventListener("mouseout", MouseOutu672, true);
-function MouseOutu672(e)
+if (bIE) u673.attachEvent("onmouseout", MouseOutu673);
+else u673.addEventListener("mouseout", MouseOutu673, true);
+function MouseOutu673(e)
 {
 windowEvent = e;
 
-if (!IsTrueMouseOut('u672',e)) return;
+if (!IsTrueMouseOut('u673',e)) return;
 if (true) {
 
-	SetPanelState('u669', 'pd2u669','none','',500,'none','',500);
+	SetPanelState('u670', 'pd2u670','none','',500,'none','',500);
 
-SetWidgetRichText('u486', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">&nbsp;</span></p>');
-
-}
+SetWidgetRichText('u487', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">&nbsp;</span></p>');
 
 }
 
-var u673 = document.getElementById('u673');
-gv_vAlignTable['u673'] = 'center';
+}
+
 var u674 = document.getElementById('u674');
-
-if (bIE) u674.attachEvent("onmouseover", MouseOveru674);
-else u674.addEventListener("mouseover", MouseOveru674, true);
-function MouseOveru674(e)
-{
-windowEvent = e;
-
-if (!IsTrueMouseOver('u674',e)) return;
-if (true) {
-
-	SetPanelState('u669', 'pd3u669','none','',500,'none','',500);
-
-SetWidgetRichText('u486', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">Bright Purple</span></p>');
-
-}
-
-}
-
+gv_vAlignTable['u674'] = 'center';
 var u675 = document.getElementById('u675');
-gv_vAlignTable['u675'] = 'center';
+
+if (bIE) u675.attachEvent("onmouseover", MouseOveru675);
+else u675.addEventListener("mouseover", MouseOveru675, true);
+function MouseOveru675(e)
+{
+windowEvent = e;
+
+if (!IsTrueMouseOver('u675',e)) return;
+if (true) {
+
+	SetPanelState('u670', 'pd3u670','none','',500,'none','',500);
+
+SetWidgetRichText('u487', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">Bright Purple</span></p>');
+
+}
+
+}
+
 var u676 = document.getElementById('u676');
-
+gv_vAlignTable['u676'] = 'center';
 var u677 = document.getElementById('u677');
-gv_vAlignTable['u677'] = 'center';
-var u678 = document.getElementById('u678');
 
-u678.style.cursor = 'pointer';
-if (bIE) u678.attachEvent("onclick", Clicku678);
-else u678.addEventListener("click", Clicku678, true);
-function Clicku678(e)
+var u678 = document.getElementById('u678');
+gv_vAlignTable['u678'] = 'center';
+var u679 = document.getElementById('u679');
+
+u679.style.cursor = 'pointer';
+if (bIE) u679.attachEvent("onclick", Clicku679);
+else u679.addEventListener("click", Clicku679, true);
+function Clicku679(e)
 {
 windowEvent = e;
 
 
 if (true) {
 
-	SetPanelState('u669', 'pd3u669','none','',500,'none','',500);
+	SetPanelState('u670', 'pd3u670','none','',500,'none','',500);
 
 SetGlobalVariableValue('$colorCount', '' + (GetNum(GetGlobalVariableValue('$colorCount')) + GetNum(1)) + '');
 
-SetWidgetRichText('u485', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">' + (GetGlobalVariableValue('$colorCount')) + ' colors selected</span></p>');
+SetWidgetRichText('u486', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">' + (GetGlobalVariableValue('$colorCount')) + ' colors selected</span></p>');
 
 }
 
 }
 
-if (bIE) u678.attachEvent("onmouseout", MouseOutu678);
-else u678.addEventListener("mouseout", MouseOutu678, true);
-function MouseOutu678(e)
+if (bIE) u679.attachEvent("onmouseout", MouseOutu679);
+else u679.addEventListener("mouseout", MouseOutu679, true);
+function MouseOutu679(e)
 {
 windowEvent = e;
 
-if (!IsTrueMouseOut('u678',e)) return;
+if (!IsTrueMouseOut('u679',e)) return;
 if (true) {
 
-	SetPanelState('u669', 'pd0u669','none','',500,'none','',500);
+	SetPanelState('u670', 'pd0u670','none','',500,'none','',500);
 
-SetWidgetRichText('u486', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">&nbsp;</span></p>');
-
-}
+SetWidgetRichText('u487', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">&nbsp;</span></p>');
 
 }
 
-var u679 = document.getElementById('u679');
-gv_vAlignTable['u679'] = 'center';
+}
+
 var u41 = document.getElementById('u41');
 
 var u42 = document.getElementById('u42');
@@ -1356,336 +1216,278 @@ gv_vAlignTable['u42'] = 'top';
 var u43 = document.getElementById('u43');
 
 var u44 = document.getElementById('u44');
-gv_vAlignTable['u44'] = 'center';
+gv_vAlignTable['u44'] = 'top';
 var u130 = document.getElementById('u130');
 gv_vAlignTable['u130'] = 'center';
 var u131 = document.getElementById('u131');
 
-u131.style.cursor = 'pointer';
-if (bIE) u131.attachEvent("onclick", Clicku131);
-else u131.addEventListener("click", Clicku131, true);
-function Clicku131(e)
-{
-windowEvent = e;
-
-
-if (true) {
-
-SetWidgetSelected('u131');
-}
-
-}
-
-if (bIE) u131.attachEvent("onmouseover", MouseOveru131);
-else u131.addEventListener("mouseover", MouseOveru131, true);
-function MouseOveru131(e)
-{
-windowEvent = e;
-
-if (!IsTrueMouseOver('u131',e)) return;
-if (true) {
-
-	SetPanelState('u128', 'pd1u128','none','',500,'none','',500);
-
-SetWidgetRichText('u59', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">Tan</span></p>');
-
-}
-
-}
-
-if (bIE) u131.attachEvent("onmouseout", MouseOutu131);
-else u131.addEventListener("mouseout", MouseOutu131, true);
-function MouseOutu131(e)
-{
-windowEvent = e;
-
-if (!IsTrueMouseOut('u131',e)) return;
-if (true) {
-
-	SetPanelState('u128', 'pd0u128','none','',500,'none','',500);
-
-SetWidgetRichText('u59', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">&nbsp;</span></p>');
-
-}
-
-}
-
 var u132 = document.getElementById('u132');
-gv_vAlignTable['u132'] = 'center';
-var u133 = document.getElementById('u133');
 
+var u133 = document.getElementById('u133');
+gv_vAlignTable['u133'] = 'center';
 var u690 = document.getElementById('u690');
-gv_vAlignTable['u690'] = 'center';
+
 var u135 = document.getElementById('u135');
 gv_vAlignTable['u135'] = 'center';
 var u136 = document.getElementById('u136');
 
-u136.style.cursor = 'pointer';
-if (bIE) u136.attachEvent("onclick", Clicku136);
-else u136.addEventListener("click", Clicku136, true);
-function Clicku136(e)
-{
-windowEvent = e;
-
-
-if (true) {
-
-SetWidgetSelected('u136');
-}
-
-}
-
-if (bIE) u136.attachEvent("onmouseover", MouseOveru136);
-else u136.addEventListener("mouseover", MouseOveru136, true);
-function MouseOveru136(e)
-{
-windowEvent = e;
-
-if (!IsTrueMouseOver('u136',e)) return;
-if (true) {
-
-	SetPanelState('u133', 'pd1u133','none','',500,'none','',500);
-
-SetWidgetRichText('u59', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">Brown</span></p>');
-
-}
-
-}
-
-if (bIE) u136.attachEvent("onmouseout", MouseOutu136);
-else u136.addEventListener("mouseout", MouseOutu136, true);
-function MouseOutu136(e)
-{
-windowEvent = e;
-
-if (!IsTrueMouseOut('u136',e)) return;
-if (true) {
-
-	SetPanelState('u133', 'pd0u133','none','',500,'none','',500);
-
-SetWidgetRichText('u59', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">&nbsp;</span></p>');
-
-}
-
-}
-
 var u137 = document.getElementById('u137');
-gv_vAlignTable['u137'] = 'center';
-var u138 = document.getElementById('u138');
 
+var u138 = document.getElementById('u138');
+gv_vAlignTable['u138'] = 'center';
 var u139 = document.getElementById('u139');
 
-var u680 = document.getElementById('u680');
-
-if (bIE) u680.attachEvent("onmouseover", MouseOveru680);
-else u680.addEventListener("mouseover", MouseOveru680, true);
-function MouseOveru680(e)
+u139.style.cursor = 'pointer';
+if (bIE) u139.attachEvent("onclick", Clicku139);
+else u139.addEventListener("click", Clicku139, true);
+function Clicku139(e)
 {
 windowEvent = e;
 
-if (!IsTrueMouseOver('u680',e)) return;
+
 if (true) {
 
-	SetPanelState('u669', 'pd1u669','none','',500,'none','',500);
+SetWidgetSelected('u139');
+}
 
-SetWidgetRichText('u486', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">Bright Purple</span></p>');
+}
+
+if (bIE) u139.attachEvent("onmouseover", MouseOveru139);
+else u139.addEventListener("mouseover", MouseOveru139, true);
+function MouseOveru139(e)
+{
+windowEvent = e;
+
+if (!IsTrueMouseOver('u139',e)) return;
+if (true) {
+
+	SetPanelState('u136', 'pd1u136','none','',500,'none','',500);
+
+SetWidgetRichText('u62', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">Brown</span></p>');
 
 }
 
 }
 
+if (bIE) u139.attachEvent("onmouseout", MouseOutu139);
+else u139.addEventListener("mouseout", MouseOutu139, true);
+function MouseOutu139(e)
+{
+windowEvent = e;
+
+if (!IsTrueMouseOut('u139',e)) return;
+if (true) {
+
+	SetPanelState('u136', 'pd0u136','none','',500,'none','',500);
+
+SetWidgetRichText('u62', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">&nbsp;</span></p>');
+
+}
+
+}
+
+var u680 = document.getElementById('u680');
+gv_vAlignTable['u680'] = 'center';
 var u681 = document.getElementById('u681');
-gv_vAlignTable['u681'] = 'center';
-var u682 = document.getElementById('u682');
 
+if (bIE) u681.attachEvent("onmouseover", MouseOveru681);
+else u681.addEventListener("mouseover", MouseOveru681, true);
+function MouseOveru681(e)
+{
+windowEvent = e;
+
+if (!IsTrueMouseOver('u681',e)) return;
+if (true) {
+
+	SetPanelState('u670', 'pd1u670','none','',500,'none','',500);
+
+SetWidgetRichText('u487', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">Bright Purple</span></p>');
+
+}
+
+}
+
+var u682 = document.getElementById('u682');
+gv_vAlignTable['u682'] = 'center';
 var u683 = document.getElementById('u683');
 
 var u684 = document.getElementById('u684');
-gv_vAlignTable['u684'] = 'center';
-var u685 = document.getElementById('u685');
 
-u685.style.cursor = 'pointer';
-if (bIE) u685.attachEvent("onclick", Clicku685);
-else u685.addEventListener("click", Clicku685, true);
-function Clicku685(e)
+var u685 = document.getElementById('u685');
+gv_vAlignTable['u685'] = 'center';
+var u686 = document.getElementById('u686');
+
+u686.style.cursor = 'pointer';
+if (bIE) u686.attachEvent("onclick", Clicku686);
+else u686.addEventListener("click", Clicku686, true);
+function Clicku686(e)
 {
 windowEvent = e;
 
 
 if (true) {
 
-	SetPanelState('u682', 'pd1u682','none','',500,'none','',500);
+	SetPanelState('u683', 'pd1u683','none','',500,'none','',500);
 
 SetGlobalVariableValue('$colorCount', '' + (GetGlobalVariableValue('$colorCount') - GetNum(1)) + '');
 
-SetWidgetRichText('u485', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">' + (GetGlobalVariableValue('$colorCount')) + ' colors selected</span></p>');
+SetWidgetRichText('u486', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">' + (GetGlobalVariableValue('$colorCount')) + ' colors selected</span></p>');
 
 }
 
 }
 
-if (bIE) u685.attachEvent("onmouseout", MouseOutu685);
-else u685.addEventListener("mouseout", MouseOutu685, true);
-function MouseOutu685(e)
+if (bIE) u686.attachEvent("onmouseout", MouseOutu686);
+else u686.addEventListener("mouseout", MouseOutu686, true);
+function MouseOutu686(e)
 {
 windowEvent = e;
 
-if (!IsTrueMouseOut('u685',e)) return;
+if (!IsTrueMouseOut('u686',e)) return;
 if (true) {
 
-	SetPanelState('u682', 'pd2u682','none','',500,'none','',500);
+	SetPanelState('u683', 'pd2u683','none','',500,'none','',500);
 
-SetWidgetRichText('u486', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">&nbsp;</span></p>');
-
-}
+SetWidgetRichText('u487', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">&nbsp;</span></p>');
 
 }
 
-var u686 = document.getElementById('u686');
-gv_vAlignTable['u686'] = 'center';
+}
+
 var u687 = document.getElementById('u687');
+gv_vAlignTable['u687'] = 'center';
+var u688 = document.getElementById('u688');
 
-if (bIE) u687.attachEvent("onmouseover", MouseOveru687);
-else u687.addEventListener("mouseover", MouseOveru687, true);
-function MouseOveru687(e)
+if (bIE) u688.attachEvent("onmouseover", MouseOveru688);
+else u688.addEventListener("mouseover", MouseOveru688, true);
+function MouseOveru688(e)
 {
 windowEvent = e;
 
-if (!IsTrueMouseOver('u687',e)) return;
+if (!IsTrueMouseOver('u688',e)) return;
 if (true) {
 
-	SetPanelState('u682', 'pd3u682','none','',500,'none','',500);
+	SetPanelState('u683', 'pd3u683','none','',500,'none','',500);
 
-SetWidgetRichText('u486', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">Bright Purple</span></p>');
-
-}
+SetWidgetRichText('u487', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">Bright Purple</span></p>');
 
 }
 
-var u688 = document.getElementById('u688');
-gv_vAlignTable['u688'] = 'center';
+}
+
 var u689 = document.getElementById('u689');
-
+gv_vAlignTable['u689'] = 'center';
 var u50 = document.getElementById('u50');
 gv_vAlignTable['u50'] = 'top';
 var u51 = document.getElementById('u51');
-
+gv_vAlignTable['u51'] = 'top';
 var u52 = document.getElementById('u52');
-gv_vAlignTable['u52'] = 'center';
+
 var u53 = document.getElementById('u53');
 
+u53.style.cursor = 'pointer';
+if (bIE) u53.attachEvent("onclick", Clicku53);
+else u53.addEventListener("click", Clicku53, true);
+function Clicku53(e)
+{
+windowEvent = e;
+
+
+if ((GetCheckState('u26')) == (true)) {
+
+	SetPanelState('u43', 'pd0u43','none','',500,'none','',500);
+
+}
+else
+if ((GetCheckState('u39')) == (true)) {
+
+	SetPanelState('u43', 'pd1u43','none','',500,'none','',500);
+
+}
+else
+if (true) {
+
+	SetPanelVisibility('u43','hidden','none',500);
+
+}
+
+}
+gv_vAlignTable['u53'] = 'top';
 var u54 = document.getElementById('u54');
 
 var u55 = document.getElementById('u55');
 gv_vAlignTable['u55'] = 'center';
 var u142 = document.getElementById('u142');
-gv_vAlignTable['u142'] = 'center';
-var u143 = document.getElementById('u143');
 
+var u143 = document.getElementById('u143');
+gv_vAlignTable['u143'] = 'center';
 var u144 = document.getElementById('u144');
+
+u144.style.cursor = 'pointer';
+if (bIE) u144.attachEvent("onclick", Clicku144);
+else u144.addEventListener("click", Clicku144, true);
+function Clicku144(e)
+{
+windowEvent = e;
+
+
+if (true) {
+
+SetWidgetSelected('u144');
+}
+
+}
+
+if (bIE) u144.attachEvent("onmouseover", MouseOveru144);
+else u144.addEventListener("mouseover", MouseOveru144, true);
+function MouseOveru144(e)
+{
+windowEvent = e;
+
+if (!IsTrueMouseOver('u144',e)) return;
+if (true) {
+
+	SetPanelState('u141', 'pd1u141','none','',500,'none','',500);
+
+SetWidgetRichText('u62', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;"> Old Gold</span></p>');
+
+}
+
+}
+
+if (bIE) u144.attachEvent("onmouseout", MouseOutu144);
+else u144.addEventListener("mouseout", MouseOutu144, true);
+function MouseOutu144(e)
+{
+windowEvent = e;
+
+if (!IsTrueMouseOut('u144',e)) return;
+if (true) {
+
+	SetPanelState('u141', 'pd0u141','none','',500,'none','',500);
+
+SetWidgetRichText('u62', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">&nbsp;</span></p>');
+
+}
+
+}
 
 var u145 = document.getElementById('u145');
 gv_vAlignTable['u145'] = 'center';
 var u146 = document.getElementById('u146');
 
-u146.style.cursor = 'pointer';
-if (bIE) u146.attachEvent("onclick", Clicku146);
-else u146.addEventListener("click", Clicku146, true);
-function Clicku146(e)
-{
-windowEvent = e;
-
-
-if (true) {
-
-SetWidgetSelected('u146');
-}
-
-}
-
-if (bIE) u146.attachEvent("onmouseover", MouseOveru146);
-else u146.addEventListener("mouseover", MouseOveru146, true);
-function MouseOveru146(e)
-{
-windowEvent = e;
-
-if (!IsTrueMouseOver('u146',e)) return;
-if (true) {
-
-	SetPanelState('u143', 'pd1u143','none','',500,'none','',500);
-
-SetWidgetRichText('u59', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">Olive</span></p>');
-
-}
-
-}
-
-if (bIE) u146.attachEvent("onmouseout", MouseOutu146);
-else u146.addEventListener("mouseout", MouseOutu146, true);
-function MouseOutu146(e)
-{
-windowEvent = e;
-
-if (!IsTrueMouseOut('u146',e)) return;
-if (true) {
-
-	SetPanelState('u143', 'pd0u143','none','',500,'none','',500);
-
-SetWidgetRichText('u59', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">&nbsp;</span></p>');
-
-}
-
-}
-
 var u147 = document.getElementById('u147');
-gv_vAlignTable['u147'] = 'center';
+
 var u148 = document.getElementById('u148');
-
+gv_vAlignTable['u148'] = 'center';
 var u500 = document.getElementById('u500');
-
+gv_vAlignTable['u500'] = 'center';
 var u501 = document.getElementById('u501');
 
 var u502 = document.getElementById('u502');
-gv_vAlignTable['u502'] = 'center';
+
 var u503 = document.getElementById('u503');
-
-u503.style.cursor = 'pointer';
-if (bIE) u503.attachEvent("onclick", Clicku503);
-else u503.addEventListener("click", Clicku503, true);
-function Clicku503(e)
-{
-windowEvent = e;
-
-
-if (true) {
-
-	SetPanelState('u500', 'pd1u500','none','',500,'none','',500);
-
-SetGlobalVariableValue('$colorCount', '' + (GetGlobalVariableValue('$colorCount') - GetNum(1)) + '');
-
-SetWidgetRichText('u485', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">' + (GetGlobalVariableValue('$colorCount')) + ' colors selected</span></p>');
-
-}
-
-}
-
-if (bIE) u503.attachEvent("onmouseout", MouseOutu503);
-else u503.addEventListener("mouseout", MouseOutu503, true);
-function MouseOutu503(e)
-{
-windowEvent = e;
-
-if (!IsTrueMouseOut('u503',e)) return;
-if (true) {
-
-	SetPanelState('u500', 'pd2u500','none','',500,'none','',500);
-
-SetWidgetRichText('u486', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">&nbsp;</span></p>');
-
-}
-
-}
-
+gv_vAlignTable['u503'] = 'center';
 var u10 = document.getElementById('u10');
 gv_vAlignTable['u10'] = 'center';
 var u11 = document.getElementById('u11');
@@ -1707,152 +1509,189 @@ var u18 = document.getElementById('u18');
 var u19 = document.getElementById('u19');
 gv_vAlignTable['u19'] = 'center';
 var u60 = document.getElementById('u60');
-gv_vAlignTable['u60'] = 'top';
+gv_vAlignTable['u60'] = 'center';
 var u61 = document.getElementById('u61');
-
-u61.style.cursor = 'pointer';
-if (bIE) u61.attachEvent("onclick", Clicku61);
-else u61.addEventListener("click", Clicku61, true);
-function Clicku61(e)
-{
-windowEvent = e;
-
-
-if (true) {
-
-SetWidgetSelected('u61');
-}
-
-}
-
-if (bIE) u61.attachEvent("onmouseover", MouseOveru61);
-else u61.addEventListener("mouseover", MouseOveru61, true);
-function MouseOveru61(e)
-{
-windowEvent = e;
-
-if (!IsTrueMouseOver('u61',e)) return;
-if (true) {
-
-	SetPanelState('u53', 'pd1u53','none','',500,'none','',500);
-
-SetWidgetRichText('u59', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;"> Black</span></p>');
-
-}
-
-}
-
-if (bIE) u61.attachEvent("onmouseout", MouseOutu61);
-else u61.addEventListener("mouseout", MouseOutu61, true);
-function MouseOutu61(e)
-{
-windowEvent = e;
-
-if (!IsTrueMouseOut('u61',e)) return;
-if (true) {
-
-	SetPanelState('u53', 'pd1u53','none','',500,'none','',500);
-
-SetWidgetRichText('u59', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">&nbsp;</span></p>');
-
-}
-
-}
-
+gv_vAlignTable['u61'] = 'top';
 var u62 = document.getElementById('u62');
-gv_vAlignTable['u62'] = 'center';
+gv_vAlignTable['u62'] = 'top';
 var u63 = document.getElementById('u63');
-
+gv_vAlignTable['u63'] = 'top';
 var u64 = document.getElementById('u64');
+
+u64.style.cursor = 'pointer';
+if (bIE) u64.attachEvent("onclick", Clicku64);
+else u64.addEventListener("click", Clicku64, true);
+function Clicku64(e)
+{
+windowEvent = e;
+
+
+if (true) {
+
+SetWidgetSelected('u64');
+}
+
+}
+
+if (bIE) u64.attachEvent("onmouseover", MouseOveru64);
+else u64.addEventListener("mouseover", MouseOveru64, true);
+function MouseOveru64(e)
+{
+windowEvent = e;
+
+if (!IsTrueMouseOver('u64',e)) return;
+if (true) {
+
+	SetPanelState('u56', 'pd1u56','none','',500,'none','',500);
+
+SetWidgetRichText('u62', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;"> Black</span></p>');
+
+}
+
+}
+
+if (bIE) u64.attachEvent("onmouseout", MouseOutu64);
+else u64.addEventListener("mouseout", MouseOutu64, true);
+function MouseOutu64(e)
+{
+windowEvent = e;
+
+if (!IsTrueMouseOut('u64',e)) return;
+if (true) {
+
+	SetPanelState('u56', 'pd1u56','none','',500,'none','',500);
+
+SetWidgetRichText('u62', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">&nbsp;</span></p>');
+
+}
+
+}
 
 var u65 = document.getElementById('u65');
 gv_vAlignTable['u65'] = 'center';
 var u153 = document.getElementById('u153');
-
+gv_vAlignTable['u153'] = 'center';
 var u154 = document.getElementById('u154');
+
+u154.style.cursor = 'pointer';
+if (bIE) u154.attachEvent("onclick", Clicku154);
+else u154.addEventListener("click", Clicku154, true);
+function Clicku154(e)
+{
+windowEvent = e;
+
+
+if (true) {
+
+SetWidgetSelected('u154');
+}
+
+}
+
+if (bIE) u154.attachEvent("onmouseover", MouseOveru154);
+else u154.addEventListener("mouseover", MouseOveru154, true);
+function MouseOveru154(e)
+{
+windowEvent = e;
+
+if (!IsTrueMouseOver('u154',e)) return;
+if (true) {
+
+	SetPanelState('u151', 'pd1u151','none','',500,'none','',500);
+
+SetWidgetRichText('u62', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">Gold</span></p>');
+
+}
+
+}
+
+if (bIE) u154.attachEvent("onmouseout", MouseOutu154);
+else u154.addEventListener("mouseout", MouseOutu154, true);
+function MouseOutu154(e)
+{
+windowEvent = e;
+
+if (!IsTrueMouseOut('u154',e)) return;
+if (true) {
+
+	SetPanelState('u151', 'pd0u151','none','',500,'none','',500);
+
+SetWidgetRichText('u62', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">&nbsp;</span></p>');
+
+}
+
+}
 
 var u155 = document.getElementById('u155');
 gv_vAlignTable['u155'] = 'center';
 var u156 = document.getElementById('u156');
 
-u156.style.cursor = 'pointer';
-if (bIE) u156.attachEvent("onclick", Clicku156);
-else u156.addEventListener("click", Clicku156, true);
-function Clicku156(e)
-{
-windowEvent = e;
-
-
-if (true) {
-
-SetWidgetSelected('u156');
-}
-
-}
-
-if (bIE) u156.attachEvent("onmouseover", MouseOveru156);
-else u156.addEventListener("mouseover", MouseOveru156, true);
-function MouseOveru156(e)
-{
-windowEvent = e;
-
-if (!IsTrueMouseOver('u156',e)) return;
-if (true) {
-
-	SetPanelState('u153', 'pd1u153','none','',500,'none','',500);
-
-SetWidgetRichText('u59', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">Yellow</span></p>');
-
-}
-
-}
-
-if (bIE) u156.attachEvent("onmouseout", MouseOutu156);
-else u156.addEventListener("mouseout", MouseOutu156, true);
-function MouseOutu156(e)
-{
-windowEvent = e;
-
-if (!IsTrueMouseOut('u156',e)) return;
-if (true) {
-
-	SetPanelState('u153', 'pd0u153','none','',500,'none','',500);
-
-SetWidgetRichText('u59', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">&nbsp;</span></p>');
-
-}
-
-}
-
 var u157 = document.getElementById('u157');
-gv_vAlignTable['u157'] = 'center';
+
 var u158 = document.getElementById('u158');
-
+gv_vAlignTable['u158'] = 'center';
 var u510 = document.getElementById('u510');
-gv_vAlignTable['u510'] = 'center';
-var u511 = document.getElementById('u511');
 
-if (bIE) u511.attachEvent("onmouseover", MouseOveru511);
-else u511.addEventListener("mouseover", MouseOveru511, true);
-function MouseOveru511(e)
+u510.style.cursor = 'pointer';
+if (bIE) u510.attachEvent("onclick", Clicku510);
+else u510.addEventListener("click", Clicku510, true);
+function Clicku510(e)
 {
 windowEvent = e;
 
-if (!IsTrueMouseOver('u511',e)) return;
+
 if (true) {
 
-	SetPanelState('u500', 'pd1u500','none','',500,'none','',500);
+	SetPanelState('u501', 'pd3u501','none','',500,'none','',500);
 
-SetWidgetRichText('u486', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">Yellow</span></p>');
+SetGlobalVariableValue('$colorCount', '' + (GetNum(GetGlobalVariableValue('$colorCount')) + GetNum(1)) + '');
+
+SetWidgetRichText('u486', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">' + (GetGlobalVariableValue('$colorCount')) + ' colors selected</span></p>');
 
 }
 
 }
 
+if (bIE) u510.attachEvent("onmouseout", MouseOutu510);
+else u510.addEventListener("mouseout", MouseOutu510, true);
+function MouseOutu510(e)
+{
+windowEvent = e;
+
+if (!IsTrueMouseOut('u510',e)) return;
+if (true) {
+
+	SetPanelState('u501', 'pd0u501','none','',500,'none','',500);
+
+SetWidgetRichText('u487', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">&nbsp;</span></p>');
+
+}
+
+}
+
+var u511 = document.getElementById('u511');
+gv_vAlignTable['u511'] = 'center';
 var u512 = document.getElementById('u512');
-gv_vAlignTable['u512'] = 'center';
-var u513 = document.getElementById('u513');
 
+if (bIE) u512.attachEvent("onmouseover", MouseOveru512);
+else u512.addEventListener("mouseover", MouseOveru512, true);
+function MouseOveru512(e)
+{
+windowEvent = e;
+
+if (!IsTrueMouseOver('u512',e)) return;
+if (true) {
+
+	SetPanelState('u501', 'pd1u501','none','',500,'none','',500);
+
+SetWidgetRichText('u487', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">Yellow</span></p>');
+
+}
+
+}
+
+var u513 = document.getElementById('u513');
+gv_vAlignTable['u513'] = 'center';
 var u20 = document.getElementById('u20');
 
 var u21 = document.getElementById('u21');
@@ -1875,93 +1714,93 @@ function Clicku26(e)
 windowEvent = e;
 
 
-if (((GetCheckState('u26')) == (true)) && ((GetCheckState('u715')) == (true))) {
+if (((GetCheckState('u26')) == (true)) && ((GetCheckState('u716')) == (true))) {
 
 	MoveWidgetTo('u32', 2,128,'none',500);
 
 	MoveWidgetTo('u38', 2,165,'none',500);
 
-	MoveWidgetTo('u41', 160,300,'none',500);
+	MoveWidgetTo('u43', 160,300,'none',500);
 
 SetGlobalVariableValue('$colorCount', '1');
 
-SetWidgetRichText('u485', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">' + (GetGlobalVariableValue('$colorCount')) + ' colors selected</span></p>');
+SetWidgetRichText('u486', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">' + (GetGlobalVariableValue('$colorCount')) + ' colors selected</span></p>');
 
 SetGlobalVariableValue('$printOption', 'multi');
 
-SetCheckState('u715', true);
+SetCheckState('u716', true);
 
 SetGlobalVariableValue('$showWhite', 'yes');
 
 	SetPanelVisibility('u28','','none',500);
 
-	SetPanelVisibility('u714','','none',500);
-
 	SetPanelState('u13', 'pd1u13','none','',500,'none','',500);
 
-	SetPanelState('u41', 'pd0u41','none','',500,'none','',500);
+	SetPanelState('u43', 'pd0u43','none','',500,'none','',500);
 
-	SetPanelState('u248', 'pd0u248','none','',500,'none','',500);
+	SetPanelState('u249', 'pd0u249','none','',500,'none','',500);
 
-	SetPanelState('u261', 'pd0u261','none','',500,'none','',500);
+	SetPanelState('u262', 'pd0u262','none','',500,'none','',500);
 
-	SetPanelState('u274', 'pd0u274','none','',500,'none','',500);
+	SetPanelState('u275', 'pd0u275','none','',500,'none','',500);
 
-	SetPanelState('u287', 'pd2u287','none','',500,'none','',500);
+	SetPanelState('u288', 'pd2u288','none','',500,'none','',500);
 
-	SetPanelState('u300', 'pd0u300','none','',500,'none','',500);
+	SetPanelState('u301', 'pd0u301','none','',500,'none','',500);
 
-	SetPanelState('u313', 'pd0u313','none','',500,'none','',500);
+	SetPanelState('u314', 'pd0u314','none','',500,'none','',500);
 
-	SetPanelState('u326', 'pd0u326','none','',500,'none','',500);
+	SetPanelState('u327', 'pd0u327','none','',500,'none','',500);
 
-	SetPanelState('u339', 'pd0u339','none','',500,'none','',500);
+	SetPanelState('u340', 'pd0u340','none','',500,'none','',500);
 
-	SetPanelState('u352', 'pd0u352','none','',500,'none','',500);
+	SetPanelState('u353', 'pd0u353','none','',500,'none','',500);
 
-	SetPanelState('u417', 'pd0u417','none','',500,'none','',500);
+	SetPanelState('u418', 'pd0u418','none','',500,'none','',500);
 
-	SetPanelState('u404', 'pd0u404','none','',500,'none','',500);
+	SetPanelState('u405', 'pd0u405','none','',500,'none','',500);
 
-	SetPanelState('u391', 'pd0u391','none','',500,'none','',500);
+	SetPanelState('u392', 'pd0u392','none','',500,'none','',500);
 
-	SetPanelState('u430', 'pd0u430','none','',500,'none','',500);
+	SetPanelState('u431', 'pd0u431','none','',500,'none','',500);
 
-	SetPanelState('u443', 'pd0u443','none','',500,'none','',500);
+	SetPanelState('u444', 'pd0u444','none','',500,'none','',500);
 
-	SetPanelState('u456', 'pd0u456','none','',500,'none','',500);
+	SetPanelState('u457', 'pd0u457','none','',500,'none','',500);
 
-	SetPanelState('u469', 'pd0u469','none','',500,'none','',500);
+	SetPanelState('u470', 'pd0u470','none','',500,'none','',500);
 
-	SetPanelState('u487', 'pd0u487','none','',500,'none','',500);
+	SetPanelState('u488', 'pd0u488','none','',500,'none','',500);
 
-	SetPanelState('u500', 'pd0u500','none','',500,'none','',500);
+	SetPanelState('u501', 'pd0u501','none','',500,'none','',500);
 
-	SetPanelState('u513', 'pd0u513','none','',500,'none','',500);
+	SetPanelState('u514', 'pd0u514','none','',500,'none','',500);
 
-	SetPanelState('u526', 'pd0u526','none','',500,'none','',500);
+	SetPanelState('u527', 'pd0u527','none','',500,'none','',500);
 
-	SetPanelState('u539', 'pd0u539','none','',500,'none','',500);
+	SetPanelState('u540', 'pd0u540','none','',500,'none','',500);
 
-	SetPanelState('u565', 'pd0u565','none','',500,'none','',500);
+	SetPanelState('u566', 'pd0u566','none','',500,'none','',500);
 
-	SetPanelState('u578', 'pd0u578','none','',500,'none','',500);
+	SetPanelState('u579', 'pd0u579','none','',500,'none','',500);
 
 	SetPanelVisibility('u36','hidden','none',500);
 
+	SetPanelVisibility('u41','hidden','none',500);
+
 }
 else
-if (((GetCheckState('u715')) == (false)) && ((GetCheckState('u26')) == (true))) {
+if (((GetCheckState('u716')) == (false)) && ((GetCheckState('u26')) == (true))) {
 
 	MoveWidgetTo('u32', 2,128,'none',500);
 
 	MoveWidgetTo('u38', 2,165,'none',500);
 
-	MoveWidgetTo('u41', 160,300,'none',500);
+	MoveWidgetTo('u43', 160,300,'none',500);
 
 SetGlobalVariableValue('$colorCount', '0');
 
-SetWidgetRichText('u485', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">0 colors selected</span></p>');
+SetWidgetRichText('u486', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">0 colors selected</span></p>');
 
 SetGlobalVariableValue('$printOption', 'multi');
 
@@ -1969,59 +1808,61 @@ SetGlobalVariableValue('$showWhite', 'no');
 
 	SetPanelVisibility('u28','','none',500);
 
-	SetPanelVisibility('u714','','none',500);
+	SetPanelVisibility('u715','','none',500);
 
 	SetPanelState('u13', 'pd0u13','none','',500,'none','',500);
 
-	SetPanelState('u41', 'pd0u41','none','',500,'none','',500);
+	SetPanelState('u43', 'pd0u43','none','',500,'none','',500);
 
-	SetPanelState('u248', 'pd0u248','none','',500,'none','',500);
+	SetPanelState('u249', 'pd0u249','none','',500,'none','',500);
 
-	SetPanelState('u261', 'pd0u261','none','',500,'none','',500);
+	SetPanelState('u262', 'pd0u262','none','',500,'none','',500);
 
-	SetPanelState('u274', 'pd0u274','none','',500,'none','',500);
+	SetPanelState('u275', 'pd0u275','none','',500,'none','',500);
 
-	SetPanelState('u287', 'pd0u287','none','',500,'none','',500);
+	SetPanelState('u288', 'pd0u288','none','',500,'none','',500);
 
-	SetPanelState('u300', 'pd0u300','none','',500,'none','',500);
+	SetPanelState('u301', 'pd0u301','none','',500,'none','',500);
 
-	SetPanelState('u313', 'pd0u313','none','',500,'none','',500);
+	SetPanelState('u314', 'pd0u314','none','',500,'none','',500);
 
-	SetPanelState('u326', 'pd0u326','none','',500,'none','',500);
+	SetPanelState('u327', 'pd0u327','none','',500,'none','',500);
 
-	SetPanelState('u339', 'pd0u339','none','',500,'none','',500);
+	SetPanelState('u340', 'pd0u340','none','',500,'none','',500);
 
-	SetPanelState('u352', 'pd0u352','none','',500,'none','',500);
+	SetPanelState('u353', 'pd0u353','none','',500,'none','',500);
 
-	SetPanelState('u417', 'pd0u417','none','',500,'none','',500);
+	SetPanelState('u418', 'pd0u418','none','',500,'none','',500);
 
-	SetPanelState('u404', 'pd0u404','none','',500,'none','',500);
+	SetPanelState('u405', 'pd0u405','none','',500,'none','',500);
 
-	SetPanelState('u391', 'pd0u391','none','',500,'none','',500);
+	SetPanelState('u392', 'pd0u392','none','',500,'none','',500);
 
-	SetPanelState('u430', 'pd0u430','none','',500,'none','',500);
+	SetPanelState('u431', 'pd0u431','none','',500,'none','',500);
 
-	SetPanelState('u443', 'pd0u443','none','',500,'none','',500);
+	SetPanelState('u444', 'pd0u444','none','',500,'none','',500);
 
-	SetPanelState('u456', 'pd0u456','none','',500,'none','',500);
+	SetPanelState('u457', 'pd0u457','none','',500,'none','',500);
 
-	SetPanelState('u469', 'pd0u469','none','',500,'none','',500);
+	SetPanelState('u470', 'pd0u470','none','',500,'none','',500);
 
-	SetPanelState('u487', 'pd0u487','none','',500,'none','',500);
+	SetPanelState('u488', 'pd0u488','none','',500,'none','',500);
 
-	SetPanelState('u500', 'pd0u500','none','',500,'none','',500);
+	SetPanelState('u501', 'pd0u501','none','',500,'none','',500);
 
-	SetPanelState('u513', 'pd0u513','none','',500,'none','',500);
+	SetPanelState('u514', 'pd0u514','none','',500,'none','',500);
 
-	SetPanelState('u526', 'pd0u526','none','',500,'none','',500);
+	SetPanelState('u527', 'pd0u527','none','',500,'none','',500);
 
-	SetPanelState('u539', 'pd0u539','none','',500,'none','',500);
+	SetPanelState('u540', 'pd0u540','none','',500,'none','',500);
 
-	SetPanelState('u565', 'pd0u565','none','',500,'none','',500);
+	SetPanelState('u566', 'pd0u566','none','',500,'none','',500);
 
-	SetPanelState('u578', 'pd0u578','none','',500,'none','',500);
+	SetPanelState('u579', 'pd0u579','none','',500,'none','',500);
 
 	SetPanelVisibility('u36','hidden','none',500);
+
+	SetPanelVisibility('u41','hidden','none',500);
 
 }
 
@@ -2037,167 +1878,216 @@ var u70 = document.getElementById('u70');
 gv_vAlignTable['u70'] = 'center';
 var u71 = document.getElementById('u71');
 
-u71.style.cursor = 'pointer';
-if (bIE) u71.attachEvent("onclick", Clicku71);
-else u71.addEventListener("click", Clicku71, true);
-function Clicku71(e)
-{
-windowEvent = e;
-
-
-if (true) {
-
-SetWidgetSelected('u71');
-}
-
-}
-
-if (bIE) u71.attachEvent("onmouseover", MouseOveru71);
-else u71.addEventListener("mouseover", MouseOveru71, true);
-function MouseOveru71(e)
-{
-windowEvent = e;
-
-if (!IsTrueMouseOver('u71',e)) return;
-if (true) {
-
-	SetPanelState('u68', 'pd1u68','none','',500,'none','',500);
-
-SetWidgetRichText('u59', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;"> Light Grey</span></p>');
-
-}
-
-}
-
-if (bIE) u71.attachEvent("onmouseout", MouseOutu71);
-else u71.addEventListener("mouseout", MouseOutu71, true);
-function MouseOutu71(e)
-{
-windowEvent = e;
-
-if (!IsTrueMouseOut('u71',e)) return;
-if (true) {
-
-	SetPanelState('u68', 'pd0u68','none','',500,'none','',500);
-
-SetWidgetRichText('u59', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">&nbsp;</span></p>');
-
-}
-
-}
-
 var u72 = document.getElementById('u72');
-gv_vAlignTable['u72'] = 'center';
-var u73 = document.getElementById('u73');
 
+var u73 = document.getElementById('u73');
+gv_vAlignTable['u73'] = 'center';
 var u74 = document.getElementById('u74');
+
+u74.style.cursor = 'pointer';
+if (bIE) u74.attachEvent("onclick", Clicku74);
+else u74.addEventListener("click", Clicku74, true);
+function Clicku74(e)
+{
+windowEvent = e;
+
+
+if (true) {
+
+SetWidgetSelected('u74');
+}
+
+}
+
+if (bIE) u74.attachEvent("onmouseover", MouseOveru74);
+else u74.addEventListener("mouseover", MouseOveru74, true);
+function MouseOveru74(e)
+{
+windowEvent = e;
+
+if (!IsTrueMouseOver('u74',e)) return;
+if (true) {
+
+	SetPanelState('u71', 'pd1u71','none','',500,'none','',500);
+
+SetWidgetRichText('u62', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;"> Light Grey</span></p>');
+
+}
+
+}
+
+if (bIE) u74.attachEvent("onmouseout", MouseOutu74);
+else u74.addEventListener("mouseout", MouseOutu74, true);
+function MouseOutu74(e)
+{
+windowEvent = e;
+
+if (!IsTrueMouseOut('u74',e)) return;
+if (true) {
+
+	SetPanelState('u71', 'pd0u71','none','',500,'none','',500);
+
+SetWidgetRichText('u62', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">&nbsp;</span></p>');
+
+}
+
+}
 
 var u75 = document.getElementById('u75');
 gv_vAlignTable['u75'] = 'center';
 var u164 = document.getElementById('u164');
 
+u164.style.cursor = 'pointer';
+if (bIE) u164.attachEvent("onclick", Clicku164);
+else u164.addEventListener("click", Clicku164, true);
+function Clicku164(e)
+{
+windowEvent = e;
+
+
+if (true) {
+
+SetWidgetSelected('u164');
+}
+
+}
+
+if (bIE) u164.attachEvent("onmouseover", MouseOveru164);
+else u164.addEventListener("mouseover", MouseOveru164, true);
+function MouseOveru164(e)
+{
+windowEvent = e;
+
+if (!IsTrueMouseOver('u164',e)) return;
+if (true) {
+
+	SetPanelState('u161', 'pd1u161','none','',500,'none','',500);
+
+SetWidgetRichText('u62', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;"> Lemon</span></p>');
+
+}
+
+}
+
+if (bIE) u164.attachEvent("onmouseout", MouseOutu164);
+else u164.addEventListener("mouseout", MouseOutu164, true);
+function MouseOutu164(e)
+{
+windowEvent = e;
+
+if (!IsTrueMouseOut('u164',e)) return;
+if (true) {
+
+	SetPanelState('u161', 'pd1u161','none','',500,'none','',500);
+
+SetWidgetRichText('u62', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">&nbsp;</span></p>');
+
+}
+
+}
+
 var u165 = document.getElementById('u165');
 gv_vAlignTable['u165'] = 'center';
 var u166 = document.getElementById('u166');
 
-u166.style.cursor = 'pointer';
-if (bIE) u166.attachEvent("onclick", Clicku166);
-else u166.addEventListener("click", Clicku166, true);
-function Clicku166(e)
-{
-windowEvent = e;
-
-
-if (true) {
-
-SetWidgetSelected('u166');
-}
-
-}
-
-if (bIE) u166.attachEvent("onmouseover", MouseOveru166);
-else u166.addEventListener("mouseover", MouseOveru166, true);
-function MouseOveru166(e)
-{
-windowEvent = e;
-
-if (!IsTrueMouseOver('u166',e)) return;
-if (true) {
-
-	SetPanelState('u163', 'pd1u163','none','',500,'none','',500);
-
-SetWidgetRichText('u59', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">Forest</span></p>');
-
-}
-
-}
-
-if (bIE) u166.attachEvent("onmouseout", MouseOutu166);
-else u166.addEventListener("mouseout", MouseOutu166, true);
-function MouseOutu166(e)
-{
-windowEvent = e;
-
-if (!IsTrueMouseOut('u166',e)) return;
-if (true) {
-
-	SetPanelState('u163', 'pd0u163','none','',500,'none','',500);
-
-SetWidgetRichText('u59', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">&nbsp;</span></p>');
-
-}
-
-}
-
 var u79 = document.getElementById('u79');
 
-var u168 = document.getElementById('u168');
-
-var u520 = document.getElementById('u520');
-
-var u521 = document.getElementById('u521');
-gv_vAlignTable['u521'] = 'center';
-var u522 = document.getElementById('u522');
-
-u522.style.cursor = 'pointer';
-if (bIE) u522.attachEvent("onclick", Clicku522);
-else u522.addEventListener("click", Clicku522, true);
-function Clicku522(e)
+u79.style.cursor = 'pointer';
+if (bIE) u79.attachEvent("onclick", Clicku79);
+else u79.addEventListener("click", Clicku79, true);
+function Clicku79(e)
 {
 windowEvent = e;
 
 
 if (true) {
 
-	SetPanelState('u513', 'pd3u513','none','',500,'none','',500);
+SetWidgetSelected('u79');
+}
+
+}
+
+if (bIE) u79.attachEvent("onmouseover", MouseOveru79);
+else u79.addEventListener("mouseover", MouseOveru79, true);
+function MouseOveru79(e)
+{
+windowEvent = e;
+
+if (!IsTrueMouseOver('u79',e)) return;
+if (true) {
+
+	SetPanelState('u76', 'pd1u76','none','',500,'none','',500);
+
+SetWidgetRichText('u62', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;"> White</span></p>');
+
+}
+
+}
+
+if (bIE) u79.attachEvent("onmouseout", MouseOutu79);
+else u79.addEventListener("mouseout", MouseOutu79, true);
+function MouseOutu79(e)
+{
+windowEvent = e;
+
+if (!IsTrueMouseOut('u79',e)) return;
+if (true) {
+
+	SetPanelState('u76', 'pd0u76','none','',500,'none','',500);
+
+SetWidgetRichText('u62', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">&nbsp;</span></p>');
+
+}
+
+}
+
+var u168 = document.getElementById('u168');
+gv_vAlignTable['u168'] = 'center';
+var u520 = document.getElementById('u520');
+gv_vAlignTable['u520'] = 'center';
+var u521 = document.getElementById('u521');
+
+var u522 = document.getElementById('u522');
+gv_vAlignTable['u522'] = 'center';
+var u523 = document.getElementById('u523');
+
+u523.style.cursor = 'pointer';
+if (bIE) u523.attachEvent("onclick", Clicku523);
+else u523.addEventListener("click", Clicku523, true);
+function Clicku523(e)
+{
+windowEvent = e;
+
+
+if (true) {
+
+	SetPanelState('u514', 'pd3u514','none','',500,'none','',500);
 
 SetGlobalVariableValue('$colorCount', '' + (GetNum(GetGlobalVariableValue('$colorCount')) + GetNum(1)) + '');
 
-SetWidgetRichText('u485', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">' + (GetGlobalVariableValue('$colorCount')) + ' colors selected</span></p>');
+SetWidgetRichText('u486', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">' + (GetGlobalVariableValue('$colorCount')) + ' colors selected</span></p>');
 
 }
 
 }
 
-if (bIE) u522.attachEvent("onmouseout", MouseOutu522);
-else u522.addEventListener("mouseout", MouseOutu522, true);
-function MouseOutu522(e)
+if (bIE) u523.attachEvent("onmouseout", MouseOutu523);
+else u523.addEventListener("mouseout", MouseOutu523, true);
+function MouseOutu523(e)
 {
 windowEvent = e;
 
-if (!IsTrueMouseOut('u522',e)) return;
+if (!IsTrueMouseOut('u523',e)) return;
 if (true) {
 
-	SetPanelState('u513', 'pd0u513','none','',500,'none','',500);
+	SetPanelState('u514', 'pd0u514','none','',500,'none','',500);
 
-SetWidgetRichText('u486', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">&nbsp;</span></p>');
-
-}
+SetWidgetRichText('u487', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">&nbsp;</span></p>');
 
 }
 
-var u523 = document.getElementById('u523');
-gv_vAlignTable['u523'] = 'center';
+}
+
 var u30 = document.getElementById('u30');
 
 u30.style.cursor = 'pointer';
@@ -2210,59 +2100,39 @@ windowEvent = e;
 
 if (true) {
 
-	SetPanelState('u41', 'pd3u41','none','',500,'none','',500);
+	SetPanelState('u43', 'pd3u43','none','',500,'none','',500);
 
 }
 
 }
 
 var u525 = document.getElementById('u525');
-gv_vAlignTable['u525'] = 'center';
-var u526 = document.getElementById('u526');
 
+if (bIE) u525.attachEvent("onmouseover", MouseOveru525);
+else u525.addEventListener("mouseover", MouseOveru525, true);
+function MouseOveru525(e)
+{
+windowEvent = e;
+
+if (!IsTrueMouseOver('u525',e)) return;
+if (true) {
+
+	SetPanelState('u514', 'pd1u514','none','',500,'none','',500);
+
+SetWidgetRichText('u487', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">Lemon</span></p>');
+
+}
+
+}
+
+var u526 = document.getElementById('u526');
+gv_vAlignTable['u526'] = 'center';
 var u527 = document.getElementById('u527');
 
 var u528 = document.getElementById('u528');
-gv_vAlignTable['u528'] = 'center';
+
 var u529 = document.getElementById('u529');
-
-u529.style.cursor = 'pointer';
-if (bIE) u529.attachEvent("onclick", Clicku529);
-else u529.addEventListener("click", Clicku529, true);
-function Clicku529(e)
-{
-windowEvent = e;
-
-
-if (true) {
-
-	SetPanelState('u526', 'pd1u526','none','',500,'none','',500);
-
-SetGlobalVariableValue('$colorCount', '' + (GetGlobalVariableValue('$colorCount') - GetNum(1)) + '');
-
-SetWidgetRichText('u485', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">' + (GetGlobalVariableValue('$colorCount')) + ' colors selected</span></p>');
-
-}
-
-}
-
-if (bIE) u529.attachEvent("onmouseout", MouseOutu529);
-else u529.addEventListener("mouseout", MouseOutu529, true);
-function MouseOutu529(e)
-{
-windowEvent = e;
-
-if (!IsTrueMouseOut('u529',e)) return;
-if (true) {
-
-	SetPanelState('u526', 'pd2u526','none','',500,'none','',500);
-
-SetWidgetRichText('u486', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">&nbsp;</span></p>');
-
-}
-
-}
-
+gv_vAlignTable['u529'] = 'center';
 var u36 = document.getElementById('u36');
 
 var u37 = document.getElementById('u37');
@@ -2279,15 +2149,15 @@ function Clicku39(e)
 windowEvent = e;
 
 
-if ((GetCheckState('u715')) == (true)) {
+if ((GetCheckState('u716')) == (true)) {
 
 SetGlobalVariableValue('$colorCount', '8');
 
 SetGlobalVariableValue('$printOption', 'full');
 
-	SetPanelVisibility('u714','','none',500);
+	SetPanelVisibility('u41','','none',500);
 
-	SetPanelState('u41', 'pd1u41','none','',500,'none','',500);
+	SetPanelState('u43', 'pd1u43','none','',500,'none','',500);
 
 	SetPanelState('u13', 'pd1u13','none','',500,'none','',500);
 
@@ -2299,7 +2169,7 @@ SetGlobalVariableValue('$printOption', 'full');
 
 	MoveWidgetTo('u38', 2,80,'none',500);
 
-	MoveWidgetTo('u41', 160,205,'none',500);
+	MoveWidgetTo('u43', 160,235,'none',500);
 
 }
 else
@@ -2311,7 +2181,7 @@ SetGlobalVariableValue('$printOption', 'full');
 
 SetGlobalVariableValue('$showWhite', 'no');
 
-	SetPanelState('u41', 'pd1u41','none','',500,'none','',500);
+	SetPanelState('u43', 'pd1u43','none','',500,'none','',500);
 
 	SetPanelState('u13', 'pd0u13','none','',500,'none','',500);
 
@@ -2319,13 +2189,13 @@ SetGlobalVariableValue('$showWhite', 'no');
 
 	SetPanelVisibility('u36','hidden','none',500);
 
-	SetPanelVisibility('u714','','none',500);
+	SetPanelVisibility('u41','','none',500);
 
 	MoveWidgetTo('u32', 2,50,'none',500);
 
 	MoveWidgetTo('u38', 2,80,'none',500);
 
-	MoveWidgetTo('u41', 160,205,'none',500);
+	MoveWidgetTo('u43', 160,235,'none',500);
 
 }
 
@@ -2335,60 +2205,60 @@ var u80 = document.getElementById('u80');
 gv_vAlignTable['u80'] = 'center';
 var u81 = document.getElementById('u81');
 
-u81.style.cursor = 'pointer';
-if (bIE) u81.attachEvent("onclick", Clicku81);
-else u81.addEventListener("click", Clicku81, true);
-function Clicku81(e)
-{
-windowEvent = e;
-
-
-if (true) {
-
-SetWidgetSelected('u81');
-}
-
-}
-
-if (bIE) u81.attachEvent("onmouseover", MouseOveru81);
-else u81.addEventListener("mouseover", MouseOveru81, true);
-function MouseOveru81(e)
-{
-windowEvent = e;
-
-if (!IsTrueMouseOver('u81',e)) return;
-if (true) {
-
-	SetPanelState('u78', 'pd1u78','none','',500,'none','',500);
-
-SetWidgetRichText('u59', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;"> Cardinal</span></p>');
-
-}
-
-}
-
-if (bIE) u81.attachEvent("onmouseout", MouseOutu81);
-else u81.addEventListener("mouseout", MouseOutu81, true);
-function MouseOutu81(e)
-{
-windowEvent = e;
-
-if (!IsTrueMouseOut('u81',e)) return;
-if (true) {
-
-	SetPanelState('u78', 'pd0u78','none','',500,'none','',500);
-
-SetWidgetRichText('u59', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">&nbsp;</span></p>');
-
-}
-
-}
-
 var u82 = document.getElementById('u82');
-gv_vAlignTable['u82'] = 'center';
-var u83 = document.getElementById('u83');
 
+var u83 = document.getElementById('u83');
+gv_vAlignTable['u83'] = 'center';
 var u84 = document.getElementById('u84');
+
+u84.style.cursor = 'pointer';
+if (bIE) u84.attachEvent("onclick", Clicku84);
+else u84.addEventListener("click", Clicku84, true);
+function Clicku84(e)
+{
+windowEvent = e;
+
+
+if (true) {
+
+SetWidgetSelected('u84');
+}
+
+}
+
+if (bIE) u84.attachEvent("onmouseover", MouseOveru84);
+else u84.addEventListener("mouseover", MouseOveru84, true);
+function MouseOveru84(e)
+{
+windowEvent = e;
+
+if (!IsTrueMouseOver('u84',e)) return;
+if (true) {
+
+	SetPanelState('u81', 'pd1u81','none','',500,'none','',500);
+
+SetWidgetRichText('u62', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;"> Cardinal</span></p>');
+
+}
+
+}
+
+if (bIE) u84.attachEvent("onmouseout", MouseOutu84);
+else u84.addEventListener("mouseout", MouseOutu84, true);
+function MouseOutu84(e)
+{
+windowEvent = e;
+
+if (!IsTrueMouseOut('u84',e)) return;
+if (true) {
+
+	SetPanelState('u81', 'pd0u81','none','',500,'none','',500);
+
+SetWidgetRichText('u62', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">&nbsp;</span></p>');
+
+}
+
+}
 
 var u85 = document.getElementById('u85');
 gv_vAlignTable['u85'] = 'center';
@@ -2396,3269 +2266,3576 @@ var u175 = document.getElementById('u175');
 gv_vAlignTable['u175'] = 'center';
 var u176 = document.getElementById('u176');
 
-u176.style.cursor = 'pointer';
-if (bIE) u176.attachEvent("onclick", Clicku176);
-else u176.addEventListener("click", Clicku176, true);
-function Clicku176(e)
-{
-windowEvent = e;
-
-
-if (true) {
-
-SetWidgetSelected('u176');
-}
-
-}
-
-if (bIE) u176.attachEvent("onmouseover", MouseOveru176);
-else u176.addEventListener("mouseover", MouseOveru176, true);
-function MouseOveru176(e)
-{
-windowEvent = e;
-
-if (!IsTrueMouseOver('u176',e)) return;
-if (true) {
-
-	SetPanelState('u173', 'pd1u173','none','',500,'none','',500);
-
-SetWidgetRichText('u59', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">Teal</span></p>');
-
-}
-
-}
-
-if (bIE) u176.attachEvent("onmouseout", MouseOutu176);
-else u176.addEventListener("mouseout", MouseOutu176, true);
-function MouseOutu176(e)
-{
-windowEvent = e;
-
-if (!IsTrueMouseOut('u176',e)) return;
-if (true) {
-
-	SetPanelState('u173', 'pd0u173','none','',500,'none','',500);
-
-SetWidgetRichText('u59', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">&nbsp;</span></p>');
-
-}
-
-}
-
 var u177 = document.getElementById('u177');
-gv_vAlignTable['u177'] = 'center';
+
 var u178 = document.getElementById('u178');
-
+gv_vAlignTable['u178'] = 'center';
 var u530 = document.getElementById('u530');
-gv_vAlignTable['u530'] = 'center';
-var u531 = document.getElementById('u531');
 
-if (bIE) u531.attachEvent("onmouseover", MouseOveru531);
-else u531.addEventListener("mouseover", MouseOveru531, true);
-function MouseOveru531(e)
+u530.style.cursor = 'pointer';
+if (bIE) u530.attachEvent("onclick", Clicku530);
+else u530.addEventListener("click", Clicku530, true);
+function Clicku530(e)
 {
 windowEvent = e;
 
-if (!IsTrueMouseOver('u531',e)) return;
+
 if (true) {
 
-	SetPanelState('u526', 'pd3u526','none','',500,'none','',500);
+	SetPanelState('u527', 'pd1u527','none','',500,'none','',500);
 
-SetWidgetRichText('u486', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">Forest</span></p>');
+SetGlobalVariableValue('$colorCount', '' + (GetGlobalVariableValue('$colorCount') - GetNum(1)) + '');
+
+SetWidgetRichText('u486', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">' + (GetGlobalVariableValue('$colorCount')) + ' colors selected</span></p>');
 
 }
 
 }
 
+if (bIE) u530.attachEvent("onmouseout", MouseOutu530);
+else u530.addEventListener("mouseout", MouseOutu530, true);
+function MouseOutu530(e)
+{
+windowEvent = e;
+
+if (!IsTrueMouseOut('u530',e)) return;
+if (true) {
+
+	SetPanelState('u527', 'pd2u527','none','',500,'none','',500);
+
+SetWidgetRichText('u487', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">&nbsp;</span></p>');
+
+}
+
+}
+
+var u531 = document.getElementById('u531');
+gv_vAlignTable['u531'] = 'center';
 var u532 = document.getElementById('u532');
-gv_vAlignTable['u532'] = 'center';
-var u533 = document.getElementById('u533');
 
+if (bIE) u532.attachEvent("onmouseover", MouseOveru532);
+else u532.addEventListener("mouseover", MouseOveru532, true);
+function MouseOveru532(e)
+{
+windowEvent = e;
+
+if (!IsTrueMouseOver('u532',e)) return;
+if (true) {
+
+	SetPanelState('u527', 'pd3u527','none','',500,'none','',500);
+
+SetWidgetRichText('u487', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">Forest</span></p>');
+
+}
+
+}
+
+var u533 = document.getElementById('u533');
+gv_vAlignTable['u533'] = 'center';
 var u40 = document.getElementById('u40');
 gv_vAlignTable['u40'] = 'top';
 var u535 = document.getElementById('u535');
+gv_vAlignTable['u535'] = 'center';
+var u536 = document.getElementById('u536');
 
-u535.style.cursor = 'pointer';
-if (bIE) u535.attachEvent("onclick", Clicku535);
-else u535.addEventListener("click", Clicku535, true);
-function Clicku535(e)
+u536.style.cursor = 'pointer';
+if (bIE) u536.attachEvent("onclick", Clicku536);
+else u536.addEventListener("click", Clicku536, true);
+function Clicku536(e)
 {
 windowEvent = e;
 
 
 if (true) {
 
-	SetPanelState('u526', 'pd3u526','none','',500,'none','',500);
+	SetPanelState('u527', 'pd3u527','none','',500,'none','',500);
 
 SetGlobalVariableValue('$colorCount', '' + (GetNum(GetGlobalVariableValue('$colorCount')) + GetNum(1)) + '');
 
-SetWidgetRichText('u485', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">' + (GetGlobalVariableValue('$colorCount')) + ' colors selected</span></p>');
+SetWidgetRichText('u486', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">' + (GetGlobalVariableValue('$colorCount')) + ' colors selected</span></p>');
 
 }
 
 }
 
-if (bIE) u535.attachEvent("onmouseout", MouseOutu535);
-else u535.addEventListener("mouseout", MouseOutu535, true);
-function MouseOutu535(e)
+if (bIE) u536.attachEvent("onmouseout", MouseOutu536);
+else u536.addEventListener("mouseout", MouseOutu536, true);
+function MouseOutu536(e)
 {
 windowEvent = e;
 
-if (!IsTrueMouseOut('u535',e)) return;
+if (!IsTrueMouseOut('u536',e)) return;
 if (true) {
 
-	SetPanelState('u526', 'pd0u526','none','',500,'none','',500);
+	SetPanelState('u527', 'pd0u527','none','',500,'none','',500);
 
-SetWidgetRichText('u486', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">&nbsp;</span></p>');
-
-}
+SetWidgetRichText('u487', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">&nbsp;</span></p>');
 
 }
 
-var u536 = document.getElementById('u536');
-gv_vAlignTable['u536'] = 'center';
+}
+
 var u537 = document.getElementById('u537');
-
-if (bIE) u537.attachEvent("onmouseover", MouseOveru537);
-else u537.addEventListener("mouseover", MouseOveru537, true);
-function MouseOveru537(e)
-{
-windowEvent = e;
-
-if (!IsTrueMouseOver('u537',e)) return;
-if (true) {
-
-	SetPanelState('u526', 'pd1u526','none','',500,'none','',500);
-
-SetWidgetRichText('u486', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">Forest</span></p>');
-
-}
-
-}
-
+gv_vAlignTable['u537'] = 'center';
 var u538 = document.getElementById('u538');
-gv_vAlignTable['u538'] = 'center';
-var u539 = document.getElementById('u539');
 
-var u46 = document.getElementById('u46');
-
-var u47 = document.getElementById('u47');
-gv_vAlignTable['u47'] = 'center';
-var u48 = document.getElementById('u48');
-gv_vAlignTable['u48'] = 'top';
-var u49 = document.getElementById('u49');
-
-u49.style.cursor = 'pointer';
-if (bIE) u49.attachEvent("onclick", Clicku49);
-else u49.addEventListener("click", Clicku49, true);
-function Clicku49(e)
+if (bIE) u538.attachEvent("onmouseover", MouseOveru538);
+else u538.addEventListener("mouseover", MouseOveru538, true);
+function MouseOveru538(e)
 {
 windowEvent = e;
 
-
-if ((GetCheckState('u26')) == (true)) {
-
-	SetPanelState('u41', 'pd0u41','none','',500,'none','',500);
-
-}
-else
-if ((GetCheckState('u39')) == (true)) {
-
-	SetPanelState('u41', 'pd1u41','none','',500,'none','',500);
-
-}
-else
+if (!IsTrueMouseOver('u538',e)) return;
 if (true) {
 
-	SetPanelVisibility('u41','hidden','none',500);
+	SetPanelState('u527', 'pd1u527','none','',500,'none','',500);
+
+SetWidgetRichText('u487', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">Forest</span></p>');
 
 }
 
 }
-gv_vAlignTable['u49'] = 'top';
+
+var u539 = document.getElementById('u539');
+gv_vAlignTable['u539'] = 'center';
+var u46 = document.getElementById('u46');
+gv_vAlignTable['u46'] = 'center';
+var u47 = document.getElementById('u47');
+gv_vAlignTable['u47'] = 'top';
+var u48 = document.getElementById('u48');
+
+var u49 = document.getElementById('u49');
+gv_vAlignTable['u49'] = 'center';
+var u717 = document.getElementById('u717');
+gv_vAlignTable['u717'] = 'top';
 var u90 = document.getElementById('u90');
 gv_vAlignTable['u90'] = 'center';
 var u91 = document.getElementById('u91');
 
-u91.style.cursor = 'pointer';
-if (bIE) u91.attachEvent("onclick", Clicku91);
-else u91.addEventListener("click", Clicku91, true);
-function Clicku91(e)
-{
-windowEvent = e;
-
-
-if (true) {
-
-SetWidgetSelected('u91');
-}
-
-}
-
-if (bIE) u91.attachEvent("onmouseover", MouseOveru91);
-else u91.addEventListener("mouseover", MouseOveru91, true);
-function MouseOveru91(e)
-{
-windowEvent = e;
-
-if (!IsTrueMouseOver('u91',e)) return;
-if (true) {
-
-	SetPanelState('u88', 'pd1u88','none','',500,'none','',500);
-
-SetWidgetRichText('u59', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;"> Orange Red</span></p>');
-
-}
-
-}
-
-if (bIE) u91.attachEvent("onmouseout", MouseOutu91);
-else u91.addEventListener("mouseout", MouseOutu91, true);
-function MouseOutu91(e)
-{
-windowEvent = e;
-
-if (!IsTrueMouseOut('u91',e)) return;
-if (true) {
-
-	SetPanelState('u88', 'pd0u88','none','',500,'none','',500);
-
-SetWidgetRichText('u59', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">&nbsp;</span></p>');
-
-}
-
-}
-
 var u92 = document.getElementById('u92');
-gv_vAlignTable['u92'] = 'center';
-var u93 = document.getElementById('u93');
 
+var u93 = document.getElementById('u93');
+gv_vAlignTable['u93'] = 'center';
 var u94 = document.getElementById('u94');
+
+u94.style.cursor = 'pointer';
+if (bIE) u94.attachEvent("onclick", Clicku94);
+else u94.addEventListener("click", Clicku94, true);
+function Clicku94(e)
+{
+windowEvent = e;
+
+
+if (true) {
+
+SetWidgetSelected('u94');
+}
+
+}
+
+if (bIE) u94.attachEvent("onmouseover", MouseOveru94);
+else u94.addEventListener("mouseover", MouseOveru94, true);
+function MouseOveru94(e)
+{
+windowEvent = e;
+
+if (!IsTrueMouseOver('u94',e)) return;
+if (true) {
+
+	SetPanelState('u91', 'pd1u91','none','',500,'none','',500);
+
+SetWidgetRichText('u62', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;"> Orange Red</span></p>');
+
+}
+
+}
+
+if (bIE) u94.attachEvent("onmouseout", MouseOutu94);
+else u94.addEventListener("mouseout", MouseOutu94, true);
+function MouseOutu94(e)
+{
+windowEvent = e;
+
+if (!IsTrueMouseOut('u94',e)) return;
+if (true) {
+
+	SetPanelState('u91', 'pd0u91','none','',500,'none','',500);
+
+SetWidgetRichText('u62', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">&nbsp;</span></p>');
+
+}
+
+}
 
 var u95 = document.getElementById('u95');
 gv_vAlignTable['u95'] = 'center';
 var u186 = document.getElementById('u186');
 
-u186.style.cursor = 'pointer';
-if (bIE) u186.attachEvent("onclick", Clicku186);
-else u186.addEventListener("click", Clicku186, true);
-function Clicku186(e)
-{
-windowEvent = e;
-
-
-if (true) {
-
-SetWidgetSelected('u186');
-}
-
-}
-
-if (bIE) u186.attachEvent("onmouseover", MouseOveru186);
-else u186.addEventListener("mouseover", MouseOveru186, true);
-function MouseOveru186(e)
-{
-windowEvent = e;
-
-if (!IsTrueMouseOver('u186',e)) return;
-if (true) {
-
-	SetPanelState('u183', 'pd1u183','none','',500,'none','',500);
-
-SetWidgetRichText('u59', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">Lime</span></p>');
-
-}
-
-}
-
-if (bIE) u186.attachEvent("onmouseout", MouseOutu186);
-else u186.addEventListener("mouseout", MouseOutu186, true);
-function MouseOutu186(e)
-{
-windowEvent = e;
-
-if (!IsTrueMouseOut('u186',e)) return;
-if (true) {
-
-	SetPanelState('u183', 'pd0u183','none','',500,'none','',500);
-
-SetWidgetRichText('u59', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">&nbsp;</span></p>');
-
-}
-
-}
-
 var u187 = document.getElementById('u187');
-gv_vAlignTable['u187'] = 'center';
-var u188 = document.getElementById('u188');
 
+var u188 = document.getElementById('u188');
+gv_vAlignTable['u188'] = 'center';
 var u540 = document.getElementById('u540');
 
 var u541 = document.getElementById('u541');
-gv_vAlignTable['u541'] = 'center';
-var u542 = document.getElementById('u542');
 
-u542.style.cursor = 'pointer';
-if (bIE) u542.attachEvent("onclick", Clicku542);
-else u542.addEventListener("click", Clicku542, true);
-function Clicku542(e)
+var u542 = document.getElementById('u542');
+gv_vAlignTable['u542'] = 'center';
+var u543 = document.getElementById('u543');
+
+u543.style.cursor = 'pointer';
+if (bIE) u543.attachEvent("onclick", Clicku543);
+else u543.addEventListener("click", Clicku543, true);
+function Clicku543(e)
 {
 windowEvent = e;
 
 
 if (true) {
 
-	SetPanelState('u539', 'pd1u539','none','',500,'none','',500);
+	SetPanelState('u540', 'pd1u540','none','',500,'none','',500);
 
 SetGlobalVariableValue('$colorCount', '' + (GetGlobalVariableValue('$colorCount') - GetNum(1)) + '');
 
-SetWidgetRichText('u485', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">' + (GetGlobalVariableValue('$colorCount')) + ' colors selected</span></p>');
+SetWidgetRichText('u486', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">' + (GetGlobalVariableValue('$colorCount')) + ' colors selected</span></p>');
 
 }
 
 }
 
-if (bIE) u542.attachEvent("onmouseout", MouseOutu542);
-else u542.addEventListener("mouseout", MouseOutu542, true);
-function MouseOutu542(e)
+if (bIE) u543.attachEvent("onmouseout", MouseOutu543);
+else u543.addEventListener("mouseout", MouseOutu543, true);
+function MouseOutu543(e)
 {
 windowEvent = e;
 
-if (!IsTrueMouseOut('u542',e)) return;
+if (!IsTrueMouseOut('u543',e)) return;
 if (true) {
 
-	SetPanelState('u539', 'pd2u539','none','',500,'none','',500);
+	SetPanelState('u540', 'pd2u540','none','',500,'none','',500);
 
-SetWidgetRichText('u486', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">&nbsp;</span></p>');
-
-}
+SetWidgetRichText('u487', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">&nbsp;</span></p>');
 
 }
 
-var u543 = document.getElementById('u543');
-gv_vAlignTable['u543'] = 'center';
+}
+
 var u544 = document.getElementById('u544');
-
-if (bIE) u544.attachEvent("onmouseover", MouseOveru544);
-else u544.addEventListener("mouseover", MouseOveru544, true);
-function MouseOveru544(e)
-{
-windowEvent = e;
-
-if (!IsTrueMouseOver('u544',e)) return;
-if (true) {
-
-	SetPanelState('u539', 'pd3u539','none','',500,'none','',500);
-
-SetWidgetRichText('u486', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">Kelly Green</span></p>');
-
-}
-
-}
-
+gv_vAlignTable['u544'] = 'center';
 var u545 = document.getElementById('u545');
-gv_vAlignTable['u545'] = 'center';
+
+if (bIE) u545.attachEvent("onmouseover", MouseOveru545);
+else u545.addEventListener("mouseover", MouseOveru545, true);
+function MouseOveru545(e)
+{
+windowEvent = e;
+
+if (!IsTrueMouseOver('u545',e)) return;
+if (true) {
+
+	SetPanelState('u540', 'pd3u540','none','',500,'none','',500);
+
+SetWidgetRichText('u487', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">Kelly Green</span></p>');
+
+}
+
+}
+
 var u546 = document.getElementById('u546');
-
+gv_vAlignTable['u546'] = 'center';
 var u547 = document.getElementById('u547');
-gv_vAlignTable['u547'] = 'center';
-var u548 = document.getElementById('u548');
 
-u548.style.cursor = 'pointer';
-if (bIE) u548.attachEvent("onclick", Clicku548);
-else u548.addEventListener("click", Clicku548, true);
-function Clicku548(e)
+var u548 = document.getElementById('u548');
+gv_vAlignTable['u548'] = 'center';
+var u549 = document.getElementById('u549');
+
+u549.style.cursor = 'pointer';
+if (bIE) u549.attachEvent("onclick", Clicku549);
+else u549.addEventListener("click", Clicku549, true);
+function Clicku549(e)
 {
 windowEvent = e;
 
 
 if (true) {
 
-	SetPanelState('u539', 'pd3u539','none','',500,'none','',500);
+	SetPanelState('u540', 'pd3u540','none','',500,'none','',500);
 
 SetGlobalVariableValue('$colorCount', '' + (GetNum(GetGlobalVariableValue('$colorCount')) + GetNum(1)) + '');
 
-SetWidgetRichText('u485', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">' + (GetGlobalVariableValue('$colorCount')) + ' colors selected</span></p>');
+SetWidgetRichText('u486', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">' + (GetGlobalVariableValue('$colorCount')) + ' colors selected</span></p>');
 
 }
 
 }
 
-if (bIE) u548.attachEvent("onmouseout", MouseOutu548);
-else u548.addEventListener("mouseout", MouseOutu548, true);
-function MouseOutu548(e)
+if (bIE) u549.attachEvent("onmouseout", MouseOutu549);
+else u549.addEventListener("mouseout", MouseOutu549, true);
+function MouseOutu549(e)
 {
 windowEvent = e;
 
-if (!IsTrueMouseOut('u548',e)) return;
+if (!IsTrueMouseOut('u549',e)) return;
 if (true) {
 
-	SetPanelState('u539', 'pd0u539','none','',500,'none','',500);
+	SetPanelState('u540', 'pd0u540','none','',500,'none','',500);
 
-SetWidgetRichText('u486', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">&nbsp;</span></p>');
-
-}
+SetWidgetRichText('u487', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">&nbsp;</span></p>');
 
 }
 
-var u549 = document.getElementById('u549');
-gv_vAlignTable['u549'] = 'center';
+}
+
 var u56 = document.getElementById('u56');
 
 var u57 = document.getElementById('u57');
-gv_vAlignTable['u57'] = 'center';
+
 var u58 = document.getElementById('u58');
-gv_vAlignTable['u58'] = 'top';
+gv_vAlignTable['u58'] = 'center';
 var u59 = document.getElementById('u59');
-gv_vAlignTable['u59'] = 'top';
+
 var u190 = document.getElementById('u190');
 gv_vAlignTable['u190'] = 'center';
 var u191 = document.getElementById('u191');
 
-u191.style.cursor = 'pointer';
-if (bIE) u191.attachEvent("onclick", Clicku191);
-else u191.addEventListener("click", Clicku191, true);
-function Clicku191(e)
-{
-windowEvent = e;
-
-
-if (true) {
-
-SetWidgetSelected('u191');
-}
-
-}
-
-if (bIE) u191.attachEvent("onmouseover", MouseOveru191);
-else u191.addEventListener("mouseover", MouseOveru191, true);
-function MouseOveru191(e)
-{
-windowEvent = e;
-
-if (!IsTrueMouseOver('u191',e)) return;
-if (true) {
-
-	SetPanelState('u188', 'pd1u188','none','',500,'none','',500);
-
-SetWidgetRichText('u59', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">Navy</span></p>');
-
-}
-
-}
-
-if (bIE) u191.attachEvent("onmouseout", MouseOutu191);
-else u191.addEventListener("mouseout", MouseOutu191, true);
-function MouseOutu191(e)
-{
-windowEvent = e;
-
-if (!IsTrueMouseOut('u191',e)) return;
-if (true) {
-
-	SetPanelState('u188', 'pd0u188','none','',500,'none','',500);
-
-SetWidgetRichText('u59', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">&nbsp;</span></p>');
-
-}
-
-}
-
 var u192 = document.getElementById('u192');
-gv_vAlignTable['u192'] = 'center';
-var u193 = document.getElementById('u193');
 
+var u193 = document.getElementById('u193');
+gv_vAlignTable['u193'] = 'center';
 var u194 = document.getElementById('u194');
+
+u194.style.cursor = 'pointer';
+if (bIE) u194.attachEvent("onclick", Clicku194);
+else u194.addEventListener("click", Clicku194, true);
+function Clicku194(e)
+{
+windowEvent = e;
+
+
+if (true) {
+
+SetWidgetSelected('u194');
+}
+
+}
+
+if (bIE) u194.attachEvent("onmouseover", MouseOveru194);
+else u194.addEventListener("mouseover", MouseOveru194, true);
+function MouseOveru194(e)
+{
+windowEvent = e;
+
+if (!IsTrueMouseOver('u194',e)) return;
+if (true) {
+
+	SetPanelState('u191', 'pd1u191','none','',500,'none','',500);
+
+SetWidgetRichText('u62', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">Navy</span></p>');
+
+}
+
+}
+
+if (bIE) u194.attachEvent("onmouseout", MouseOutu194);
+else u194.addEventListener("mouseout", MouseOutu194, true);
+function MouseOutu194(e)
+{
+windowEvent = e;
+
+if (!IsTrueMouseOut('u194',e)) return;
+if (true) {
+
+	SetPanelState('u191', 'pd0u191','none','',500,'none','',500);
+
+SetWidgetRichText('u62', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">&nbsp;</span></p>');
+
+}
+
+}
 
 var u195 = document.getElementById('u195');
 gv_vAlignTable['u195'] = 'center';
 var u196 = document.getElementById('u196');
 
-u196.style.cursor = 'pointer';
-if (bIE) u196.attachEvent("onclick", Clicku196);
-else u196.addEventListener("click", Clicku196, true);
-function Clicku196(e)
-{
-windowEvent = e;
-
-
-if (true) {
-
-SetWidgetSelected('u196');
-}
-
-}
-
-if (bIE) u196.attachEvent("onmouseover", MouseOveru196);
-else u196.addEventListener("mouseover", MouseOveru196, true);
-function MouseOveru196(e)
-{
-windowEvent = e;
-
-if (!IsTrueMouseOver('u196',e)) return;
-if (true) {
-
-	SetPanelState('u193', 'pd1u193','none','',500,'none','',500);
-
-SetWidgetRichText('u59', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">Royal</span></p>');
-
-}
-
-}
-
-if (bIE) u196.attachEvent("onmouseout", MouseOutu196);
-else u196.addEventListener("mouseout", MouseOutu196, true);
-function MouseOutu196(e)
-{
-windowEvent = e;
-
-if (!IsTrueMouseOut('u196',e)) return;
-if (true) {
-
-	SetPanelState('u193', 'pd0u193','none','',500,'none','',500);
-
-SetWidgetRichText('u59', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">&nbsp;</span></p>');
-
-}
-
-}
-
 var u197 = document.getElementById('u197');
-gv_vAlignTable['u197'] = 'center';
+
 var u198 = document.getElementById('u198');
-
+gv_vAlignTable['u198'] = 'center';
 var u550 = document.getElementById('u550');
+gv_vAlignTable['u550'] = 'center';
+var u551 = document.getElementById('u551');
 
-if (bIE) u550.attachEvent("onmouseover", MouseOveru550);
-else u550.addEventListener("mouseover", MouseOveru550, true);
-function MouseOveru550(e)
+if (bIE) u551.attachEvent("onmouseover", MouseOveru551);
+else u551.addEventListener("mouseover", MouseOveru551, true);
+function MouseOveru551(e)
 {
 windowEvent = e;
 
-if (!IsTrueMouseOver('u550',e)) return;
+if (!IsTrueMouseOver('u551',e)) return;
 if (true) {
 
-	SetPanelState('u539', 'pd1u539','none','',500,'none','',500);
+	SetPanelState('u540', 'pd1u540','none','',500,'none','',500);
 
-SetWidgetRichText('u486', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">Kelly Green</span></p>');
-
-}
+SetWidgetRichText('u487', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">Kelly Green</span></p>');
 
 }
 
-var u551 = document.getElementById('u551');
-gv_vAlignTable['u551'] = 'center';
+}
+
 var u552 = document.getElementById('u552');
-
+gv_vAlignTable['u552'] = 'center';
 var u553 = document.getElementById('u553');
 
 var u554 = document.getElementById('u554');
-gv_vAlignTable['u554'] = 'center';
-var u555 = document.getElementById('u555');
 
-u555.style.cursor = 'pointer';
-if (bIE) u555.attachEvent("onclick", Clicku555);
-else u555.addEventListener("click", Clicku555, true);
-function Clicku555(e)
+var u555 = document.getElementById('u555');
+gv_vAlignTable['u555'] = 'center';
+var u556 = document.getElementById('u556');
+
+u556.style.cursor = 'pointer';
+if (bIE) u556.attachEvent("onclick", Clicku556);
+else u556.addEventListener("click", Clicku556, true);
+function Clicku556(e)
 {
 windowEvent = e;
 
 
 if (true) {
 
-	SetPanelState('u552', 'pd1u552','none','',500,'none','',500);
+	SetPanelState('u553', 'pd1u553','none','',500,'none','',500);
 
 SetGlobalVariableValue('$colorCount', '' + (GetGlobalVariableValue('$colorCount') - GetNum(1)) + '');
 
-SetWidgetRichText('u485', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">' + (GetGlobalVariableValue('$colorCount')) + ' colors selected</span></p>');
+SetWidgetRichText('u486', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">' + (GetGlobalVariableValue('$colorCount')) + ' colors selected</span></p>');
 
 }
 
 }
 
-if (bIE) u555.attachEvent("onmouseout", MouseOutu555);
-else u555.addEventListener("mouseout", MouseOutu555, true);
-function MouseOutu555(e)
+if (bIE) u556.attachEvent("onmouseout", MouseOutu556);
+else u556.addEventListener("mouseout", MouseOutu556, true);
+function MouseOutu556(e)
 {
 windowEvent = e;
 
-if (!IsTrueMouseOut('u555',e)) return;
+if (!IsTrueMouseOut('u556',e)) return;
 if (true) {
 
-	SetPanelState('u552', 'pd2u552','none','',500,'none','',500);
+	SetPanelState('u553', 'pd2u553','none','',500,'none','',500);
 
-SetWidgetRichText('u486', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">&nbsp;</span></p>');
-
-}
+SetWidgetRichText('u487', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">&nbsp;</span></p>');
 
 }
 
-var u556 = document.getElementById('u556');
-gv_vAlignTable['u556'] = 'center';
+}
+
 var u557 = document.getElementById('u557');
+gv_vAlignTable['u557'] = 'center';
+var u558 = document.getElementById('u558');
 
-if (bIE) u557.attachEvent("onmouseover", MouseOveru557);
-else u557.addEventListener("mouseover", MouseOveru557, true);
-function MouseOveru557(e)
+if (bIE) u558.attachEvent("onmouseover", MouseOveru558);
+else u558.addEventListener("mouseover", MouseOveru558, true);
+function MouseOveru558(e)
 {
 windowEvent = e;
 
-if (!IsTrueMouseOver('u557',e)) return;
+if (!IsTrueMouseOver('u558',e)) return;
 if (true) {
 
-	SetPanelState('u552', 'pd3u552','none','',500,'none','',500);
+	SetPanelState('u553', 'pd3u553','none','',500,'none','',500);
 
-SetWidgetRichText('u486', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">Teal</span></p>');
-
-}
+SetWidgetRichText('u487', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">Teal</span></p>');
 
 }
 
-var u558 = document.getElementById('u558');
-gv_vAlignTable['u558'] = 'center';
+}
+
 var u559 = document.getElementById('u559');
-
+gv_vAlignTable['u559'] = 'center';
 var u66 = document.getElementById('u66');
 
-u66.style.cursor = 'pointer';
-if (bIE) u66.attachEvent("onclick", Clicku66);
-else u66.addEventListener("click", Clicku66, true);
-function Clicku66(e)
-{
-windowEvent = e;
-
-
-if (true) {
-
-SetWidgetSelected('u66');
-}
-
-}
-
-if (bIE) u66.attachEvent("onmouseover", MouseOveru66);
-else u66.addEventListener("mouseover", MouseOveru66, true);
-function MouseOveru66(e)
-{
-windowEvent = e;
-
-if (!IsTrueMouseOver('u66',e)) return;
-if (true) {
-
-	SetPanelState('u63', 'pd1u63','none','',500,'none','',500);
-
-SetWidgetRichText('u59', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;"> Grey</span></p>');
-
-}
-
-}
-
-if (bIE) u66.attachEvent("onmouseout", MouseOutu66);
-else u66.addEventListener("mouseout", MouseOutu66, true);
-function MouseOutu66(e)
-{
-windowEvent = e;
-
-if (!IsTrueMouseOut('u66',e)) return;
-if (true) {
-
-	SetPanelState('u63', 'pd0u63','none','',500,'none','',500);
-
-SetWidgetRichText('u59', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">&nbsp;</span></p>');
-
-}
-
-}
-
 var u67 = document.getElementById('u67');
-gv_vAlignTable['u67'] = 'center';
-var u68 = document.getElementById('u68');
 
+var u68 = document.getElementById('u68');
+gv_vAlignTable['u68'] = 'center';
 var u69 = document.getElementById('u69');
 
-var u560 = document.getElementById('u560');
-gv_vAlignTable['u560'] = 'center';
-var u561 = document.getElementById('u561');
-
-u561.style.cursor = 'pointer';
-if (bIE) u561.attachEvent("onclick", Clicku561);
-else u561.addEventListener("click", Clicku561, true);
-function Clicku561(e)
+u69.style.cursor = 'pointer';
+if (bIE) u69.attachEvent("onclick", Clicku69);
+else u69.addEventListener("click", Clicku69, true);
+function Clicku69(e)
 {
 windowEvent = e;
 
 
 if (true) {
 
-	SetPanelState('u552', 'pd3u552','none','',500,'none','',500);
+SetWidgetSelected('u69');
+}
+
+}
+
+if (bIE) u69.attachEvent("onmouseover", MouseOveru69);
+else u69.addEventListener("mouseover", MouseOveru69, true);
+function MouseOveru69(e)
+{
+windowEvent = e;
+
+if (!IsTrueMouseOver('u69',e)) return;
+if (true) {
+
+	SetPanelState('u66', 'pd1u66','none','',500,'none','',500);
+
+SetWidgetRichText('u62', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;"> Grey</span></p>');
+
+}
+
+}
+
+if (bIE) u69.attachEvent("onmouseout", MouseOutu69);
+else u69.addEventListener("mouseout", MouseOutu69, true);
+function MouseOutu69(e)
+{
+windowEvent = e;
+
+if (!IsTrueMouseOut('u69',e)) return;
+if (true) {
+
+	SetPanelState('u66', 'pd0u66','none','',500,'none','',500);
+
+SetWidgetRichText('u62', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">&nbsp;</span></p>');
+
+}
+
+}
+
+var u560 = document.getElementById('u560');
+
+var u561 = document.getElementById('u561');
+gv_vAlignTable['u561'] = 'center';
+var u562 = document.getElementById('u562');
+
+u562.style.cursor = 'pointer';
+if (bIE) u562.attachEvent("onclick", Clicku562);
+else u562.addEventListener("click", Clicku562, true);
+function Clicku562(e)
+{
+windowEvent = e;
+
+
+if (true) {
+
+	SetPanelState('u553', 'pd3u553','none','',500,'none','',500);
 
 SetGlobalVariableValue('$colorCount', '' + (GetNum(GetGlobalVariableValue('$colorCount')) + GetNum(1)) + '');
 
-SetWidgetRichText('u485', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">' + (GetGlobalVariableValue('$colorCount')) + ' colors selected</span></p>');
+SetWidgetRichText('u486', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">' + (GetGlobalVariableValue('$colorCount')) + ' colors selected</span></p>');
 
 }
 
 }
 
-if (bIE) u561.attachEvent("onmouseout", MouseOutu561);
-else u561.addEventListener("mouseout", MouseOutu561, true);
-function MouseOutu561(e)
+if (bIE) u562.attachEvent("onmouseout", MouseOutu562);
+else u562.addEventListener("mouseout", MouseOutu562, true);
+function MouseOutu562(e)
 {
 windowEvent = e;
 
-if (!IsTrueMouseOut('u561',e)) return;
+if (!IsTrueMouseOut('u562',e)) return;
 if (true) {
 
-	SetPanelState('u552', 'pd0u552','none','',500,'none','',500);
+	SetPanelState('u553', 'pd0u553','none','',500,'none','',500);
 
-SetWidgetRichText('u486', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">&nbsp;</span></p>');
-
-}
+SetWidgetRichText('u487', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">&nbsp;</span></p>');
 
 }
 
-var u562 = document.getElementById('u562');
-gv_vAlignTable['u562'] = 'center';
+}
+
 var u563 = document.getElementById('u563');
+gv_vAlignTable['u563'] = 'center';
+var u564 = document.getElementById('u564');
 
-if (bIE) u563.attachEvent("onmouseover", MouseOveru563);
-else u563.addEventListener("mouseover", MouseOveru563, true);
-function MouseOveru563(e)
+if (bIE) u564.attachEvent("onmouseover", MouseOveru564);
+else u564.addEventListener("mouseover", MouseOveru564, true);
+function MouseOveru564(e)
 {
 windowEvent = e;
 
-if (!IsTrueMouseOver('u563',e)) return;
+if (!IsTrueMouseOver('u564',e)) return;
 if (true) {
 
-	SetPanelState('u552', 'pd1u552','none','',500,'none','',500);
+	SetPanelState('u553', 'pd1u553','none','',500,'none','',500);
 
-SetWidgetRichText('u486', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">Teal</span></p>');
-
-}
+SetWidgetRichText('u487', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">Teal</span></p>');
 
 }
 
-var u564 = document.getElementById('u564');
-gv_vAlignTable['u564'] = 'center';
+}
+
 var u565 = document.getElementById('u565');
-
+gv_vAlignTable['u565'] = 'center';
 var u566 = document.getElementById('u566');
 
 var u567 = document.getElementById('u567');
-gv_vAlignTable['u567'] = 'center';
-var u568 = document.getElementById('u568');
 
-u568.style.cursor = 'pointer';
-if (bIE) u568.attachEvent("onclick", Clicku568);
-else u568.addEventListener("click", Clicku568, true);
-function Clicku568(e)
+var u568 = document.getElementById('u568');
+gv_vAlignTable['u568'] = 'center';
+var u569 = document.getElementById('u569');
+
+u569.style.cursor = 'pointer';
+if (bIE) u569.attachEvent("onclick", Clicku569);
+else u569.addEventListener("click", Clicku569, true);
+function Clicku569(e)
 {
 windowEvent = e;
 
 
 if (true) {
 
-	SetPanelState('u565', 'pd1u565','none','',500,'none','',500);
+	SetPanelState('u566', 'pd1u566','none','',500,'none','',500);
 
 SetGlobalVariableValue('$colorCount', '' + (GetGlobalVariableValue('$colorCount') - GetNum(1)) + '');
 
-SetWidgetRichText('u485', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">' + (GetGlobalVariableValue('$colorCount')) + ' colors selected</span></p>');
+SetWidgetRichText('u486', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">' + (GetGlobalVariableValue('$colorCount')) + ' colors selected</span></p>');
 
 }
 
 }
 
-if (bIE) u568.attachEvent("onmouseout", MouseOutu568);
-else u568.addEventListener("mouseout", MouseOutu568, true);
-function MouseOutu568(e)
+if (bIE) u569.attachEvent("onmouseout", MouseOutu569);
+else u569.addEventListener("mouseout", MouseOutu569, true);
+function MouseOutu569(e)
 {
 windowEvent = e;
 
-if (!IsTrueMouseOut('u568',e)) return;
+if (!IsTrueMouseOut('u569',e)) return;
 if (true) {
 
-	SetPanelState('u565', 'pd2u565','none','',500,'none','',500);
+	SetPanelState('u566', 'pd2u566','none','',500,'none','',500);
 
-SetWidgetRichText('u486', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">&nbsp;</span></p>');
-
-}
+SetWidgetRichText('u487', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">&nbsp;</span></p>');
 
 }
 
-var u569 = document.getElementById('u569');
-gv_vAlignTable['u569'] = 'center';
+}
+
 var u76 = document.getElementById('u76');
 
-u76.style.cursor = 'pointer';
-if (bIE) u76.attachEvent("onclick", Clicku76);
-else u76.addEventListener("click", Clicku76, true);
-function Clicku76(e)
-{
-windowEvent = e;
-
-
-if (true) {
-
-SetWidgetSelected('u76');
-}
-
-}
-
-if (bIE) u76.attachEvent("onmouseover", MouseOveru76);
-else u76.addEventListener("mouseover", MouseOveru76, true);
-function MouseOveru76(e)
-{
-windowEvent = e;
-
-if (!IsTrueMouseOver('u76',e)) return;
-if (true) {
-
-	SetPanelState('u73', 'pd1u73','none','',500,'none','',500);
-
-SetWidgetRichText('u59', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;"> White</span></p>');
-
-}
-
-}
-
-if (bIE) u76.attachEvent("onmouseout", MouseOutu76);
-else u76.addEventListener("mouseout", MouseOutu76, true);
-function MouseOutu76(e)
-{
-windowEvent = e;
-
-if (!IsTrueMouseOut('u76',e)) return;
-if (true) {
-
-	SetPanelState('u73', 'pd0u73','none','',500,'none','',500);
-
-SetWidgetRichText('u59', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">&nbsp;</span></p>');
-
-}
-
-}
-
 var u77 = document.getElementById('u77');
-gv_vAlignTable['u77'] = 'center';
-var u78 = document.getElementById('u78');
 
+var u78 = document.getElementById('u78');
+gv_vAlignTable['u78'] = 'center';
 var u249 = document.getElementById('u249');
 
 var u570 = document.getElementById('u570');
-
-if (bIE) u570.attachEvent("onmouseover", MouseOveru570);
-else u570.addEventListener("mouseover", MouseOveru570, true);
-function MouseOveru570(e)
-{
-windowEvent = e;
-
-if (!IsTrueMouseOver('u570',e)) return;
-if (true) {
-
-	SetPanelState('u565', 'pd3u565','none','',500,'none','',500);
-
-SetWidgetRichText('u486', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">Green</span></p>');
-
-}
-
-}
-
+gv_vAlignTable['u570'] = 'center';
 var u571 = document.getElementById('u571');
-gv_vAlignTable['u571'] = 'center';
+
+if (bIE) u571.attachEvent("onmouseover", MouseOveru571);
+else u571.addEventListener("mouseover", MouseOveru571, true);
+function MouseOveru571(e)
+{
+windowEvent = e;
+
+if (!IsTrueMouseOver('u571',e)) return;
+if (true) {
+
+	SetPanelState('u566', 'pd3u566','none','',500,'none','',500);
+
+SetWidgetRichText('u487', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">Green</span></p>');
+
+}
+
+}
+
 var u572 = document.getElementById('u572');
-
+gv_vAlignTable['u572'] = 'center';
 var u573 = document.getElementById('u573');
-gv_vAlignTable['u573'] = 'center';
-var u574 = document.getElementById('u574');
 
-u574.style.cursor = 'pointer';
-if (bIE) u574.attachEvent("onclick", Clicku574);
-else u574.addEventListener("click", Clicku574, true);
-function Clicku574(e)
+var u574 = document.getElementById('u574');
+gv_vAlignTable['u574'] = 'center';
+var u575 = document.getElementById('u575');
+
+u575.style.cursor = 'pointer';
+if (bIE) u575.attachEvent("onclick", Clicku575);
+else u575.addEventListener("click", Clicku575, true);
+function Clicku575(e)
 {
 windowEvent = e;
 
 
 if (true) {
 
-	SetPanelState('u565', 'pd3u565','none','',500,'none','',500);
+	SetPanelState('u566', 'pd3u566','none','',500,'none','',500);
 
 SetGlobalVariableValue('$colorCount', '' + (GetNum(GetGlobalVariableValue('$colorCount')) + GetNum(1)) + '');
 
-SetWidgetRichText('u485', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">' + (GetGlobalVariableValue('$colorCount')) + ' colors selected</span></p>');
+SetWidgetRichText('u486', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">' + (GetGlobalVariableValue('$colorCount')) + ' colors selected</span></p>');
 
 }
 
 }
 
-if (bIE) u574.attachEvent("onmouseout", MouseOutu574);
-else u574.addEventListener("mouseout", MouseOutu574, true);
-function MouseOutu574(e)
+if (bIE) u575.attachEvent("onmouseout", MouseOutu575);
+else u575.addEventListener("mouseout", MouseOutu575, true);
+function MouseOutu575(e)
 {
 windowEvent = e;
 
-if (!IsTrueMouseOut('u574',e)) return;
+if (!IsTrueMouseOut('u575',e)) return;
 if (true) {
 
-	SetPanelState('u565', 'pd0u565','none','',500,'none','',500);
+	SetPanelState('u566', 'pd0u566','none','',500,'none','',500);
 
-SetWidgetRichText('u486', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">&nbsp;</span></p>');
-
-}
+SetWidgetRichText('u487', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">&nbsp;</span></p>');
 
 }
 
-var u575 = document.getElementById('u575');
-gv_vAlignTable['u575'] = 'center';
+}
+
 var u576 = document.getElementById('u576');
+gv_vAlignTable['u576'] = 'center';
+var u577 = document.getElementById('u577');
 
-if (bIE) u576.attachEvent("onmouseover", MouseOveru576);
-else u576.addEventListener("mouseover", MouseOveru576, true);
-function MouseOveru576(e)
+if (bIE) u577.attachEvent("onmouseover", MouseOveru577);
+else u577.addEventListener("mouseover", MouseOveru577, true);
+function MouseOveru577(e)
 {
 windowEvent = e;
 
-if (!IsTrueMouseOver('u576',e)) return;
+if (!IsTrueMouseOver('u577',e)) return;
 if (true) {
 
-	SetPanelState('u565', 'pd1u565','none','',500,'none','',500);
+	SetPanelState('u566', 'pd1u566','none','',500,'none','',500);
 
-SetWidgetRichText('u486', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">Green</span></p>');
-
-}
+SetWidgetRichText('u487', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">Green</span></p>');
 
 }
 
-var u577 = document.getElementById('u577');
-gv_vAlignTable['u577'] = 'center';
+}
+
 var u578 = document.getElementById('u578');
-
+gv_vAlignTable['u578'] = 'center';
 var u579 = document.getElementById('u579');
 
 var u86 = document.getElementById('u86');
 
-u86.style.cursor = 'pointer';
-if (bIE) u86.attachEvent("onclick", Clicku86);
-else u86.addEventListener("click", Clicku86, true);
-function Clicku86(e)
-{
-windowEvent = e;
-
-
-if (true) {
-
-SetWidgetSelected('u86');
-}
-
-}
-
-if (bIE) u86.attachEvent("onmouseover", MouseOveru86);
-else u86.addEventListener("mouseover", MouseOveru86, true);
-function MouseOveru86(e)
-{
-windowEvent = e;
-
-if (!IsTrueMouseOver('u86',e)) return;
-if (true) {
-
-	SetPanelState('u83', 'pd1u83','none','',500,'none','',500);
-
-SetWidgetRichText('u59', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">Red</span></p>');
-
-}
-
-}
-
-if (bIE) u86.attachEvent("onmouseout", MouseOutu86);
-else u86.addEventListener("mouseout", MouseOutu86, true);
-function MouseOutu86(e)
-{
-windowEvent = e;
-
-if (!IsTrueMouseOut('u86',e)) return;
-if (true) {
-
-	SetPanelState('u83', 'pd0u83','none','',500,'none','',500);
-
-SetWidgetRichText('u59', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">&nbsp;</span></p>');
-
-}
-
-}
-
 var u87 = document.getElementById('u87');
-gv_vAlignTable['u87'] = 'center';
-var u88 = document.getElementById('u88');
 
+var u88 = document.getElementById('u88');
+gv_vAlignTable['u88'] = 'center';
 var u89 = document.getElementById('u89');
 
-var u207 = document.getElementById('u207');
-gv_vAlignTable['u207'] = 'center';
-var u580 = document.getElementById('u580');
-gv_vAlignTable['u580'] = 'center';
-var u581 = document.getElementById('u581');
-
-u581.style.cursor = 'pointer';
-if (bIE) u581.attachEvent("onclick", Clicku581);
-else u581.addEventListener("click", Clicku581, true);
-function Clicku581(e)
+u89.style.cursor = 'pointer';
+if (bIE) u89.attachEvent("onclick", Clicku89);
+else u89.addEventListener("click", Clicku89, true);
+function Clicku89(e)
 {
 windowEvent = e;
 
 
 if (true) {
 
-	SetPanelState('u578', 'pd1u578','none','',500,'none','',500);
+SetWidgetSelected('u89');
+}
+
+}
+
+if (bIE) u89.attachEvent("onmouseover", MouseOveru89);
+else u89.addEventListener("mouseover", MouseOveru89, true);
+function MouseOveru89(e)
+{
+windowEvent = e;
+
+if (!IsTrueMouseOver('u89',e)) return;
+if (true) {
+
+	SetPanelState('u86', 'pd1u86','none','',500,'none','',500);
+
+SetWidgetRichText('u62', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">Red</span></p>');
+
+}
+
+}
+
+if (bIE) u89.attachEvent("onmouseout", MouseOutu89);
+else u89.addEventListener("mouseout", MouseOutu89, true);
+function MouseOutu89(e)
+{
+windowEvent = e;
+
+if (!IsTrueMouseOut('u89',e)) return;
+if (true) {
+
+	SetPanelState('u86', 'pd0u86','none','',500,'none','',500);
+
+SetWidgetRichText('u62', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">&nbsp;</span></p>');
+
+}
+
+}
+
+var u207 = document.getElementById('u207');
+
+var u580 = document.getElementById('u580');
+
+var u581 = document.getElementById('u581');
+gv_vAlignTable['u581'] = 'center';
+var u582 = document.getElementById('u582');
+
+u582.style.cursor = 'pointer';
+if (bIE) u582.attachEvent("onclick", Clicku582);
+else u582.addEventListener("click", Clicku582, true);
+function Clicku582(e)
+{
+windowEvent = e;
+
+
+if (true) {
+
+	SetPanelState('u579', 'pd1u579','none','',500,'none','',500);
 
 SetGlobalVariableValue('$colorCount', '' + (GetGlobalVariableValue('$colorCount') - GetNum(1)) + '');
 
-SetWidgetRichText('u485', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">' + (GetGlobalVariableValue('$colorCount')) + ' colors selected</span></p>');
+SetWidgetRichText('u486', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">' + (GetGlobalVariableValue('$colorCount')) + ' colors selected</span></p>');
 
 }
 
 }
 
-if (bIE) u581.attachEvent("onmouseout", MouseOutu581);
-else u581.addEventListener("mouseout", MouseOutu581, true);
-function MouseOutu581(e)
+if (bIE) u582.attachEvent("onmouseout", MouseOutu582);
+else u582.addEventListener("mouseout", MouseOutu582, true);
+function MouseOutu582(e)
 {
 windowEvent = e;
 
-if (!IsTrueMouseOut('u581',e)) return;
+if (!IsTrueMouseOut('u582',e)) return;
 if (true) {
 
-	SetPanelState('u578', 'pd2u578','none','',500,'none','',500);
+	SetPanelState('u579', 'pd2u579','none','',500,'none','',500);
 
-SetWidgetRichText('u486', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">&nbsp;</span></p>');
-
-}
+SetWidgetRichText('u487', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">&nbsp;</span></p>');
 
 }
 
-var u582 = document.getElementById('u582');
-gv_vAlignTable['u582'] = 'center';
+}
+
 var u583 = document.getElementById('u583');
-
-if (bIE) u583.attachEvent("onmouseover", MouseOveru583);
-else u583.addEventListener("mouseover", MouseOveru583, true);
-function MouseOveru583(e)
-{
-windowEvent = e;
-
-if (!IsTrueMouseOver('u583',e)) return;
-if (true) {
-
-	SetPanelState('u578', 'pd3u578','none','',500,'none','',500);
-
-SetWidgetRichText('u486', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">Lime</span></p>');
-
-}
-
-}
-
+gv_vAlignTable['u583'] = 'center';
 var u584 = document.getElementById('u584');
-gv_vAlignTable['u584'] = 'center';
+
+if (bIE) u584.attachEvent("onmouseover", MouseOveru584);
+else u584.addEventListener("mouseover", MouseOveru584, true);
+function MouseOveru584(e)
+{
+windowEvent = e;
+
+if (!IsTrueMouseOver('u584',e)) return;
+if (true) {
+
+	SetPanelState('u579', 'pd3u579','none','',500,'none','',500);
+
+SetWidgetRichText('u487', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">Lime</span></p>');
+
+}
+
+}
+
 var u585 = document.getElementById('u585');
-
+gv_vAlignTable['u585'] = 'center';
 var u586 = document.getElementById('u586');
-gv_vAlignTable['u586'] = 'center';
-var u587 = document.getElementById('u587');
 
-u587.style.cursor = 'pointer';
-if (bIE) u587.attachEvent("onclick", Clicku587);
-else u587.addEventListener("click", Clicku587, true);
-function Clicku587(e)
+var u587 = document.getElementById('u587');
+gv_vAlignTable['u587'] = 'center';
+var u588 = document.getElementById('u588');
+
+u588.style.cursor = 'pointer';
+if (bIE) u588.attachEvent("onclick", Clicku588);
+else u588.addEventListener("click", Clicku588, true);
+function Clicku588(e)
 {
 windowEvent = e;
 
 
 if (true) {
 
-	SetPanelState('u578', 'pd3u578','none','',500,'none','',500);
+	SetPanelState('u579', 'pd3u579','none','',500,'none','',500);
 
 SetGlobalVariableValue('$colorCount', '' + (GetNum(GetGlobalVariableValue('$colorCount')) + GetNum(1)) + '');
 
-SetWidgetRichText('u485', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">' + (GetGlobalVariableValue('$colorCount')) + ' colors selected</span></p>');
+SetWidgetRichText('u486', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">' + (GetGlobalVariableValue('$colorCount')) + ' colors selected</span></p>');
 
 }
 
 }
 
-if (bIE) u587.attachEvent("onmouseout", MouseOutu587);
-else u587.addEventListener("mouseout", MouseOutu587, true);
-function MouseOutu587(e)
+if (bIE) u588.attachEvent("onmouseout", MouseOutu588);
+else u588.addEventListener("mouseout", MouseOutu588, true);
+function MouseOutu588(e)
 {
 windowEvent = e;
 
-if (!IsTrueMouseOut('u587',e)) return;
+if (!IsTrueMouseOut('u588',e)) return;
 if (true) {
 
-	SetPanelState('u578', 'pd0u578','none','',500,'none','',500);
+	SetPanelState('u579', 'pd0u579','none','',500,'none','',500);
 
-SetWidgetRichText('u486', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">&nbsp;</span></p>');
-
-}
+SetWidgetRichText('u487', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">&nbsp;</span></p>');
 
 }
 
-var u588 = document.getElementById('u588');
-gv_vAlignTable['u588'] = 'center';
+}
+
 var u589 = document.getElementById('u589');
-
-if (bIE) u589.attachEvent("onmouseover", MouseOveru589);
-else u589.addEventListener("mouseover", MouseOveru589, true);
-function MouseOveru589(e)
-{
-windowEvent = e;
-
-if (!IsTrueMouseOver('u589',e)) return;
-if (true) {
-
-	SetPanelState('u578', 'pd1u578','none','',500,'none','',500);
-
-SetWidgetRichText('u486', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">Lime</span></p>');
-
-}
-
-}
-
+gv_vAlignTable['u589'] = 'center';
 var u96 = document.getElementById('u96');
 
-u96.style.cursor = 'pointer';
-if (bIE) u96.attachEvent("onclick", Clicku96);
-else u96.addEventListener("click", Clicku96, true);
-function Clicku96(e)
-{
-windowEvent = e;
-
-
-if (true) {
-
-SetWidgetSelected('u96');
-}
-
-}
-
-if (bIE) u96.attachEvent("onmouseover", MouseOveru96);
-else u96.addEventListener("mouseover", MouseOveru96, true);
-function MouseOveru96(e)
-{
-windowEvent = e;
-
-if (!IsTrueMouseOver('u96',e)) return;
-if (true) {
-
-	SetPanelState('u93', 'pd1u93','none','',500,'none','',500);
-
-SetWidgetRichText('u59', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;"> Pink</span></p>');
-
-}
-
-}
-
-if (bIE) u96.attachEvent("onmouseout", MouseOutu96);
-else u96.addEventListener("mouseout", MouseOutu96, true);
-function MouseOutu96(e)
-{
-windowEvent = e;
-
-if (!IsTrueMouseOut('u96',e)) return;
-if (true) {
-
-	SetPanelState('u93', 'pd0u93','none','',500,'none','',500);
-
-SetWidgetRichText('u59', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">&nbsp;</span></p>');
-
-}
-
-}
-
 var u97 = document.getElementById('u97');
-gv_vAlignTable['u97'] = 'center';
-var u98 = document.getElementById('u98');
 
+var u98 = document.getElementById('u98');
+gv_vAlignTable['u98'] = 'center';
 var u99 = document.getElementById('u99');
+
+u99.style.cursor = 'pointer';
+if (bIE) u99.attachEvent("onclick", Clicku99);
+else u99.addEventListener("click", Clicku99, true);
+function Clicku99(e)
+{
+windowEvent = e;
+
+
+if (true) {
+
+SetWidgetSelected('u99');
+}
+
+}
+
+if (bIE) u99.attachEvent("onmouseover", MouseOveru99);
+else u99.addEventListener("mouseover", MouseOveru99, true);
+function MouseOveru99(e)
+{
+windowEvent = e;
+
+if (!IsTrueMouseOver('u99',e)) return;
+if (true) {
+
+	SetPanelState('u96', 'pd1u96','none','',500,'none','',500);
+
+SetWidgetRichText('u62', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;"> Pink</span></p>');
+
+}
+
+}
+
+if (bIE) u99.attachEvent("onmouseout", MouseOutu99);
+else u99.addEventListener("mouseout", MouseOutu99, true);
+function MouseOutu99(e)
+{
+windowEvent = e;
+
+if (!IsTrueMouseOut('u99',e)) return;
+if (true) {
+
+	SetPanelState('u96', 'pd0u96','none','',500,'none','',500);
+
+SetWidgetRichText('u62', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">&nbsp;</span></p>');
+
+}
+
+}
 
 var u199 = document.getElementById('u199');
 
-var u400 = document.getElementById('u400');
-
-u400.style.cursor = 'pointer';
-if (bIE) u400.attachEvent("onclick", Clicku400);
-else u400.addEventListener("click", Clicku400, true);
-function Clicku400(e)
+u199.style.cursor = 'pointer';
+if (bIE) u199.attachEvent("onclick", Clicku199);
+else u199.addEventListener("click", Clicku199, true);
+function Clicku199(e)
 {
 windowEvent = e;
 
 
 if (true) {
 
-	SetPanelState('u391', 'pd3u391','none','',500,'none','',500);
+SetWidgetSelected('u199');
+}
+
+}
+
+if (bIE) u199.attachEvent("onmouseover", MouseOveru199);
+else u199.addEventListener("mouseover", MouseOveru199, true);
+function MouseOveru199(e)
+{
+windowEvent = e;
+
+if (!IsTrueMouseOver('u199',e)) return;
+if (true) {
+
+	SetPanelState('u196', 'pd1u196','none','',500,'none','',500);
+
+SetWidgetRichText('u62', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">Royal</span></p>');
+
+}
+
+}
+
+if (bIE) u199.attachEvent("onmouseout", MouseOutu199);
+else u199.addEventListener("mouseout", MouseOutu199, true);
+function MouseOutu199(e)
+{
+windowEvent = e;
+
+if (!IsTrueMouseOut('u199',e)) return;
+if (true) {
+
+	SetPanelState('u196', 'pd0u196','none','',500,'none','',500);
+
+SetWidgetRichText('u62', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">&nbsp;</span></p>');
+
+}
+
+}
+
+var u400 = document.getElementById('u400');
+gv_vAlignTable['u400'] = 'center';
+var u401 = document.getElementById('u401');
+
+u401.style.cursor = 'pointer';
+if (bIE) u401.attachEvent("onclick", Clicku401);
+else u401.addEventListener("click", Clicku401, true);
+function Clicku401(e)
+{
+windowEvent = e;
+
+
+if (true) {
+
+	SetPanelState('u392', 'pd3u392','none','',500,'none','',500);
 
 SetGlobalVariableValue('$colorCount', '' + (GetNum(GetGlobalVariableValue('$colorCount')) + GetNum(1)) + '');
 
-SetWidgetRichText('u485', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">' + (GetGlobalVariableValue('$colorCount')) + ' colors selected</span></p>');
+SetWidgetRichText('u486', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">' + (GetGlobalVariableValue('$colorCount')) + ' colors selected</span></p>');
 
 }
 
 }
 
-if (bIE) u400.attachEvent("onmouseout", MouseOutu400);
-else u400.addEventListener("mouseout", MouseOutu400, true);
-function MouseOutu400(e)
+if (bIE) u401.attachEvent("onmouseout", MouseOutu401);
+else u401.addEventListener("mouseout", MouseOutu401, true);
+function MouseOutu401(e)
 {
 windowEvent = e;
 
-if (!IsTrueMouseOut('u400',e)) return;
+if (!IsTrueMouseOut('u401',e)) return;
 if (true) {
 
-	SetPanelState('u391', 'pd0u391','none','',500,'none','',500);
+	SetPanelState('u392', 'pd0u392','none','',500,'none','',500);
 
-SetWidgetRichText('u486', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">&nbsp;</span></p>');
-
-}
+SetWidgetRichText('u487', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">&nbsp;</span></p>');
 
 }
 
-var u401 = document.getElementById('u401');
-gv_vAlignTable['u401'] = 'center';
+}
+
 var u402 = document.getElementById('u402');
+gv_vAlignTable['u402'] = 'center';
+var u590 = document.getElementById('u590');
 
-if (bIE) u402.attachEvent("onmouseover", MouseOveru402);
-else u402.addEventListener("mouseover", MouseOveru402, true);
-function MouseOveru402(e)
+if (bIE) u590.attachEvent("onmouseover", MouseOveru590);
+else u590.addEventListener("mouseover", MouseOveru590, true);
+function MouseOveru590(e)
 {
 windowEvent = e;
 
-if (!IsTrueMouseOver('u402',e)) return;
+if (!IsTrueMouseOver('u590',e)) return;
 if (true) {
 
-	SetPanelState('u391', 'pd1u391','none','',500,'none','',500);
+	SetPanelState('u579', 'pd1u579','none','',500,'none','',500);
 
-SetWidgetRichText('u486', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">Orange</span></p>');
-
-}
+SetWidgetRichText('u487', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">Lime</span></p>');
 
 }
 
-var u590 = document.getElementById('u590');
-gv_vAlignTable['u590'] = 'center';
+}
+
 var u591 = document.getElementById('u591');
-
+gv_vAlignTable['u591'] = 'center';
 var u405 = document.getElementById('u405');
 
 var u406 = document.getElementById('u406');
-gv_vAlignTable['u406'] = 'center';
-var u407 = document.getElementById('u407');
 
-u407.style.cursor = 'pointer';
-if (bIE) u407.attachEvent("onclick", Clicku407);
-else u407.addEventListener("click", Clicku407, true);
-function Clicku407(e)
+var u407 = document.getElementById('u407');
+gv_vAlignTable['u407'] = 'center';
+var u408 = document.getElementById('u408');
+
+u408.style.cursor = 'pointer';
+if (bIE) u408.attachEvent("onclick", Clicku408);
+else u408.addEventListener("click", Clicku408, true);
+function Clicku408(e)
 {
 windowEvent = e;
 
 
 if (true) {
 
-	SetPanelState('u404', 'pd1u404','none','',500,'none','',500);
+	SetPanelState('u405', 'pd1u405','none','',500,'none','',500);
 
 SetGlobalVariableValue('$colorCount', '' + (GetGlobalVariableValue('$colorCount') - GetNum(1)) + '');
 
-SetWidgetRichText('u485', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">' + (GetGlobalVariableValue('$colorCount')) + ' colors selected</span></p>');
+SetWidgetRichText('u486', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">' + (GetGlobalVariableValue('$colorCount')) + ' colors selected</span></p>');
 
 }
 
 }
 
-if (bIE) u407.attachEvent("onmouseout", MouseOutu407);
-else u407.addEventListener("mouseout", MouseOutu407, true);
-function MouseOutu407(e)
+if (bIE) u408.attachEvent("onmouseout", MouseOutu408);
+else u408.addEventListener("mouseout", MouseOutu408, true);
+function MouseOutu408(e)
 {
 windowEvent = e;
 
-if (!IsTrueMouseOut('u407',e)) return;
+if (!IsTrueMouseOut('u408',e)) return;
 if (true) {
 
-	SetPanelState('u404', 'pd2u404','none','',500,'none','',500);
+	SetPanelState('u405', 'pd2u405','none','',500,'none','',500);
 
-SetWidgetRichText('u486', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">&nbsp;</span></p>');
-
-}
+SetWidgetRichText('u487', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">&nbsp;</span></p>');
 
 }
 
-var u408 = document.getElementById('u408');
-gv_vAlignTable['u408'] = 'center';
+}
+
 var u409 = document.getElementById('u409');
-
-if (bIE) u409.attachEvent("onmouseover", MouseOveru409);
-else u409.addEventListener("mouseover", MouseOveru409, true);
-function MouseOveru409(e)
-{
-windowEvent = e;
-
-if (!IsTrueMouseOver('u409',e)) return;
-if (true) {
-
-	SetPanelState('u404', 'pd3u404','none','',500,'none','',500);
-
-SetWidgetRichText('u486', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">Light Orange</span></p>');
-
-}
-
-}
-
+gv_vAlignTable['u409'] = 'center';
 var u597 = document.getElementById('u597');
-gv_vAlignTable['u597'] = 'center';
+
+if (bIE) u597.attachEvent("onmouseover", MouseOveru597);
+else u597.addEventListener("mouseover", MouseOveru597, true);
+function MouseOveru597(e)
+{
+windowEvent = e;
+
+if (!IsTrueMouseOver('u597',e)) return;
+if (true) {
+
+	SetPanelState('u592', 'pd3u592','none','',500,'none','',500);
+
+SetWidgetRichText('u487', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">Navy</span></p>');
+
+}
+
+}
+
 var u598 = document.getElementById('u598');
-
+gv_vAlignTable['u598'] = 'center';
 var u599 = document.getElementById('u599');
-gv_vAlignTable['u599'] = 'center';
+
 var u410 = document.getElementById('u410');
-gv_vAlignTable['u410'] = 'center';
+
+if (bIE) u410.attachEvent("onmouseover", MouseOveru410);
+else u410.addEventListener("mouseover", MouseOveru410, true);
+function MouseOveru410(e)
+{
+windowEvent = e;
+
+if (!IsTrueMouseOver('u410',e)) return;
+if (true) {
+
+	SetPanelState('u405', 'pd3u405','none','',500,'none','',500);
+
+SetWidgetRichText('u487', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">Light Orange</span></p>');
+
+}
+
+}
+
 var u411 = document.getElementById('u411');
-
+gv_vAlignTable['u411'] = 'center';
 var u412 = document.getElementById('u412');
-gv_vAlignTable['u412'] = 'center';
-var u413 = document.getElementById('u413');
 
-u413.style.cursor = 'pointer';
-if (bIE) u413.attachEvent("onclick", Clicku413);
-else u413.addEventListener("click", Clicku413, true);
-function Clicku413(e)
+var u413 = document.getElementById('u413');
+gv_vAlignTable['u413'] = 'center';
+var u414 = document.getElementById('u414');
+
+u414.style.cursor = 'pointer';
+if (bIE) u414.attachEvent("onclick", Clicku414);
+else u414.addEventListener("click", Clicku414, true);
+function Clicku414(e)
 {
 windowEvent = e;
 
 
 if (true) {
 
-	SetPanelState('u404', 'pd3u404','none','',500,'none','',500);
+	SetPanelState('u405', 'pd3u405','none','',500,'none','',500);
 
 SetGlobalVariableValue('$colorCount', '' + (GetNum(GetGlobalVariableValue('$colorCount')) + GetNum(1)) + '');
 
-SetWidgetRichText('u485', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">' + (GetGlobalVariableValue('$colorCount')) + ' colors selected</span></p>');
+SetWidgetRichText('u486', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">' + (GetGlobalVariableValue('$colorCount')) + ' colors selected</span></p>');
 
 }
 
 }
 
-if (bIE) u413.attachEvent("onmouseout", MouseOutu413);
-else u413.addEventListener("mouseout", MouseOutu413, true);
-function MouseOutu413(e)
+if (bIE) u414.attachEvent("onmouseout", MouseOutu414);
+else u414.addEventListener("mouseout", MouseOutu414, true);
+function MouseOutu414(e)
 {
 windowEvent = e;
 
-if (!IsTrueMouseOut('u413',e)) return;
+if (!IsTrueMouseOut('u414',e)) return;
 if (true) {
 
-	SetPanelState('u404', 'pd0u404','none','',500,'none','',500);
+	SetPanelState('u405', 'pd0u405','none','',500,'none','',500);
 
-SetWidgetRichText('u486', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">&nbsp;</span></p>');
-
-}
+SetWidgetRichText('u487', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">&nbsp;</span></p>');
 
 }
 
-var u414 = document.getElementById('u414');
-gv_vAlignTable['u414'] = 'center';
+}
+
 var u415 = document.getElementById('u415');
+gv_vAlignTable['u415'] = 'center';
+var u416 = document.getElementById('u416');
 
-if (bIE) u415.attachEvent("onmouseover", MouseOveru415);
-else u415.addEventListener("mouseover", MouseOveru415, true);
-function MouseOveru415(e)
+if (bIE) u416.attachEvent("onmouseover", MouseOveru416);
+else u416.addEventListener("mouseover", MouseOveru416, true);
+function MouseOveru416(e)
 {
 windowEvent = e;
 
-if (!IsTrueMouseOver('u415',e)) return;
+if (!IsTrueMouseOver('u416',e)) return;
 if (true) {
 
-	SetPanelState('u404', 'pd1u404','none','',500,'none','',500);
+	SetPanelState('u405', 'pd1u405','none','',500,'none','',500);
 
-SetWidgetRichText('u486', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">Light Orange</span></p>');
-
-}
+SetWidgetRichText('u487', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">Light Orange</span></p>');
 
 }
 
-var u416 = document.getElementById('u416');
-gv_vAlignTable['u416'] = 'center';
+}
+
 var u417 = document.getElementById('u417');
-
+gv_vAlignTable['u417'] = 'center';
 var u418 = document.getElementById('u418');
 
 var u419 = document.getElementById('u419');
-gv_vAlignTable['u419'] = 'center';
+
 var u109 = document.getElementById('u109');
 
+u109.style.cursor = 'pointer';
+if (bIE) u109.attachEvent("onclick", Clicku109);
+else u109.addEventListener("click", Clicku109, true);
+function Clicku109(e)
+{
+windowEvent = e;
+
+
+if (true) {
+
+SetWidgetSelected('u109');
+}
+
+}
+
+if (bIE) u109.attachEvent("onmouseover", MouseOveru109);
+else u109.addEventListener("mouseover", MouseOveru109, true);
+function MouseOveru109(e)
+{
+windowEvent = e;
+
+if (!IsTrueMouseOver('u109',e)) return;
+if (true) {
+
+	SetPanelState('u106', 'pd1u106','none','',500,'none','',500);
+
+SetWidgetRichText('u62', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;"> Hot Pink</span></p>');
+
+}
+
+}
+
+if (bIE) u109.attachEvent("onmouseout", MouseOutu109);
+else u109.addEventListener("mouseout", MouseOutu109, true);
+function MouseOutu109(e)
+{
+windowEvent = e;
+
+if (!IsTrueMouseOut('u109',e)) return;
+if (true) {
+
+	SetPanelState('u106', 'pd0u106','none','',500,'none','',500);
+
+SetWidgetRichText('u62', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">&nbsp;</span></p>');
+
+}
+
+}
+
 var u620 = document.getElementById('u620');
-
-u620.style.cursor = 'pointer';
-if (bIE) u620.attachEvent("onclick", Clicku620);
-else u620.addEventListener("click", Clicku620, true);
-function Clicku620(e)
-{
-windowEvent = e;
-
-
-if ((GetGlobalVariableValue('$colorCount')) == ('1')) {
-
-	SetPanelState('u617', 'pd1u617','none','',500,'none','',500);
-
-SetGlobalVariableValue('$colorCount', '' + (GetGlobalVariableValue('$colorCount') - GetNum(1)) + '');
-
-SetWidgetRichText('u485', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">' + (GetGlobalVariableValue('$colorCount')) + ' colors selected</span></p>');
-
-}
-
-}
-
-if (bIE) u620.attachEvent("onmouseout", MouseOutu620);
-else u620.addEventListener("mouseout", MouseOutu620, true);
-function MouseOutu620(e)
-{
-windowEvent = e;
-
-if (!IsTrueMouseOut('u620',e)) return;
-if (true) {
-
-	SetPanelState('u617', 'pd2u617','none','',500,'none','',500);
-
-SetWidgetRichText('u486', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">&nbsp;</span></p>');
-
-}
-
-}
-
+gv_vAlignTable['u620'] = 'center';
 var u420 = document.getElementById('u420');
+gv_vAlignTable['u420'] = 'center';
+var u421 = document.getElementById('u421');
 
-u420.style.cursor = 'pointer';
-if (bIE) u420.attachEvent("onclick", Clicku420);
-else u420.addEventListener("click", Clicku420, true);
-function Clicku420(e)
+u421.style.cursor = 'pointer';
+if (bIE) u421.attachEvent("onclick", Clicku421);
+else u421.addEventListener("click", Clicku421, true);
+function Clicku421(e)
 {
 windowEvent = e;
 
 
 if (true) {
 
-	SetPanelState('u417', 'pd1u417','none','',500,'none','',500);
+	SetPanelState('u418', 'pd1u418','none','',500,'none','',500);
 
 SetGlobalVariableValue('$colorCount', '' + (GetGlobalVariableValue('$colorCount') - GetNum(1)) + '');
 
-SetWidgetRichText('u485', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">' + (GetGlobalVariableValue('$colorCount')) + ' colors selected</span></p>');
+SetWidgetRichText('u486', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">' + (GetGlobalVariableValue('$colorCount')) + ' colors selected</span></p>');
 
 }
 
 }
 
-if (bIE) u420.attachEvent("onmouseout", MouseOutu420);
-else u420.addEventListener("mouseout", MouseOutu420, true);
-function MouseOutu420(e)
+if (bIE) u421.attachEvent("onmouseout", MouseOutu421);
+else u421.addEventListener("mouseout", MouseOutu421, true);
+function MouseOutu421(e)
 {
 windowEvent = e;
 
-if (!IsTrueMouseOut('u420',e)) return;
+if (!IsTrueMouseOut('u421',e)) return;
 if (true) {
 
-	SetPanelState('u417', 'pd2u417','none','',500,'none','',500);
+	SetPanelState('u418', 'pd2u418','none','',500,'none','',500);
 
-SetWidgetRichText('u486', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">&nbsp;</span></p>');
-
-}
+SetWidgetRichText('u487', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">&nbsp;</span></p>');
 
 }
 
-var u421 = document.getElementById('u421');
-gv_vAlignTable['u421'] = 'center';
+}
+
 var u422 = document.getElementById('u422');
-
-if (bIE) u422.attachEvent("onmouseover", MouseOveru422);
-else u422.addEventListener("mouseover", MouseOveru422, true);
-function MouseOveru422(e)
-{
-windowEvent = e;
-
-if (!IsTrueMouseOver('u422',e)) return;
-if (true) {
-
-	SetPanelState('u417', 'pd3u417','none','',500,'none','',500);
-
-SetWidgetRichText('u486', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">Athletic Gold</span></p>');
-
-}
-
-}
-
+gv_vAlignTable['u422'] = 'center';
 var u423 = document.getElementById('u423');
-gv_vAlignTable['u423'] = 'center';
+
+if (bIE) u423.attachEvent("onmouseover", MouseOveru423);
+else u423.addEventListener("mouseover", MouseOveru423, true);
+function MouseOveru423(e)
+{
+windowEvent = e;
+
+if (!IsTrueMouseOver('u423',e)) return;
+if (true) {
+
+	SetPanelState('u418', 'pd3u418','none','',500,'none','',500);
+
+SetWidgetRichText('u487', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">Athletic Gold</span></p>');
+
+}
+
+}
+
 var u424 = document.getElementById('u424');
-
+gv_vAlignTable['u424'] = 'center';
 var u425 = document.getElementById('u425');
-gv_vAlignTable['u425'] = 'center';
-var u426 = document.getElementById('u426');
 
-u426.style.cursor = 'pointer';
-if (bIE) u426.attachEvent("onclick", Clicku426);
-else u426.addEventListener("click", Clicku426, true);
-function Clicku426(e)
+var u426 = document.getElementById('u426');
+gv_vAlignTable['u426'] = 'center';
+var u427 = document.getElementById('u427');
+
+u427.style.cursor = 'pointer';
+if (bIE) u427.attachEvent("onclick", Clicku427);
+else u427.addEventListener("click", Clicku427, true);
+function Clicku427(e)
 {
 windowEvent = e;
 
 
 if (true) {
 
-	SetPanelState('u417', 'pd3u417','none','',500,'none','',500);
+	SetPanelState('u418', 'pd3u418','none','',500,'none','',500);
 
 SetGlobalVariableValue('$colorCount', '' + (GetNum(GetGlobalVariableValue('$colorCount')) + GetNum(1)) + '');
 
-SetWidgetRichText('u485', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">' + (GetGlobalVariableValue('$colorCount')) + ' colors selected</span></p>');
+SetWidgetRichText('u486', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">' + (GetGlobalVariableValue('$colorCount')) + ' colors selected</span></p>');
 
 }
 
 }
 
-if (bIE) u426.attachEvent("onmouseout", MouseOutu426);
-else u426.addEventListener("mouseout", MouseOutu426, true);
-function MouseOutu426(e)
+if (bIE) u427.attachEvent("onmouseout", MouseOutu427);
+else u427.addEventListener("mouseout", MouseOutu427, true);
+function MouseOutu427(e)
 {
 windowEvent = e;
 
-if (!IsTrueMouseOut('u426',e)) return;
+if (!IsTrueMouseOut('u427',e)) return;
 if (true) {
 
-	SetPanelState('u417', 'pd0u417','none','',500,'none','',500);
+	SetPanelState('u418', 'pd0u418','none','',500,'none','',500);
 
-SetWidgetRichText('u486', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">&nbsp;</span></p>');
-
-}
+SetWidgetRichText('u487', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">&nbsp;</span></p>');
 
 }
 
-var u427 = document.getElementById('u427');
-gv_vAlignTable['u427'] = 'center';
+}
+
 var u428 = document.getElementById('u428');
+gv_vAlignTable['u428'] = 'center';
+var u610 = document.getElementById('u610');
 
-if (bIE) u428.attachEvent("onmouseover", MouseOveru428);
-else u428.addEventListener("mouseover", MouseOveru428, true);
-function MouseOveru428(e)
+if (bIE) u610.attachEvent("onmouseover", MouseOveru610);
+else u610.addEventListener("mouseover", MouseOveru610, true);
+function MouseOveru610(e)
 {
 windowEvent = e;
 
-if (!IsTrueMouseOver('u428',e)) return;
+if (!IsTrueMouseOver('u610',e)) return;
 if (true) {
 
-	SetPanelState('u417', 'pd1u417','none','',500,'none','',500);
+	SetPanelState('u605', 'pd3u605','none','',500,'none','',500);
 
-SetWidgetRichText('u486', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">Athletic Gold</span></p>');
-
-}
+SetWidgetRichText('u487', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">Royal</span></p>');
 
 }
 
-var u610 = document.getElementById('u610');
-gv_vAlignTable['u610'] = 'center';
+}
+
 var u430 = document.getElementById('u430');
-
+gv_vAlignTable['u430'] = 'center';
 var u431 = document.getElementById('u431');
 
 var u432 = document.getElementById('u432');
-gv_vAlignTable['u432'] = 'center';
-var u433 = document.getElementById('u433');
 
-u433.style.cursor = 'pointer';
-if (bIE) u433.attachEvent("onclick", Clicku433);
-else u433.addEventListener("click", Clicku433, true);
-function Clicku433(e)
+var u433 = document.getElementById('u433');
+gv_vAlignTable['u433'] = 'center';
+var u434 = document.getElementById('u434');
+
+u434.style.cursor = 'pointer';
+if (bIE) u434.attachEvent("onclick", Clicku434);
+else u434.addEventListener("click", Clicku434, true);
+function Clicku434(e)
 {
 windowEvent = e;
 
 
 if ((GetGlobalVariableValue('$colorCount')) == ('1')) {
 
-	SetPanelState('u430', 'pd1u430','none','',500,'none','',500);
+	SetPanelState('u431', 'pd1u431','none','',500,'none','',500);
 
 SetGlobalVariableValue('$colorCount', '' + (GetGlobalVariableValue('$colorCount') - GetNum(1)) + '');
 
-SetWidgetRichText('u485', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">' + (GetGlobalVariableValue('$colorCount')) + ' colors selected</span></p>');
+SetWidgetRichText('u486', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">' + (GetGlobalVariableValue('$colorCount')) + ' colors selected</span></p>');
 
 }
 
 }
 
-if (bIE) u433.attachEvent("onmouseout", MouseOutu433);
-else u433.addEventListener("mouseout", MouseOutu433, true);
-function MouseOutu433(e)
+if (bIE) u434.attachEvent("onmouseout", MouseOutu434);
+else u434.addEventListener("mouseout", MouseOutu434, true);
+function MouseOutu434(e)
 {
 windowEvent = e;
 
-if (!IsTrueMouseOut('u433',e)) return;
+if (!IsTrueMouseOut('u434',e)) return;
 if (true) {
 
-	SetPanelState('u430', 'pd2u430','none','',500,'none','',500);
+	SetPanelState('u431', 'pd2u431','none','',500,'none','',500);
 
-SetWidgetRichText('u486', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">&nbsp;</span></p>');
-
-}
+SetWidgetRichText('u487', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">&nbsp;</span></p>');
 
 }
 
-var u434 = document.getElementById('u434');
-gv_vAlignTable['u434'] = 'center';
+}
+
 var u435 = document.getElementById('u435');
-
-if (bIE) u435.attachEvent("onmouseover", MouseOveru435);
-else u435.addEventListener("mouseover", MouseOveru435, true);
-function MouseOveru435(e)
-{
-windowEvent = e;
-
-if (!IsTrueMouseOver('u435',e)) return;
-if (true) {
-
-	SetPanelState('u430', 'pd3u430','none','',500,'none','',500);
-
-SetWidgetRichText('u486', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">Tan</span></p>');
-
-}
-
-}
-
+gv_vAlignTable['u435'] = 'center';
 var u436 = document.getElementById('u436');
-gv_vAlignTable['u436'] = 'center';
+
+if (bIE) u436.attachEvent("onmouseover", MouseOveru436);
+else u436.addEventListener("mouseover", MouseOveru436, true);
+function MouseOveru436(e)
+{
+windowEvent = e;
+
+if (!IsTrueMouseOver('u436',e)) return;
+if (true) {
+
+	SetPanelState('u431', 'pd3u431','none','',500,'none','',500);
+
+SetWidgetRichText('u487', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">Tan</span></p>');
+
+}
+
+}
+
 var u437 = document.getElementById('u437');
-
+gv_vAlignTable['u437'] = 'center';
 var u438 = document.getElementById('u438');
-gv_vAlignTable['u438'] = 'center';
-var u439 = document.getElementById('u439');
 
-u439.style.cursor = 'pointer';
-if (bIE) u439.attachEvent("onclick", Clicku439);
-else u439.addEventListener("click", Clicku439, true);
-function Clicku439(e)
+var u439 = document.getElementById('u439');
+gv_vAlignTable['u439'] = 'center';
+var u440 = document.getElementById('u440');
+
+u440.style.cursor = 'pointer';
+if (bIE) u440.attachEvent("onclick", Clicku440);
+else u440.addEventListener("click", Clicku440, true);
+function Clicku440(e)
 {
 windowEvent = e;
 
 
 if (true) {
 
-	SetPanelState('u430', 'pd3u430','none','',500,'none','',500);
+	SetPanelState('u431', 'pd3u431','none','',500,'none','',500);
 
 SetGlobalVariableValue('$colorCount', '' + (GetNum(GetGlobalVariableValue('$colorCount')) + GetNum(1)) + '');
 
-SetWidgetRichText('u485', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">' + (GetGlobalVariableValue('$colorCount')) + ' colors selected</span></p>');
+SetWidgetRichText('u486', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">' + (GetGlobalVariableValue('$colorCount')) + ' colors selected</span></p>');
 
 }
 
 }
 
-if (bIE) u439.attachEvent("onmouseout", MouseOutu439);
-else u439.addEventListener("mouseout", MouseOutu439, true);
-function MouseOutu439(e)
+if (bIE) u440.attachEvent("onmouseout", MouseOutu440);
+else u440.addEventListener("mouseout", MouseOutu440, true);
+function MouseOutu440(e)
 {
 windowEvent = e;
 
-if (!IsTrueMouseOut('u439',e)) return;
+if (!IsTrueMouseOut('u440',e)) return;
 if (true) {
 
-	SetPanelState('u430', 'pd0u430','none','',500,'none','',500);
+	SetPanelState('u431', 'pd0u431','none','',500,'none','',500);
 
-SetWidgetRichText('u486', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">&nbsp;</span></p>');
-
-}
+SetWidgetRichText('u487', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">&nbsp;</span></p>');
 
 }
 
-var u440 = document.getElementById('u440');
-gv_vAlignTable['u440'] = 'center';
+}
+
 var u441 = document.getElementById('u441');
+gv_vAlignTable['u441'] = 'center';
+var u442 = document.getElementById('u442');
 
-if (bIE) u441.attachEvent("onmouseover", MouseOveru441);
-else u441.addEventListener("mouseover", MouseOveru441, true);
-function MouseOveru441(e)
+if (bIE) u442.attachEvent("onmouseover", MouseOveru442);
+else u442.addEventListener("mouseover", MouseOveru442, true);
+function MouseOveru442(e)
 {
 windowEvent = e;
 
-if (!IsTrueMouseOver('u441',e)) return;
+if (!IsTrueMouseOver('u442',e)) return;
 if (true) {
 
-	SetPanelState('u430', 'pd1u430','none','',500,'none','',500);
+	SetPanelState('u431', 'pd1u431','none','',500,'none','',500);
 
-SetWidgetRichText('u486', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">Tan</span></p>');
-
-}
+SetWidgetRichText('u487', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">Tan</span></p>');
 
 }
 
-var u442 = document.getElementById('u442');
-gv_vAlignTable['u442'] = 'center';
+}
+
 var u443 = document.getElementById('u443');
-
+gv_vAlignTable['u443'] = 'center';
 var u444 = document.getElementById('u444');
 
 var u445 = document.getElementById('u445');
-gv_vAlignTable['u445'] = 'center';
-var u446 = document.getElementById('u446');
 
-u446.style.cursor = 'pointer';
-if (bIE) u446.attachEvent("onclick", Clicku446);
-else u446.addEventListener("click", Clicku446, true);
-function Clicku446(e)
+var u446 = document.getElementById('u446');
+gv_vAlignTable['u446'] = 'center';
+var u447 = document.getElementById('u447');
+
+u447.style.cursor = 'pointer';
+if (bIE) u447.attachEvent("onclick", Clicku447);
+else u447.addEventListener("click", Clicku447, true);
+function Clicku447(e)
 {
 windowEvent = e;
 
 
 if (true) {
 
-	SetPanelState('u443', 'pd1u443','none','',500,'none','',500);
+	SetPanelState('u444', 'pd1u444','none','',500,'none','',500);
 
 SetGlobalVariableValue('$colorCount', '' + (GetGlobalVariableValue('$colorCount') - GetNum(1)) + '');
 
-SetWidgetRichText('u485', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">' + (GetGlobalVariableValue('$colorCount')) + ' colors selected</span></p>');
+SetWidgetRichText('u486', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">' + (GetGlobalVariableValue('$colorCount')) + ' colors selected</span></p>');
 
 }
 
 }
 
-if (bIE) u446.attachEvent("onmouseout", MouseOutu446);
-else u446.addEventListener("mouseout", MouseOutu446, true);
-function MouseOutu446(e)
+if (bIE) u447.attachEvent("onmouseout", MouseOutu447);
+else u447.addEventListener("mouseout", MouseOutu447, true);
+function MouseOutu447(e)
 {
 windowEvent = e;
 
-if (!IsTrueMouseOut('u446',e)) return;
+if (!IsTrueMouseOut('u447',e)) return;
 if (true) {
 
-	SetPanelState('u443', 'pd2u443','none','',500,'none','',500);
+	SetPanelState('u444', 'pd2u444','none','',500,'none','',500);
 
-SetWidgetRichText('u486', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">&nbsp;</span></p>');
-
-}
+SetWidgetRichText('u487', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">&nbsp;</span></p>');
 
 }
 
-var u447 = document.getElementById('u447');
-gv_vAlignTable['u447'] = 'center';
+}
+
 var u448 = document.getElementById('u448');
-
-if (bIE) u448.attachEvent("onmouseover", MouseOveru448);
-else u448.addEventListener("mouseover", MouseOveru448, true);
-function MouseOveru448(e)
-{
-windowEvent = e;
-
-if (!IsTrueMouseOver('u448',e)) return;
-if (true) {
-
-	SetPanelState('u443', 'pd3u443','none','',500,'none','',500);
-
-SetWidgetRichText('u486', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">Brown</span></p>');
-
-}
-
-}
-
+gv_vAlignTable['u448'] = 'center';
 var u449 = document.getElementById('u449');
-gv_vAlignTable['u449'] = 'center';
+
+if (bIE) u449.attachEvent("onmouseover", MouseOveru449);
+else u449.addEventListener("mouseover", MouseOveru449, true);
+function MouseOveru449(e)
+{
+windowEvent = e;
+
+if (!IsTrueMouseOver('u449',e)) return;
+if (true) {
+
+	SetPanelState('u444', 'pd3u444','none','',500,'none','',500);
+
+SetWidgetRichText('u487', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">Brown</span></p>');
+
+}
+
+}
+
 var u630 = document.getElementById('u630');
-
+gv_vAlignTable['u630'] = 'center';
 var u450 = document.getElementById('u450');
-
+gv_vAlignTable['u450'] = 'center';
 var u451 = document.getElementById('u451');
-gv_vAlignTable['u451'] = 'center';
-var u452 = document.getElementById('u452');
 
-u452.style.cursor = 'pointer';
-if (bIE) u452.attachEvent("onclick", Clicku452);
-else u452.addEventListener("click", Clicku452, true);
-function Clicku452(e)
+var u452 = document.getElementById('u452');
+gv_vAlignTable['u452'] = 'center';
+var u453 = document.getElementById('u453');
+
+u453.style.cursor = 'pointer';
+if (bIE) u453.attachEvent("onclick", Clicku453);
+else u453.addEventListener("click", Clicku453, true);
+function Clicku453(e)
 {
 windowEvent = e;
 
 
 if (true) {
 
-	SetPanelState('u443', 'pd3u443','none','',500,'none','',500);
+	SetPanelState('u444', 'pd3u444','none','',500,'none','',500);
 
 SetGlobalVariableValue('$colorCount', '' + (GetNum(GetGlobalVariableValue('$colorCount')) + GetNum(1)) + '');
 
-SetWidgetRichText('u485', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">' + (GetGlobalVariableValue('$colorCount')) + ' colors selected</span></p>');
+SetWidgetRichText('u486', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">' + (GetGlobalVariableValue('$colorCount')) + ' colors selected</span></p>');
 
 }
 
 }
 
-if (bIE) u452.attachEvent("onmouseout", MouseOutu452);
-else u452.addEventListener("mouseout", MouseOutu452, true);
-function MouseOutu452(e)
+if (bIE) u453.attachEvent("onmouseout", MouseOutu453);
+else u453.addEventListener("mouseout", MouseOutu453, true);
+function MouseOutu453(e)
 {
 windowEvent = e;
 
-if (!IsTrueMouseOut('u452',e)) return;
+if (!IsTrueMouseOut('u453',e)) return;
 if (true) {
 
-	SetPanelState('u443', 'pd0u443','none','',500,'none','',500);
+	SetPanelState('u444', 'pd0u444','none','',500,'none','',500);
 
-SetWidgetRichText('u486', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">&nbsp;</span></p>');
-
-}
+SetWidgetRichText('u487', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">&nbsp;</span></p>');
 
 }
 
-var u453 = document.getElementById('u453');
-gv_vAlignTable['u453'] = 'center';
+}
+
 var u454 = document.getElementById('u454');
+gv_vAlignTable['u454'] = 'center';
+var u455 = document.getElementById('u455');
 
-if (bIE) u454.attachEvent("onmouseover", MouseOveru454);
-else u454.addEventListener("mouseover", MouseOveru454, true);
-function MouseOveru454(e)
+if (bIE) u455.attachEvent("onmouseover", MouseOveru455);
+else u455.addEventListener("mouseover", MouseOveru455, true);
+function MouseOveru455(e)
 {
 windowEvent = e;
 
-if (!IsTrueMouseOver('u454',e)) return;
+if (!IsTrueMouseOver('u455',e)) return;
 if (true) {
 
-	SetPanelState('u443', 'pd1u443','none','',500,'none','',500);
+	SetPanelState('u444', 'pd1u444','none','',500,'none','',500);
 
-SetWidgetRichText('u486', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">Brown</span></p>');
-
-}
+SetWidgetRichText('u487', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">Brown</span></p>');
 
 }
 
-var u455 = document.getElementById('u455');
-gv_vAlignTable['u455'] = 'center';
+}
+
 var u456 = document.getElementById('u456');
-
+gv_vAlignTable['u456'] = 'center';
 var u457 = document.getElementById('u457');
 
 var u458 = document.getElementById('u458');
-gv_vAlignTable['u458'] = 'center';
+
 var u459 = document.getElementById('u459');
-
-u459.style.cursor = 'pointer';
-if (bIE) u459.attachEvent("onclick", Clicku459);
-else u459.addEventListener("click", Clicku459, true);
-function Clicku459(e)
-{
-windowEvent = e;
-
-
-if (true) {
-
-	SetPanelState('u456', 'pd1u456','none','',500,'none','',500);
-
-SetGlobalVariableValue('$colorCount', '' + (GetGlobalVariableValue('$colorCount') - GetNum(1)) + '');
-
-SetWidgetRichText('u485', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">' + (GetGlobalVariableValue('$colorCount')) + ' colors selected</span></p>');
-
-}
-
-}
-
-if (bIE) u459.attachEvent("onmouseout", MouseOutu459);
-else u459.addEventListener("mouseout", MouseOutu459, true);
-function MouseOutu459(e)
-{
-windowEvent = e;
-
-if (!IsTrueMouseOut('u459',e)) return;
-if (true) {
-
-	SetPanelState('u456', 'pd2u456','none','',500,'none','',500);
-
-SetWidgetRichText('u486', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">&nbsp;</span></p>');
-
-}
-
-}
-
+gv_vAlignTable['u459'] = 'center';
 var u640 = document.getElementById('u640');
-gv_vAlignTable['u640'] = 'center';
-var u149 = document.getElementById('u149');
 
-var u649 = document.getElementById('u649');
-gv_vAlignTable['u649'] = 'center';
-var u460 = document.getElementById('u460');
-gv_vAlignTable['u460'] = 'center';
-var u461 = document.getElementById('u461');
-
-if (bIE) u461.attachEvent("onmouseover", MouseOveru461);
-else u461.addEventListener("mouseover", MouseOveru461, true);
-function MouseOveru461(e)
-{
-windowEvent = e;
-
-if (!IsTrueMouseOver('u461',e)) return;
-if (true) {
-
-	SetPanelState('u456', 'pd3u456','none','',500,'none','',500);
-
-SetWidgetRichText('u486', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">Old Gold</span></p>');
-
-}
-
-}
-
-var u462 = document.getElementById('u462');
-gv_vAlignTable['u462'] = 'center';
-var u463 = document.getElementById('u463');
-
-var u464 = document.getElementById('u464');
-gv_vAlignTable['u464'] = 'center';
-var u465 = document.getElementById('u465');
-
-u465.style.cursor = 'pointer';
-if (bIE) u465.attachEvent("onclick", Clicku465);
-else u465.addEventListener("click", Clicku465, true);
-function Clicku465(e)
+u640.style.cursor = 'pointer';
+if (bIE) u640.attachEvent("onclick", Clicku640);
+else u640.addEventListener("click", Clicku640, true);
+function Clicku640(e)
 {
 windowEvent = e;
 
 
 if (true) {
 
-	SetPanelState('u456', 'pd3u456','none','',500,'none','',500);
+	SetPanelState('u631', 'pd3u631','none','',500,'none','',500);
 
 SetGlobalVariableValue('$colorCount', '' + (GetNum(GetGlobalVariableValue('$colorCount')) + GetNum(1)) + '');
 
-SetWidgetRichText('u485', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">' + (GetGlobalVariableValue('$colorCount')) + ' colors selected</span></p>');
+SetWidgetRichText('u486', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">' + (GetGlobalVariableValue('$colorCount')) + ' colors selected</span></p>');
 
 }
 
 }
 
-if (bIE) u465.attachEvent("onmouseout", MouseOutu465);
-else u465.addEventListener("mouseout", MouseOutu465, true);
-function MouseOutu465(e)
+if (bIE) u640.attachEvent("onmouseout", MouseOutu640);
+else u640.addEventListener("mouseout", MouseOutu640, true);
+function MouseOutu640(e)
 {
 windowEvent = e;
 
-if (!IsTrueMouseOut('u465',e)) return;
+if (!IsTrueMouseOut('u640',e)) return;
 if (true) {
 
-	SetPanelState('u456', 'pd0u456','none','',500,'none','',500);
+	SetPanelState('u631', 'pd0u631','none','',500,'none','',500);
 
-SetWidgetRichText('u486', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">&nbsp;</span></p>');
+SetWidgetRichText('u487', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">&nbsp;</span></p>');
+
+}
+
+}
+
+var u149 = document.getElementById('u149');
+
+u149.style.cursor = 'pointer';
+if (bIE) u149.attachEvent("onclick", Clicku149);
+else u149.addEventListener("click", Clicku149, true);
+function Clicku149(e)
+{
+windowEvent = e;
+
+
+if (true) {
+
+SetWidgetSelected('u149');
+}
+
+}
+
+if (bIE) u149.attachEvent("onmouseover", MouseOveru149);
+else u149.addEventListener("mouseover", MouseOveru149, true);
+function MouseOveru149(e)
+{
+windowEvent = e;
+
+if (!IsTrueMouseOver('u149',e)) return;
+if (true) {
+
+	SetPanelState('u146', 'pd1u146','none','',500,'none','',500);
+
+SetWidgetRichText('u62', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">Olive</span></p>');
 
 }
 
 }
 
+if (bIE) u149.attachEvent("onmouseout", MouseOutu149);
+else u149.addEventListener("mouseout", MouseOutu149, true);
+function MouseOutu149(e)
+{
+windowEvent = e;
+
+if (!IsTrueMouseOut('u149',e)) return;
+if (true) {
+
+	SetPanelState('u146', 'pd0u146','none','',500,'none','',500);
+
+SetWidgetRichText('u62', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">&nbsp;</span></p>');
+
+}
+
+}
+
+var u649 = document.getElementById('u649');
+
+if (bIE) u649.attachEvent("onmouseover", MouseOveru649);
+else u649.addEventListener("mouseover", MouseOveru649, true);
+function MouseOveru649(e)
+{
+windowEvent = e;
+
+if (!IsTrueMouseOver('u649',e)) return;
+if (true) {
+
+	SetPanelState('u644', 'pd3u644','none','',500,'none','',500);
+
+SetWidgetRichText('u487', '<p style="text-align:left;"><span style="font-family:Lucida Grande;font-size:11px;font-weight:normal;font-style:normal;text-decoration:none;color:#000000;">Turquoise</span></p>');
+
+}
+
+}
+
+var u460 = document.getElementById('u460');
+
+u460.style.cursor = 'pointer';
+if (bIE) u460.attachEvent("onclick", Clicku460);
+else u460.addEventListener("click", Clicku460, true);
+function Clicku460(e)
+{
+windowEvent = e;
+
+
+if (true) {
+
+	SetPanelState('u457', 'pd1u457','none','',500,'none','',500);
+
+SetGlobalVariableValue('$colorCount', '' + (GetGlobalVariableValue('$colorCount') - GetNum(1)) + '');
+
+SetWidgetRichText('u486', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">' + (GetGlobalVariableValue('$colorCount')) + ' colors selected</span></p>');
+
+}
+
+}
+
+if (bIE) u460.attachEvent("onmouseout", MouseOutu460);
+else u460.addEventListener("mouseout", MouseOutu460, true);
+function MouseOutu460(e)
+{
+windowEvent = e;
+
+if (!IsTrueMouseOut('u460',e)) return;
+if (true) {
+
+	SetPanelState('u457', 'pd2u457','none','',500,'none','',500);
+
+SetWidgetRichText('u487', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">&nbsp;</span></p>');
+
+}
+
+}
+
+var u461 = document.getElementById('u461');
+gv_vAlignTable['u461'] = 'center';
+var u462 = document.getElementById('u462');
+
+if (bIE) u462.attachEvent("onmouseover", MouseOveru462);
+else u462.addEventListener("mouseover", MouseOveru462, true);
+function MouseOveru462(e)
+{
+windowEvent = e;
+
+if (!IsTrueMouseOver('u462',e)) return;
+if (true) {
+
+	SetPanelState('u457', 'pd3u457','none','',500,'none','',500);
+
+SetWidgetRichText('u487', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">Old Gold</span></p>');
+
+}
+
+}
+
+var u463 = document.getElementById('u463');
+gv_vAlignTable['u463'] = 'center';
+var u464 = document.getElementById('u464');
+
+var u465 = document.getElementById('u465');
+gv_vAlignTable['u465'] = 'center';
 var u466 = document.getElementById('u466');
-gv_vAlignTable['u466'] = 'center';
-var u467 = document.getElementById('u467');
 
-if (bIE) u467.attachEvent("onmouseover", MouseOveru467);
-else u467.addEventListener("mouseover", MouseOveru467, true);
-function MouseOveru467(e)
+u466.style.cursor = 'pointer';
+if (bIE) u466.attachEvent("onclick", Clicku466);
+else u466.addEventListener("click", Clicku466, true);
+function Clicku466(e)
 {
 windowEvent = e;
 
-if (!IsTrueMouseOver('u467',e)) return;
+
 if (true) {
 
-	SetPanelState('u456', 'pd1u456','none','',500,'none','',500);
+	SetPanelState('u457', 'pd3u457','none','',500,'none','',500);
 
-SetWidgetRichText('u486', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">Old Gold</span></p>');
+SetGlobalVariableValue('$colorCount', '' + (GetNum(GetGlobalVariableValue('$colorCount')) + GetNum(1)) + '');
+
+SetWidgetRichText('u486', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">' + (GetGlobalVariableValue('$colorCount')) + ' colors selected</span></p>');
 
 }
 
 }
 
+if (bIE) u466.attachEvent("onmouseout", MouseOutu466);
+else u466.addEventListener("mouseout", MouseOutu466, true);
+function MouseOutu466(e)
+{
+windowEvent = e;
+
+if (!IsTrueMouseOut('u466',e)) return;
+if (true) {
+
+	SetPanelState('u457', 'pd0u457','none','',500,'none','',500);
+
+SetWidgetRichText('u487', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">&nbsp;</span></p>');
+
+}
+
+}
+
+var u467 = document.getElementById('u467');
+gv_vAlignTable['u467'] = 'center';
 var u468 = document.getElementById('u468');
-gv_vAlignTable['u468'] = 'center';
+
+if (bIE) u468.attachEvent("onmouseover", MouseOveru468);
+else u468.addEventListener("mouseover", MouseOveru468, true);
+function MouseOveru468(e)
+{
+windowEvent = e;
+
+if (!IsTrueMouseOver('u468',e)) return;
+if (true) {
+
+	SetPanelState('u457', 'pd1u457','none','',500,'none','',500);
+
+SetWidgetRichText('u487', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">Old Gold</span></p>');
+
+}
+
+}
+
 var u469 = document.getElementById('u469');
-
+gv_vAlignTable['u469'] = 'center';
 var u650 = document.getElementById('u650');
-
+gv_vAlignTable['u650'] = 'center';
 var u159 = document.getElementById('u159');
 
+u159.style.cursor = 'pointer';
+if (bIE) u159.attachEvent("onclick", Clicku159);
+else u159.addEventListener("click", Clicku159, true);
+function Clicku159(e)
+{
+windowEvent = e;
+
+
+if (true) {
+
+SetWidgetSelected('u159');
+}
+
+}
+
+if (bIE) u159.attachEvent("onmouseover", MouseOveru159);
+else u159.addEventListener("mouseover", MouseOveru159, true);
+function MouseOveru159(e)
+{
+windowEvent = e;
+
+if (!IsTrueMouseOver('u159',e)) return;
+if (true) {
+
+	SetPanelState('u156', 'pd1u156','none','',500,'none','',500);
+
+SetWidgetRichText('u62', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">Yellow</span></p>');
+
+}
+
+}
+
+if (bIE) u159.attachEvent("onmouseout", MouseOutu159);
+else u159.addEventListener("mouseout", MouseOutu159, true);
+function MouseOutu159(e)
+{
+windowEvent = e;
+
+if (!IsTrueMouseOut('u159',e)) return;
+if (true) {
+
+	SetPanelState('u156', 'pd0u156','none','',500,'none','',500);
+
+SetWidgetRichText('u62', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">&nbsp;</span></p>');
+
+}
+
+}
+
 var u45 = document.getElementById('u45');
-gv_vAlignTable['u45'] = 'top';
+
 var u470 = document.getElementById('u470');
 
 var u471 = document.getElementById('u471');
-gv_vAlignTable['u471'] = 'center';
-var u472 = document.getElementById('u472');
 
-u472.style.cursor = 'pointer';
-if (bIE) u472.attachEvent("onclick", Clicku472);
-else u472.addEventListener("click", Clicku472, true);
-function Clicku472(e)
+var u472 = document.getElementById('u472');
+gv_vAlignTable['u472'] = 'center';
+var u473 = document.getElementById('u473');
+
+u473.style.cursor = 'pointer';
+if (bIE) u473.attachEvent("onclick", Clicku473);
+else u473.addEventListener("click", Clicku473, true);
+function Clicku473(e)
 {
 windowEvent = e;
 
 
 if (true) {
 
-	SetPanelState('u469', 'pd1u469','none','',500,'none','',500);
+	SetPanelState('u470', 'pd1u470','none','',500,'none','',500);
 
 SetGlobalVariableValue('$colorCount', '' + (GetGlobalVariableValue('$colorCount') - GetNum(1)) + '');
 
-SetWidgetRichText('u485', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">' + (GetGlobalVariableValue('$colorCount')) + ' colors selected</span></p>');
+SetWidgetRichText('u486', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">' + (GetGlobalVariableValue('$colorCount')) + ' colors selected</span></p>');
 
 }
 
 }
 
-if (bIE) u472.attachEvent("onmouseout", MouseOutu472);
-else u472.addEventListener("mouseout", MouseOutu472, true);
-function MouseOutu472(e)
+if (bIE) u473.attachEvent("onmouseout", MouseOutu473);
+else u473.addEventListener("mouseout", MouseOutu473, true);
+function MouseOutu473(e)
 {
 windowEvent = e;
 
-if (!IsTrueMouseOut('u472',e)) return;
+if (!IsTrueMouseOut('u473',e)) return;
 if (true) {
 
-	SetPanelState('u469', 'pd2u469','none','',500,'none','',500);
+	SetPanelState('u470', 'pd2u470','none','',500,'none','',500);
 
-SetWidgetRichText('u486', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">&nbsp;</span></p>');
-
-}
+SetWidgetRichText('u487', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">&nbsp;</span></p>');
 
 }
 
-var u473 = document.getElementById('u473');
-gv_vAlignTable['u473'] = 'center';
+}
+
 var u474 = document.getElementById('u474');
-
-if (bIE) u474.attachEvent("onmouseover", MouseOveru474);
-else u474.addEventListener("mouseover", MouseOveru474, true);
-function MouseOveru474(e)
-{
-windowEvent = e;
-
-if (!IsTrueMouseOver('u474',e)) return;
-if (true) {
-
-	SetPanelState('u469', 'pd3u469','none','',500,'none','',500);
-
-SetWidgetRichText('u486', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">Olive</span></p>');
-
-}
-
-}
-
+gv_vAlignTable['u474'] = 'center';
 var u475 = document.getElementById('u475');
-gv_vAlignTable['u475'] = 'center';
+
+if (bIE) u475.attachEvent("onmouseover", MouseOveru475);
+else u475.addEventListener("mouseover", MouseOveru475, true);
+function MouseOveru475(e)
+{
+windowEvent = e;
+
+if (!IsTrueMouseOver('u475',e)) return;
+if (true) {
+
+	SetPanelState('u470', 'pd3u470','none','',500,'none','',500);
+
+SetWidgetRichText('u487', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">Olive</span></p>');
+
+}
+
+}
+
 var u476 = document.getElementById('u476');
-
+gv_vAlignTable['u476'] = 'center';
 var u477 = document.getElementById('u477');
-gv_vAlignTable['u477'] = 'center';
-var u478 = document.getElementById('u478');
 
-u478.style.cursor = 'pointer';
-if (bIE) u478.attachEvent("onclick", Clicku478);
-else u478.addEventListener("click", Clicku478, true);
-function Clicku478(e)
+var u478 = document.getElementById('u478');
+gv_vAlignTable['u478'] = 'center';
+var u479 = document.getElementById('u479');
+
+u479.style.cursor = 'pointer';
+if (bIE) u479.attachEvent("onclick", Clicku479);
+else u479.addEventListener("click", Clicku479, true);
+function Clicku479(e)
 {
 windowEvent = e;
 
 
 if (true) {
 
-	SetPanelState('u469', 'pd3u469','none','',500,'none','',500);
+	SetPanelState('u470', 'pd3u470','none','',500,'none','',500);
 
 SetGlobalVariableValue('$colorCount', '' + (GetNum(GetGlobalVariableValue('$colorCount')) + GetNum(1)) + '');
 
-SetWidgetRichText('u485', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">' + (GetGlobalVariableValue('$colorCount')) + ' colors selected</span></p>');
+SetWidgetRichText('u486', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">' + (GetGlobalVariableValue('$colorCount')) + ' colors selected</span></p>');
 
 }
 
 }
 
-if (bIE) u478.attachEvent("onmouseout", MouseOutu478);
-else u478.addEventListener("mouseout", MouseOutu478, true);
-function MouseOutu478(e)
+if (bIE) u479.attachEvent("onmouseout", MouseOutu479);
+else u479.addEventListener("mouseout", MouseOutu479, true);
+function MouseOutu479(e)
 {
 windowEvent = e;
 
-if (!IsTrueMouseOut('u478',e)) return;
+if (!IsTrueMouseOut('u479',e)) return;
 if (true) {
 
-	SetPanelState('u469', 'pd0u469','none','',500,'none','',500);
+	SetPanelState('u470', 'pd0u470','none','',500,'none','',500);
 
-SetWidgetRichText('u486', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">&nbsp;</span></p>');
-
-}
+SetWidgetRichText('u487', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">&nbsp;</span></p>');
 
 }
 
-var u479 = document.getElementById('u479');
-gv_vAlignTable['u479'] = 'center';
+}
+
 var u167 = document.getElementById('u167');
-gv_vAlignTable['u167'] = 'center';
+
 var u169 = document.getElementById('u169');
 
-var u480 = document.getElementById('u480');
-
-if (bIE) u480.attachEvent("onmouseover", MouseOveru480);
-else u480.addEventListener("mouseover", MouseOveru480, true);
-function MouseOveru480(e)
+u169.style.cursor = 'pointer';
+if (bIE) u169.attachEvent("onclick", Clicku169);
+else u169.addEventListener("click", Clicku169, true);
+function Clicku169(e)
 {
 windowEvent = e;
 
-if (!IsTrueMouseOver('u480',e)) return;
+
 if (true) {
 
-	SetPanelState('u469', 'pd1u469','none','',500,'none','',500);
+SetWidgetSelected('u169');
+}
 
-SetWidgetRichText('u486', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">Olive</span></p>');
+}
+
+if (bIE) u169.attachEvent("onmouseover", MouseOveru169);
+else u169.addEventListener("mouseover", MouseOveru169, true);
+function MouseOveru169(e)
+{
+windowEvent = e;
+
+if (!IsTrueMouseOver('u169',e)) return;
+if (true) {
+
+	SetPanelState('u166', 'pd1u166','none','',500,'none','',500);
+
+SetWidgetRichText('u62', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">Forest</span></p>');
 
 }
 
 }
 
+if (bIE) u169.attachEvent("onmouseout", MouseOutu169);
+else u169.addEventListener("mouseout", MouseOutu169, true);
+function MouseOutu169(e)
+{
+windowEvent = e;
+
+if (!IsTrueMouseOut('u169',e)) return;
+if (true) {
+
+	SetPanelState('u166', 'pd0u166','none','',500,'none','',500);
+
+SetWidgetRichText('u62', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">&nbsp;</span></p>');
+
+}
+
+}
+
+var u480 = document.getElementById('u480');
+gv_vAlignTable['u480'] = 'center';
 var u481 = document.getElementById('u481');
-gv_vAlignTable['u481'] = 'center';
-var u482 = document.getElementById('u482');
 
+if (bIE) u481.attachEvent("onmouseover", MouseOveru481);
+else u481.addEventListener("mouseover", MouseOveru481, true);
+function MouseOveru481(e)
+{
+windowEvent = e;
+
+if (!IsTrueMouseOver('u481',e)) return;
+if (true) {
+
+	SetPanelState('u470', 'pd1u470','none','',500,'none','',500);
+
+SetWidgetRichText('u487', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">Olive</span></p>');
+
+}
+
+}
+
+var u482 = document.getElementById('u482');
+gv_vAlignTable['u482'] = 'center';
 var u483 = document.getElementById('u483');
-gv_vAlignTable['u483'] = 'center';
+
 var u484 = document.getElementById('u484');
-gv_vAlignTable['u484'] = 'top';
+gv_vAlignTable['u484'] = 'center';
 var u485 = document.getElementById('u485');
 gv_vAlignTable['u485'] = 'top';
 var u486 = document.getElementById('u486');
 gv_vAlignTable['u486'] = 'top';
 var u487 = document.getElementById('u487');
-
+gv_vAlignTable['u487'] = 'top';
 var u488 = document.getElementById('u488');
 
 var u489 = document.getElementById('u489');
-gv_vAlignTable['u489'] = 'center';
-var u173 = document.getElementById('u173');
 
+var u173 = document.getElementById('u173');
+gv_vAlignTable['u173'] = 'center';
 var u174 = document.getElementById('u174');
 
-var u203 = document.getElementById('u203');
+u174.style.cursor = 'pointer';
+if (bIE) u174.attachEvent("onclick", Clicku174);
+else u174.addEventListener("click", Clicku174, true);
+function Clicku174(e)
+{
+windowEvent = e;
 
+
+if (true) {
+
+SetWidgetSelected('u174');
+}
+
+}
+
+if (bIE) u174.attachEvent("onmouseover", MouseOveru174);
+else u174.addEventListener("mouseover", MouseOveru174, true);
+function MouseOveru174(e)
+{
+windowEvent = e;
+
+if (!IsTrueMouseOver('u174',e)) return;
+if (true) {
+
+	SetPanelState('u171', 'pd1u171','none','',500,'none','',500);
+
+SetWidgetRichText('u62', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">Kelly</span></p>');
+
+}
+
+}
+
+if (bIE) u174.attachEvent("onmouseout", MouseOutu174);
+else u174.addEventListener("mouseout", MouseOutu174, true);
+function MouseOutu174(e)
+{
+windowEvent = e;
+
+if (!IsTrueMouseOut('u174',e)) return;
+if (true) {
+
+	SetPanelState('u171', 'pd0u171','none','',500,'none','',500);
+
+SetWidgetRichText('u62', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">&nbsp;</span></p>');
+
+}
+
+}
+
+var u203 = document.getElementById('u203');
+gv_vAlignTable['u203'] = 'center';
 var u204 = document.getElementById('u204');
+
+u204.style.cursor = 'pointer';
+if (bIE) u204.attachEvent("onclick", Clicku204);
+else u204.addEventListener("click", Clicku204, true);
+function Clicku204(e)
+{
+windowEvent = e;
+
+
+if (true) {
+
+SetWidgetSelected('u204');
+}
+
+}
+
+if (bIE) u204.attachEvent("onmouseover", MouseOveru204);
+else u204.addEventListener("mouseover", MouseOveru204, true);
+function MouseOveru204(e)
+{
+windowEvent = e;
+
+if (!IsTrueMouseOver('u204',e)) return;
+if (true) {
+
+	SetPanelState('u201', 'pd1u201','none','',500,'none','',500);
+
+SetWidgetRichText('u62', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">Blue</span></p>');
+
+}
+
+}
+
+if (bIE) u204.attachEvent("onmouseout", MouseOutu204);
+else u204.addEventListener("mouseout", MouseOutu204, true);
+function MouseOutu204(e)
+{
+windowEvent = e;
+
+if (!IsTrueMouseOut('u204',e)) return;
+if (true) {
+
+	SetPanelState('u201', 'pd0u201','none','',500,'none','',500);
+
+SetWidgetRichText('u62', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">&nbsp;</span></p>');
+
+}
+
+}
 
 var u205 = document.getElementById('u205');
 gv_vAlignTable['u205'] = 'center';
 var u206 = document.getElementById('u206');
 
-u206.style.cursor = 'pointer';
-if (bIE) u206.attachEvent("onclick", Clicku206);
-else u206.addEventListener("click", Clicku206, true);
-function Clicku206(e)
-{
-windowEvent = e;
-
-
-if (true) {
-
-SetWidgetSelected('u206');
-}
-
-}
-
-if (bIE) u206.attachEvent("onmouseover", MouseOveru206);
-else u206.addEventListener("mouseover", MouseOveru206, true);
-function MouseOveru206(e)
-{
-windowEvent = e;
-
-if (!IsTrueMouseOver('u206',e)) return;
-if (true) {
-
-	SetPanelState('u203', 'pd1u203','none','',500,'none','',500);
-
-SetWidgetRichText('u59', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">Light Blue</span></p>');
-
-}
-
-}
-
-if (bIE) u206.attachEvent("onmouseout", MouseOutu206);
-else u206.addEventListener("mouseout", MouseOutu206, true);
-function MouseOutu206(e)
-{
-windowEvent = e;
-
-if (!IsTrueMouseOut('u206',e)) return;
-if (true) {
-
-	SetPanelState('u203', 'pd0u203','none','',500,'none','',500);
-
-SetWidgetRichText('u59', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">&nbsp;</span></p>');
-
-}
-
-}
-
 var u179 = document.getElementById('u179');
 
-var u208 = document.getElementById('u208');
+u179.style.cursor = 'pointer';
+if (bIE) u179.attachEvent("onclick", Clicku179);
+else u179.addEventListener("click", Clicku179, true);
+function Clicku179(e)
+{
+windowEvent = e;
 
+
+if (true) {
+
+SetWidgetSelected('u179');
+}
+
+}
+
+if (bIE) u179.attachEvent("onmouseover", MouseOveru179);
+else u179.addEventListener("mouseover", MouseOveru179, true);
+function MouseOveru179(e)
+{
+windowEvent = e;
+
+if (!IsTrueMouseOver('u179',e)) return;
+if (true) {
+
+	SetPanelState('u176', 'pd1u176','none','',500,'none','',500);
+
+SetWidgetRichText('u62', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">Teal</span></p>');
+
+}
+
+}
+
+if (bIE) u179.attachEvent("onmouseout", MouseOutu179);
+else u179.addEventListener("mouseout", MouseOutu179, true);
+function MouseOutu179(e)
+{
+windowEvent = e;
+
+if (!IsTrueMouseOut('u179',e)) return;
+if (true) {
+
+	SetPanelState('u176', 'pd0u176','none','',500,'none','',500);
+
+SetWidgetRichText('u62', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">&nbsp;</span></p>');
+
+}
+
+}
+
+var u208 = document.getElementById('u208');
+gv_vAlignTable['u208'] = 'center';
 var u209 = document.getElementById('u209');
 
-var u300 = document.getElementById('u300');
+u209.style.cursor = 'pointer';
+if (bIE) u209.attachEvent("onclick", Clicku209);
+else u209.addEventListener("click", Clicku209, true);
+function Clicku209(e)
+{
+windowEvent = e;
 
+
+if (true) {
+
+SetWidgetSelected('u209');
+}
+
+}
+
+if (bIE) u209.attachEvent("onmouseover", MouseOveru209);
+else u209.addEventListener("mouseover", MouseOveru209, true);
+function MouseOveru209(e)
+{
+windowEvent = e;
+
+if (!IsTrueMouseOver('u209',e)) return;
+if (true) {
+
+	SetPanelState('u206', 'pd1u206','none','',500,'none','',500);
+
+SetWidgetRichText('u62', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">Light Blue</span></p>');
+
+}
+
+}
+
+if (bIE) u209.attachEvent("onmouseout", MouseOutu209);
+else u209.addEventListener("mouseout", MouseOutu209, true);
+function MouseOutu209(e)
+{
+windowEvent = e;
+
+if (!IsTrueMouseOut('u209',e)) return;
+if (true) {
+
+	SetPanelState('u206', 'pd0u206','none','',500,'none','',500);
+
+SetWidgetRichText('u62', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">&nbsp;</span></p>');
+
+}
+
+}
+
+var u300 = document.getElementById('u300');
+gv_vAlignTable['u300'] = 'center';
 var u301 = document.getElementById('u301');
 
 var u302 = document.getElementById('u302');
-gv_vAlignTable['u302'] = 'center';
-var u303 = document.getElementById('u303');
 
-u303.style.cursor = 'pointer';
-if (bIE) u303.attachEvent("onclick", Clicku303);
-else u303.addEventListener("click", Clicku303, true);
-function Clicku303(e)
+var u303 = document.getElementById('u303');
+gv_vAlignTable['u303'] = 'center';
+var u304 = document.getElementById('u304');
+
+u304.style.cursor = 'pointer';
+if (bIE) u304.attachEvent("onclick", Clicku304);
+else u304.addEventListener("click", Clicku304, true);
+function Clicku304(e)
 {
 windowEvent = e;
 
 
 if (true) {
 
-	SetPanelState('u300', 'pd1u300','none','',500,'none','',500);
+	SetPanelState('u301', 'pd1u301','none','',500,'none','',500);
 
 SetGlobalVariableValue('$colorCount', '' + (GetGlobalVariableValue('$colorCount') - GetNum(1)) + '');
 
-SetWidgetRichText('u485', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">' + (GetGlobalVariableValue('$colorCount')) + ' colors selected</span></p>');
+SetWidgetRichText('u486', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">' + (GetGlobalVariableValue('$colorCount')) + ' colors selected</span></p>');
 
 }
 
 }
 
-if (bIE) u303.attachEvent("onmouseout", MouseOutu303);
-else u303.addEventListener("mouseout", MouseOutu303, true);
-function MouseOutu303(e)
+if (bIE) u304.attachEvent("onmouseout", MouseOutu304);
+else u304.addEventListener("mouseout", MouseOutu304, true);
+function MouseOutu304(e)
 {
 windowEvent = e;
 
-if (!IsTrueMouseOut('u303',e)) return;
+if (!IsTrueMouseOut('u304',e)) return;
 if (true) {
 
-	SetPanelState('u300', 'pd2u300','none','',500,'none','',500);
+	SetPanelState('u301', 'pd2u301','none','',500,'none','',500);
 
-SetWidgetRichText('u486', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">&nbsp;</span></p>');
-
-}
+SetWidgetRichText('u487', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">&nbsp;</span></p>');
 
 }
 
-var u304 = document.getElementById('u304');
-gv_vAlignTable['u304'] = 'center';
+}
+
 var u305 = document.getElementById('u305');
-
-if (bIE) u305.attachEvent("onmouseover", MouseOveru305);
-else u305.addEventListener("mouseover", MouseOveru305, true);
-function MouseOveru305(e)
-{
-windowEvent = e;
-
-if (!IsTrueMouseOver('u305',e)) return;
-if (true) {
-
-	SetPanelState('u300', 'pd3u300','none','',500,'none','',500);
-
-SetWidgetRichText('u486', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">Cardinal</span></p>');
-
-}
-
-}
-
+gv_vAlignTable['u305'] = 'center';
 var u306 = document.getElementById('u306');
-gv_vAlignTable['u306'] = 'center';
+
+if (bIE) u306.attachEvent("onmouseover", MouseOveru306);
+else u306.addEventListener("mouseover", MouseOveru306, true);
+function MouseOveru306(e)
+{
+windowEvent = e;
+
+if (!IsTrueMouseOver('u306',e)) return;
+if (true) {
+
+	SetPanelState('u301', 'pd3u301','none','',500,'none','',500);
+
+SetWidgetRichText('u487', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">Cardinal</span></p>');
+
+}
+
+}
+
 var u307 = document.getElementById('u307');
-
+gv_vAlignTable['u307'] = 'center';
 var u308 = document.getElementById('u308');
-gv_vAlignTable['u308'] = 'center';
+
 var u309 = document.getElementById('u309');
-
-u309.style.cursor = 'pointer';
-if (bIE) u309.attachEvent("onclick", Clicku309);
-else u309.addEventListener("click", Clicku309, true);
-function Clicku309(e)
-{
-windowEvent = e;
-
-
-if (true) {
-
-	SetPanelState('u300', 'pd3u300','none','',500,'none','',500);
-
-SetGlobalVariableValue('$colorCount', '' + (GetNum(GetGlobalVariableValue('$colorCount')) + GetNum(1)) + '');
-
-SetWidgetRichText('u485', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">' + (GetGlobalVariableValue('$colorCount')) + ' colors selected</span></p>');
-
-}
-
-}
-
-if (bIE) u309.attachEvent("onmouseout", MouseOutu309);
-else u309.addEventListener("mouseout", MouseOutu309, true);
-function MouseOutu309(e)
-{
-windowEvent = e;
-
-if (!IsTrueMouseOut('u309',e)) return;
-if (true) {
-
-	SetPanelState('u300', 'pd0u300','none','',500,'none','',500);
-
-SetWidgetRichText('u486', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">&nbsp;</span></p>');
-
-}
-
-}
-
+gv_vAlignTable['u309'] = 'center';
 var u497 = document.getElementById('u497');
-gv_vAlignTable['u497'] = 'center';
-var u498 = document.getElementById('u498');
 
-if (bIE) u498.attachEvent("onmouseover", MouseOveru498);
-else u498.addEventListener("mouseover", MouseOveru498, true);
-function MouseOveru498(e)
-{
-windowEvent = e;
-
-if (!IsTrueMouseOver('u498',e)) return;
-if (true) {
-
-	SetPanelState('u487', 'pd1u487','none','',500,'none','',500);
-
-SetWidgetRichText('u486', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;"> Gold</span></p>');
-
-}
-
-}
-
-var u499 = document.getElementById('u499');
-gv_vAlignTable['u499'] = 'center';
-var u504 = document.getElementById('u504');
-gv_vAlignTable['u504'] = 'center';
-var u505 = document.getElementById('u505');
-
-if (bIE) u505.attachEvent("onmouseover", MouseOveru505);
-else u505.addEventListener("mouseover", MouseOveru505, true);
-function MouseOveru505(e)
-{
-windowEvent = e;
-
-if (!IsTrueMouseOver('u505',e)) return;
-if (true) {
-
-	SetPanelState('u500', 'pd3u500','none','',500,'none','',500);
-
-SetWidgetRichText('u486', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">Yellow</span></p>');
-
-}
-
-}
-
-var u506 = document.getElementById('u506');
-gv_vAlignTable['u506'] = 'center';
-var u507 = document.getElementById('u507');
-
-var u508 = document.getElementById('u508');
-gv_vAlignTable['u508'] = 'center';
-var u509 = document.getElementById('u509');
-
-u509.style.cursor = 'pointer';
-if (bIE) u509.attachEvent("onclick", Clicku509);
-else u509.addEventListener("click", Clicku509, true);
-function Clicku509(e)
+u497.style.cursor = 'pointer';
+if (bIE) u497.attachEvent("onclick", Clicku497);
+else u497.addEventListener("click", Clicku497, true);
+function Clicku497(e)
 {
 windowEvent = e;
 
 
 if (true) {
 
-	SetPanelState('u500', 'pd3u500','none','',500,'none','',500);
+	SetPanelState('u488', 'pd3u488','none','',500,'none','',500);
 
 SetGlobalVariableValue('$colorCount', '' + (GetNum(GetGlobalVariableValue('$colorCount')) + GetNum(1)) + '');
 
-SetWidgetRichText('u485', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">' + (GetGlobalVariableValue('$colorCount')) + ' colors selected</span></p>');
+SetWidgetRichText('u486', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">' + (GetGlobalVariableValue('$colorCount')) + ' colors selected</span></p>');
 
 }
 
 }
 
-if (bIE) u509.attachEvent("onmouseout", MouseOutu509);
-else u509.addEventListener("mouseout", MouseOutu509, true);
-function MouseOutu509(e)
+if (bIE) u497.attachEvent("onmouseout", MouseOutu497);
+else u497.addEventListener("mouseout", MouseOutu497, true);
+function MouseOutu497(e)
 {
 windowEvent = e;
 
-if (!IsTrueMouseOut('u509',e)) return;
+if (!IsTrueMouseOut('u497',e)) return;
 if (true) {
 
-	SetPanelState('u500', 'pd0u500','none','',500,'none','',500);
+	SetPanelState('u488', 'pd0u488','none','',500,'none','',500);
 
-SetWidgetRichText('u486', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">&nbsp;</span></p>');
+SetWidgetRichText('u487', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">&nbsp;</span></p>');
+
+}
+
+}
+
+var u498 = document.getElementById('u498');
+gv_vAlignTable['u498'] = 'center';
+var u499 = document.getElementById('u499');
+
+if (bIE) u499.attachEvent("onmouseover", MouseOveru499);
+else u499.addEventListener("mouseover", MouseOveru499, true);
+function MouseOveru499(e)
+{
+windowEvent = e;
+
+if (!IsTrueMouseOver('u499',e)) return;
+if (true) {
+
+	SetPanelState('u488', 'pd1u488','none','',500,'none','',500);
+
+SetWidgetRichText('u487', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;"> Gold</span></p>');
 
 }
 
 }
 
+var u504 = document.getElementById('u504');
+
+u504.style.cursor = 'pointer';
+if (bIE) u504.attachEvent("onclick", Clicku504);
+else u504.addEventListener("click", Clicku504, true);
+function Clicku504(e)
+{
+windowEvent = e;
+
+
+if (true) {
+
+	SetPanelState('u501', 'pd1u501','none','',500,'none','',500);
+
+SetGlobalVariableValue('$colorCount', '' + (GetGlobalVariableValue('$colorCount') - GetNum(1)) + '');
+
+SetWidgetRichText('u486', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">' + (GetGlobalVariableValue('$colorCount')) + ' colors selected</span></p>');
+
+}
+
+}
+
+if (bIE) u504.attachEvent("onmouseout", MouseOutu504);
+else u504.addEventListener("mouseout", MouseOutu504, true);
+function MouseOutu504(e)
+{
+windowEvent = e;
+
+if (!IsTrueMouseOut('u504',e)) return;
+if (true) {
+
+	SetPanelState('u501', 'pd2u501','none','',500,'none','',500);
+
+SetWidgetRichText('u487', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">&nbsp;</span></p>');
+
+}
+
+}
+
+var u505 = document.getElementById('u505');
+gv_vAlignTable['u505'] = 'center';
+var u506 = document.getElementById('u506');
+
+if (bIE) u506.attachEvent("onmouseover", MouseOveru506);
+else u506.addEventListener("mouseover", MouseOveru506, true);
+function MouseOveru506(e)
+{
+windowEvent = e;
+
+if (!IsTrueMouseOver('u506',e)) return;
+if (true) {
+
+	SetPanelState('u501', 'pd3u501','none','',500,'none','',500);
+
+SetWidgetRichText('u487', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">Yellow</span></p>');
+
+}
+
+}
+
+var u507 = document.getElementById('u507');
+gv_vAlignTable['u507'] = 'center';
+var u508 = document.getElementById('u508');
+
+var u509 = document.getElementById('u509');
+gv_vAlignTable['u509'] = 'center';
 var u189 = document.getElementById('u189');
 
-var u310 = document.getElementById('u310');
-gv_vAlignTable['u310'] = 'center';
-var u311 = document.getElementById('u311');
-
-if (bIE) u311.attachEvent("onmouseover", MouseOveru311);
-else u311.addEventListener("mouseover", MouseOveru311, true);
-function MouseOveru311(e)
+u189.style.cursor = 'pointer';
+if (bIE) u189.attachEvent("onclick", Clicku189);
+else u189.addEventListener("click", Clicku189, true);
+function Clicku189(e)
 {
 windowEvent = e;
 
-if (!IsTrueMouseOver('u311',e)) return;
+
 if (true) {
 
-	SetPanelState('u300', 'pd1u300','none','',500,'none','',500);
+SetWidgetSelected('u189');
+}
 
-SetWidgetRichText('u486', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">Cardinal</span></p>');
+}
+
+if (bIE) u189.attachEvent("onmouseover", MouseOveru189);
+else u189.addEventListener("mouseover", MouseOveru189, true);
+function MouseOveru189(e)
+{
+windowEvent = e;
+
+if (!IsTrueMouseOver('u189',e)) return;
+if (true) {
+
+	SetPanelState('u186', 'pd1u186','none','',500,'none','',500);
+
+SetWidgetRichText('u62', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">Lime</span></p>');
 
 }
 
 }
 
+if (bIE) u189.attachEvent("onmouseout", MouseOutu189);
+else u189.addEventListener("mouseout", MouseOutu189, true);
+function MouseOutu189(e)
+{
+windowEvent = e;
+
+if (!IsTrueMouseOut('u189',e)) return;
+if (true) {
+
+	SetPanelState('u186', 'pd0u186','none','',500,'none','',500);
+
+SetWidgetRichText('u62', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">&nbsp;</span></p>');
+
+}
+
+}
+
+var u310 = document.getElementById('u310');
+
+u310.style.cursor = 'pointer';
+if (bIE) u310.attachEvent("onclick", Clicku310);
+else u310.addEventListener("click", Clicku310, true);
+function Clicku310(e)
+{
+windowEvent = e;
+
+
+if (true) {
+
+	SetPanelState('u301', 'pd3u301','none','',500,'none','',500);
+
+SetGlobalVariableValue('$colorCount', '' + (GetNum(GetGlobalVariableValue('$colorCount')) + GetNum(1)) + '');
+
+SetWidgetRichText('u486', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">' + (GetGlobalVariableValue('$colorCount')) + ' colors selected</span></p>');
+
+}
+
+}
+
+if (bIE) u310.attachEvent("onmouseout", MouseOutu310);
+else u310.addEventListener("mouseout", MouseOutu310, true);
+function MouseOutu310(e)
+{
+windowEvent = e;
+
+if (!IsTrueMouseOut('u310',e)) return;
+if (true) {
+
+	SetPanelState('u301', 'pd0u301','none','',500,'none','',500);
+
+SetWidgetRichText('u487', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">&nbsp;</span></p>');
+
+}
+
+}
+
+var u311 = document.getElementById('u311');
+gv_vAlignTable['u311'] = 'center';
 var u312 = document.getElementById('u312');
-gv_vAlignTable['u312'] = 'center';
-var u313 = document.getElementById('u313');
 
+if (bIE) u312.attachEvent("onmouseover", MouseOveru312);
+else u312.addEventListener("mouseover", MouseOveru312, true);
+function MouseOveru312(e)
+{
+windowEvent = e;
+
+if (!IsTrueMouseOver('u312',e)) return;
+if (true) {
+
+	SetPanelState('u301', 'pd1u301','none','',500,'none','',500);
+
+SetWidgetRichText('u487', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">Cardinal</span></p>');
+
+}
+
+}
+
+var u313 = document.getElementById('u313');
+gv_vAlignTable['u313'] = 'center';
 var u314 = document.getElementById('u314');
 
 var u315 = document.getElementById('u315');
-gv_vAlignTable['u315'] = 'center';
-var u316 = document.getElementById('u316');
 
-u316.style.cursor = 'pointer';
-if (bIE) u316.attachEvent("onclick", Clicku316);
-else u316.addEventListener("click", Clicku316, true);
-function Clicku316(e)
+var u316 = document.getElementById('u316');
+gv_vAlignTable['u316'] = 'center';
+var u317 = document.getElementById('u317');
+
+u317.style.cursor = 'pointer';
+if (bIE) u317.attachEvent("onclick", Clicku317);
+else u317.addEventListener("click", Clicku317, true);
+function Clicku317(e)
 {
 windowEvent = e;
 
 
 if (true) {
 
-	SetPanelState('u313', 'pd1u313','none','',500,'none','',500);
+	SetPanelState('u314', 'pd1u314','none','',500,'none','',500);
 
 SetGlobalVariableValue('$colorCount', '' + (GetGlobalVariableValue('$colorCount') - GetNum(1)) + '');
 
-SetWidgetRichText('u485', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">' + (GetGlobalVariableValue('$colorCount')) + ' colors selected</span></p>');
+SetWidgetRichText('u486', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">' + (GetGlobalVariableValue('$colorCount')) + ' colors selected</span></p>');
 
 }
 
 }
 
-if (bIE) u316.attachEvent("onmouseout", MouseOutu316);
-else u316.addEventListener("mouseout", MouseOutu316, true);
-function MouseOutu316(e)
+if (bIE) u317.attachEvent("onmouseout", MouseOutu317);
+else u317.addEventListener("mouseout", MouseOutu317, true);
+function MouseOutu317(e)
 {
 windowEvent = e;
 
-if (!IsTrueMouseOut('u316',e)) return;
+if (!IsTrueMouseOut('u317',e)) return;
 if (true) {
 
-	SetPanelState('u313', 'pd2u313','none','',500,'none','',500);
+	SetPanelState('u314', 'pd2u314','none','',500,'none','',500);
 
-SetWidgetRichText('u486', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">&nbsp;</span></p>');
-
-}
+SetWidgetRichText('u487', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">&nbsp;</span></p>');
 
 }
 
-var u317 = document.getElementById('u317');
-gv_vAlignTable['u317'] = 'center';
+}
+
 var u318 = document.getElementById('u318');
+gv_vAlignTable['u318'] = 'center';
+var u319 = document.getElementById('u319');
 
-if (bIE) u318.attachEvent("onmouseover", MouseOveru318);
-else u318.addEventListener("mouseover", MouseOveru318, true);
-function MouseOveru318(e)
+if (bIE) u319.attachEvent("onmouseover", MouseOveru319);
+else u319.addEventListener("mouseover", MouseOveru319, true);
+function MouseOveru319(e)
 {
 windowEvent = e;
 
-if (!IsTrueMouseOver('u318',e)) return;
+if (!IsTrueMouseOver('u319',e)) return;
 if (true) {
 
-	SetPanelState('u313', 'pd3u313','none','',500,'none','',500);
+	SetPanelState('u314', 'pd3u314','none','',500,'none','',500);
 
-SetWidgetRichText('u486', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">Red</span></p>');
-
-}
+SetWidgetRichText('u487', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">Red</span></p>');
 
 }
 
-var u319 = document.getElementById('u319');
-gv_vAlignTable['u319'] = 'center';
+}
+
 var u514 = document.getElementById('u514');
 
 var u515 = document.getElementById('u515');
-gv_vAlignTable['u515'] = 'center';
-var u516 = document.getElementById('u516');
 
-u516.style.cursor = 'pointer';
-if (bIE) u516.attachEvent("onclick", Clicku516);
-else u516.addEventListener("click", Clicku516, true);
-function Clicku516(e)
+var u516 = document.getElementById('u516');
+gv_vAlignTable['u516'] = 'center';
+var u517 = document.getElementById('u517');
+
+u517.style.cursor = 'pointer';
+if (bIE) u517.attachEvent("onclick", Clicku517);
+else u517.addEventListener("click", Clicku517, true);
+function Clicku517(e)
 {
 windowEvent = e;
 
 
 if (true) {
 
-	SetPanelState('u513', 'pd1u513','none','',500,'none','',500);
+	SetPanelState('u514', 'pd1u514','none','',500,'none','',500);
 
 SetGlobalVariableValue('$colorCount', '' + (GetGlobalVariableValue('$colorCount') - GetNum(1)) + '');
 
-SetWidgetRichText('u485', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">' + (GetGlobalVariableValue('$colorCount')) + ' colors selected</span></p>');
+SetWidgetRichText('u486', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">' + (GetGlobalVariableValue('$colorCount')) + ' colors selected</span></p>');
 
 }
 
 }
 
-if (bIE) u516.attachEvent("onmouseout", MouseOutu516);
-else u516.addEventListener("mouseout", MouseOutu516, true);
-function MouseOutu516(e)
+if (bIE) u517.attachEvent("onmouseout", MouseOutu517);
+else u517.addEventListener("mouseout", MouseOutu517, true);
+function MouseOutu517(e)
 {
 windowEvent = e;
 
-if (!IsTrueMouseOut('u516',e)) return;
+if (!IsTrueMouseOut('u517',e)) return;
 if (true) {
 
-	SetPanelState('u513', 'pd2u513','none','',500,'none','',500);
+	SetPanelState('u514', 'pd2u514','none','',500,'none','',500);
 
-SetWidgetRichText('u486', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">&nbsp;</span></p>');
-
-}
+SetWidgetRichText('u487', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">&nbsp;</span></p>');
 
 }
 
-var u517 = document.getElementById('u517');
-gv_vAlignTable['u517'] = 'center';
+}
+
 var u518 = document.getElementById('u518');
-
-if (bIE) u518.attachEvent("onmouseover", MouseOveru518);
-else u518.addEventListener("mouseover", MouseOveru518, true);
-function MouseOveru518(e)
-{
-windowEvent = e;
-
-if (!IsTrueMouseOver('u518',e)) return;
-if (true) {
-
-	SetPanelState('u513', 'pd3u513','none','',500,'none','',500);
-
-SetWidgetRichText('u486', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">Lemon</span></p>');
-
-}
-
-}
-
+gv_vAlignTable['u518'] = 'center';
 var u519 = document.getElementById('u519');
-gv_vAlignTable['u519'] = 'center';
-var u691 = document.getElementById('u691');
 
-u691.style.cursor = 'pointer';
-if (bIE) u691.attachEvent("onclick", Clicku691);
-else u691.addEventListener("click", Clicku691, true);
-function Clicku691(e)
+if (bIE) u519.attachEvent("onmouseover", MouseOveru519);
+else u519.addEventListener("mouseover", MouseOveru519, true);
+function MouseOveru519(e)
+{
+windowEvent = e;
+
+if (!IsTrueMouseOver('u519',e)) return;
+if (true) {
+
+	SetPanelState('u514', 'pd3u514','none','',500,'none','',500);
+
+SetWidgetRichText('u487', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">Lemon</span></p>');
+
+}
+
+}
+
+var u691 = document.getElementById('u691');
+gv_vAlignTable['u691'] = 'center';
+var u692 = document.getElementById('u692');
+
+u692.style.cursor = 'pointer';
+if (bIE) u692.attachEvent("onclick", Clicku692);
+else u692.addEventListener("click", Clicku692, true);
+function Clicku692(e)
 {
 windowEvent = e;
 
 
 if (true) {
 
-	SetPanelState('u682', 'pd3u682','none','',500,'none','',500);
+	SetPanelState('u683', 'pd3u683','none','',500,'none','',500);
 
 SetGlobalVariableValue('$colorCount', '' + (GetNum(GetGlobalVariableValue('$colorCount')) + GetNum(1)) + '');
 
-SetWidgetRichText('u485', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">' + (GetGlobalVariableValue('$colorCount')) + ' colors selected</span></p>');
+SetWidgetRichText('u486', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">' + (GetGlobalVariableValue('$colorCount')) + ' colors selected</span></p>');
 
 }
 
 }
 
-if (bIE) u691.attachEvent("onmouseout", MouseOutu691);
-else u691.addEventListener("mouseout", MouseOutu691, true);
-function MouseOutu691(e)
+if (bIE) u692.attachEvent("onmouseout", MouseOutu692);
+else u692.addEventListener("mouseout", MouseOutu692, true);
+function MouseOutu692(e)
 {
 windowEvent = e;
 
-if (!IsTrueMouseOut('u691',e)) return;
+if (!IsTrueMouseOut('u692',e)) return;
 if (true) {
 
-	SetPanelState('u682', 'pd0u682','none','',500,'none','',500);
+	SetPanelState('u683', 'pd0u683','none','',500,'none','',500);
 
-SetWidgetRichText('u486', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">&nbsp;</span></p>');
-
-}
+SetWidgetRichText('u487', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">&nbsp;</span></p>');
 
 }
 
-var u692 = document.getElementById('u692');
-gv_vAlignTable['u692'] = 'center';
+}
+
 var u693 = document.getElementById('u693');
+gv_vAlignTable['u693'] = 'center';
+var u694 = document.getElementById('u694');
 
-if (bIE) u693.attachEvent("onmouseover", MouseOveru693);
-else u693.addEventListener("mouseover", MouseOveru693, true);
-function MouseOveru693(e)
+if (bIE) u694.attachEvent("onmouseover", MouseOveru694);
+else u694.addEventListener("mouseover", MouseOveru694, true);
+function MouseOveru694(e)
 {
 windowEvent = e;
 
-if (!IsTrueMouseOver('u693',e)) return;
+if (!IsTrueMouseOver('u694',e)) return;
 if (true) {
 
-	SetPanelState('u682', 'pd1u682','none','',500,'none','',500);
+	SetPanelState('u683', 'pd1u683','none','',500,'none','',500);
 
-SetWidgetRichText('u486', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">Bright Purple</span></p>');
-
-}
+SetWidgetRichText('u487', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">Bright Purple</span></p>');
 
 }
 
-var u694 = document.getElementById('u694');
-gv_vAlignTable['u694'] = 'center';
+}
+
 var u695 = document.getElementById('u695');
-
+gv_vAlignTable['u695'] = 'center';
 var u696 = document.getElementById('u696');
 
 var u697 = document.getElementById('u697');
-gv_vAlignTable['u697'] = 'center';
-var u698 = document.getElementById('u698');
 
-u698.style.cursor = 'pointer';
-if (bIE) u698.attachEvent("onclick", Clicku698);
-else u698.addEventListener("click", Clicku698, true);
-function Clicku698(e)
+var u698 = document.getElementById('u698');
+gv_vAlignTable['u698'] = 'center';
+var u699 = document.getElementById('u699');
+
+u699.style.cursor = 'pointer';
+if (bIE) u699.attachEvent("onclick", Clicku699);
+else u699.addEventListener("click", Clicku699, true);
+function Clicku699(e)
 {
 windowEvent = e;
 
 
 if (true) {
 
-	SetPanelState('u695', 'pd1u695','none','',500,'none','',500);
+	SetPanelState('u696', 'pd1u696','none','',500,'none','',500);
 
 SetGlobalVariableValue('$colorCount', '' + (GetGlobalVariableValue('$colorCount') - GetNum(1)) + '');
 
-SetWidgetRichText('u485', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">' + (GetGlobalVariableValue('$colorCount')) + ' colors selected</span></p>');
+SetWidgetRichText('u486', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">' + (GetGlobalVariableValue('$colorCount')) + ' colors selected</span></p>');
 
 }
 
 }
 
-if (bIE) u698.attachEvent("onmouseout", MouseOutu698);
-else u698.addEventListener("mouseout", MouseOutu698, true);
-function MouseOutu698(e)
+if (bIE) u699.attachEvent("onmouseout", MouseOutu699);
+else u699.addEventListener("mouseout", MouseOutu699, true);
+function MouseOutu699(e)
 {
 windowEvent = e;
 
-if (!IsTrueMouseOut('u698',e)) return;
+if (!IsTrueMouseOut('u699',e)) return;
 if (true) {
 
-	SetPanelState('u695', 'pd2u695','none','',500,'none','',500);
+	SetPanelState('u696', 'pd2u696','none','',500,'none','',500);
 
-SetWidgetRichText('u486', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">&nbsp;</span></p>');
-
-}
+SetWidgetRichText('u487', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">&nbsp;</span></p>');
 
 }
 
-var u699 = document.getElementById('u699');
-gv_vAlignTable['u699'] = 'center';
+}
+
 var u320 = document.getElementById('u320');
-
+gv_vAlignTable['u320'] = 'center';
 var u321 = document.getElementById('u321');
-gv_vAlignTable['u321'] = 'center';
-var u322 = document.getElementById('u322');
 
-u322.style.cursor = 'pointer';
-if (bIE) u322.attachEvent("onclick", Clicku322);
-else u322.addEventListener("click", Clicku322, true);
-function Clicku322(e)
+var u322 = document.getElementById('u322');
+gv_vAlignTable['u322'] = 'center';
+var u323 = document.getElementById('u323');
+
+u323.style.cursor = 'pointer';
+if (bIE) u323.attachEvent("onclick", Clicku323);
+else u323.addEventListener("click", Clicku323, true);
+function Clicku323(e)
 {
 windowEvent = e;
 
 
 if (true) {
 
-	SetPanelState('u313', 'pd3u313','none','',500,'none','',500);
+	SetPanelState('u314', 'pd3u314','none','',500,'none','',500);
 
 SetGlobalVariableValue('$colorCount', '' + (GetNum(GetGlobalVariableValue('$colorCount')) + GetNum(1)) + '');
 
-SetWidgetRichText('u485', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">' + (GetGlobalVariableValue('$colorCount')) + ' colors selected</span></p>');
+SetWidgetRichText('u486', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">' + (GetGlobalVariableValue('$colorCount')) + ' colors selected</span></p>');
 
 }
 
 }
 
-if (bIE) u322.attachEvent("onmouseout", MouseOutu322);
-else u322.addEventListener("mouseout", MouseOutu322, true);
-function MouseOutu322(e)
+if (bIE) u323.attachEvent("onmouseout", MouseOutu323);
+else u323.addEventListener("mouseout", MouseOutu323, true);
+function MouseOutu323(e)
 {
 windowEvent = e;
 
-if (!IsTrueMouseOut('u322',e)) return;
+if (!IsTrueMouseOut('u323',e)) return;
 if (true) {
 
-	SetPanelState('u313', 'pd0u313','none','',500,'none','',500);
+	SetPanelState('u314', 'pd0u314','none','',500,'none','',500);
 
-SetWidgetRichText('u486', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">&nbsp;</span></p>');
-
-}
+SetWidgetRichText('u487', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">&nbsp;</span></p>');
 
 }
 
-var u323 = document.getElementById('u323');
-gv_vAlignTable['u323'] = 'center';
+}
+
 var u324 = document.getElementById('u324');
+gv_vAlignTable['u324'] = 'center';
+var u325 = document.getElementById('u325');
 
-if (bIE) u324.attachEvent("onmouseover", MouseOveru324);
-else u324.addEventListener("mouseover", MouseOveru324, true);
-function MouseOveru324(e)
+if (bIE) u325.attachEvent("onmouseover", MouseOveru325);
+else u325.addEventListener("mouseover", MouseOveru325, true);
+function MouseOveru325(e)
 {
 windowEvent = e;
 
-if (!IsTrueMouseOver('u324',e)) return;
+if (!IsTrueMouseOver('u325',e)) return;
 if (true) {
 
-	SetPanelState('u313', 'pd1u313','none','',500,'none','',500);
+	SetPanelState('u314', 'pd1u314','none','',500,'none','',500);
 
-SetWidgetRichText('u486', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">Red</span></p>');
-
-}
+SetWidgetRichText('u487', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">Red</span></p>');
 
 }
 
-var u325 = document.getElementById('u325');
-gv_vAlignTable['u325'] = 'center';
+}
+
 var u326 = document.getElementById('u326');
-
+gv_vAlignTable['u326'] = 'center';
 var u327 = document.getElementById('u327');
 
 var u328 = document.getElementById('u328');
-gv_vAlignTable['u328'] = 'center';
-var u329 = document.getElementById('u329');
 
-u329.style.cursor = 'pointer';
-if (bIE) u329.attachEvent("onclick", Clicku329);
-else u329.addEventListener("click", Clicku329, true);
-function Clicku329(e)
+var u329 = document.getElementById('u329');
+gv_vAlignTable['u329'] = 'center';
+var u524 = document.getElementById('u524');
+gv_vAlignTable['u524'] = 'center';
+var u330 = document.getElementById('u330');
+
+u330.style.cursor = 'pointer';
+if (bIE) u330.attachEvent("onclick", Clicku330);
+else u330.addEventListener("click", Clicku330, true);
+function Clicku330(e)
 {
 windowEvent = e;
 
 
 if (true) {
 
-	SetPanelState('u326', 'pd1u326','none','',500,'none','',500);
+	SetPanelState('u327', 'pd1u327','none','',500,'none','',500);
 
 SetGlobalVariableValue('$colorCount', '' + (GetGlobalVariableValue('$colorCount') - GetNum(1)) + '');
 
-SetWidgetRichText('u485', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">' + (GetGlobalVariableValue('$colorCount')) + ' colors selected</span></p>');
+SetWidgetRichText('u486', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">' + (GetGlobalVariableValue('$colorCount')) + ' colors selected</span></p>');
 
 }
 
 }
 
-if (bIE) u329.attachEvent("onmouseout", MouseOutu329);
-else u329.addEventListener("mouseout", MouseOutu329, true);
-function MouseOutu329(e)
+if (bIE) u330.attachEvent("onmouseout", MouseOutu330);
+else u330.addEventListener("mouseout", MouseOutu330, true);
+function MouseOutu330(e)
 {
 windowEvent = e;
 
-if (!IsTrueMouseOut('u329',e)) return;
+if (!IsTrueMouseOut('u330',e)) return;
 if (true) {
 
-	SetPanelState('u326', 'pd2u326','none','',500,'none','',500);
+	SetPanelState('u327', 'pd2u327','none','',500,'none','',500);
 
-SetWidgetRichText('u486', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">&nbsp;</span></p>');
-
-}
-
-}
-
-var u524 = document.getElementById('u524');
-
-if (bIE) u524.attachEvent("onmouseover", MouseOveru524);
-else u524.addEventListener("mouseover", MouseOveru524, true);
-function MouseOveru524(e)
-{
-windowEvent = e;
-
-if (!IsTrueMouseOver('u524',e)) return;
-if (true) {
-
-	SetPanelState('u513', 'pd1u513','none','',500,'none','',500);
-
-SetWidgetRichText('u486', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">Lemon</span></p>');
+SetWidgetRichText('u487', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">&nbsp;</span></p>');
 
 }
 
 }
 
-var u330 = document.getElementById('u330');
-gv_vAlignTable['u330'] = 'center';
 var u331 = document.getElementById('u331');
-
-if (bIE) u331.attachEvent("onmouseover", MouseOveru331);
-else u331.addEventListener("mouseover", MouseOveru331, true);
-function MouseOveru331(e)
-{
-windowEvent = e;
-
-if (!IsTrueMouseOver('u331',e)) return;
-if (true) {
-
-	SetPanelState('u326', 'pd3u326','none','',500,'none','',500);
-
-SetWidgetRichText('u486', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">Orange Red</span></p>');
-
-}
-
-}
-
+gv_vAlignTable['u331'] = 'center';
 var u332 = document.getElementById('u332');
-gv_vAlignTable['u332'] = 'center';
+
+if (bIE) u332.attachEvent("onmouseover", MouseOveru332);
+else u332.addEventListener("mouseover", MouseOveru332, true);
+function MouseOveru332(e)
+{
+windowEvent = e;
+
+if (!IsTrueMouseOver('u332',e)) return;
+if (true) {
+
+	SetPanelState('u327', 'pd3u327','none','',500,'none','',500);
+
+SetWidgetRichText('u487', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">Orange Red</span></p>');
+
+}
+
+}
+
 var u333 = document.getElementById('u333');
-
+gv_vAlignTable['u333'] = 'center';
 var u334 = document.getElementById('u334');
-gv_vAlignTable['u334'] = 'center';
-var u335 = document.getElementById('u335');
 
-u335.style.cursor = 'pointer';
-if (bIE) u335.attachEvent("onclick", Clicku335);
-else u335.addEventListener("click", Clicku335, true);
-function Clicku335(e)
+var u335 = document.getElementById('u335');
+gv_vAlignTable['u335'] = 'center';
+var u336 = document.getElementById('u336');
+
+u336.style.cursor = 'pointer';
+if (bIE) u336.attachEvent("onclick", Clicku336);
+else u336.addEventListener("click", Clicku336, true);
+function Clicku336(e)
 {
 windowEvent = e;
 
 
 if (true) {
 
-	SetPanelState('u326', 'pd3u326','none','',500,'none','',500);
+	SetPanelState('u327', 'pd3u327','none','',500,'none','',500);
 
 SetGlobalVariableValue('$colorCount', '' + (GetNum(GetGlobalVariableValue('$colorCount')) + GetNum(1)) + '');
 
-SetWidgetRichText('u485', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">' + (GetGlobalVariableValue('$colorCount')) + ' colors selected</span></p>');
+SetWidgetRichText('u486', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">' + (GetGlobalVariableValue('$colorCount')) + ' colors selected</span></p>');
 
 }
 
 }
 
-if (bIE) u335.attachEvent("onmouseout", MouseOutu335);
-else u335.addEventListener("mouseout", MouseOutu335, true);
-function MouseOutu335(e)
+if (bIE) u336.attachEvent("onmouseout", MouseOutu336);
+else u336.addEventListener("mouseout", MouseOutu336, true);
+function MouseOutu336(e)
 {
 windowEvent = e;
 
-if (!IsTrueMouseOut('u335',e)) return;
+if (!IsTrueMouseOut('u336',e)) return;
 if (true) {
 
-	SetPanelState('u326', 'pd0u326','none','',500,'none','',500);
+	SetPanelState('u327', 'pd0u327','none','',500,'none','',500);
 
-SetWidgetRichText('u486', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">&nbsp;</span></p>');
-
-}
+SetWidgetRichText('u487', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">&nbsp;</span></p>');
 
 }
 
-var u336 = document.getElementById('u336');
-gv_vAlignTable['u336'] = 'center';
+}
+
 var u337 = document.getElementById('u337');
+gv_vAlignTable['u337'] = 'center';
+var u338 = document.getElementById('u338');
 
-if (bIE) u337.attachEvent("onmouseover", MouseOveru337);
-else u337.addEventListener("mouseover", MouseOveru337, true);
-function MouseOveru337(e)
+if (bIE) u338.attachEvent("onmouseover", MouseOveru338);
+else u338.addEventListener("mouseover", MouseOveru338, true);
+function MouseOveru338(e)
 {
 windowEvent = e;
 
-if (!IsTrueMouseOver('u337',e)) return;
+if (!IsTrueMouseOver('u338',e)) return;
 if (true) {
 
-	SetPanelState('u326', 'pd1u326','none','',500,'none','',500);
+	SetPanelState('u327', 'pd1u327','none','',500,'none','',500);
 
-SetWidgetRichText('u486', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">Orange Red</span></p>');
-
-}
+SetWidgetRichText('u487', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">Orange Red</span></p>');
 
 }
 
-var u338 = document.getElementById('u338');
-gv_vAlignTable['u338'] = 'center';
+}
+
 var u339 = document.getElementById('u339');
-
+gv_vAlignTable['u339'] = 'center';
 var u534 = document.getElementById('u534');
-gv_vAlignTable['u534'] = 'center';
+
 var u180 = document.getElementById('u180');
 gv_vAlignTable['u180'] = 'center';
 var u181 = document.getElementById('u181');
 
-u181.style.cursor = 'pointer';
-if (bIE) u181.attachEvent("onclick", Clicku181);
-else u181.addEventListener("click", Clicku181, true);
-function Clicku181(e)
-{
-windowEvent = e;
-
-
-if (true) {
-
-SetWidgetSelected('u181');
-}
-
-}
-
-if (bIE) u181.attachEvent("onmouseover", MouseOveru181);
-else u181.addEventListener("mouseover", MouseOveru181, true);
-function MouseOveru181(e)
-{
-windowEvent = e;
-
-if (!IsTrueMouseOver('u181',e)) return;
-if (true) {
-
-	SetPanelState('u178', 'pd1u178','none','',500,'none','',500);
-
-SetWidgetRichText('u59', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">Green</span></p>');
-
-}
-
-}
-
-if (bIE) u181.attachEvent("onmouseout", MouseOutu181);
-else u181.addEventListener("mouseout", MouseOutu181, true);
-function MouseOutu181(e)
-{
-windowEvent = e;
-
-if (!IsTrueMouseOut('u181',e)) return;
-if (true) {
-
-	SetPanelState('u178', 'pd0u178','none','',500,'none','',500);
-
-SetWidgetRichText('u59', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">&nbsp;</span></p>');
-
-}
-
-}
-
 var u182 = document.getElementById('u182');
-gv_vAlignTable['u182'] = 'center';
-var u183 = document.getElementById('u183');
 
+var u183 = document.getElementById('u183');
+gv_vAlignTable['u183'] = 'center';
 var u184 = document.getElementById('u184');
+
+u184.style.cursor = 'pointer';
+if (bIE) u184.attachEvent("onclick", Clicku184);
+else u184.addEventListener("click", Clicku184, true);
+function Clicku184(e)
+{
+windowEvent = e;
+
+
+if (true) {
+
+SetWidgetSelected('u184');
+}
+
+}
+
+if (bIE) u184.attachEvent("onmouseover", MouseOveru184);
+else u184.addEventListener("mouseover", MouseOveru184, true);
+function MouseOveru184(e)
+{
+windowEvent = e;
+
+if (!IsTrueMouseOver('u184',e)) return;
+if (true) {
+
+	SetPanelState('u181', 'pd1u181','none','',500,'none','',500);
+
+SetWidgetRichText('u62', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">Green</span></p>');
+
+}
+
+}
+
+if (bIE) u184.attachEvent("onmouseout", MouseOutu184);
+else u184.addEventListener("mouseout", MouseOutu184, true);
+function MouseOutu184(e)
+{
+windowEvent = e;
+
+if (!IsTrueMouseOut('u184',e)) return;
+if (true) {
+
+	SetPanelState('u181', 'pd0u181','none','',500,'none','',500);
+
+SetWidgetRichText('u62', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">&nbsp;</span></p>');
+
+}
+
+}
 
 var u185 = document.getElementById('u185');
 gv_vAlignTable['u185'] = 'center';
 var u340 = document.getElementById('u340');
 
 var u341 = document.getElementById('u341');
-gv_vAlignTable['u341'] = 'center';
-var u342 = document.getElementById('u342');
 
-u342.style.cursor = 'pointer';
-if (bIE) u342.attachEvent("onclick", Clicku342);
-else u342.addEventListener("click", Clicku342, true);
-function Clicku342(e)
+var u342 = document.getElementById('u342');
+gv_vAlignTable['u342'] = 'center';
+var u343 = document.getElementById('u343');
+
+u343.style.cursor = 'pointer';
+if (bIE) u343.attachEvent("onclick", Clicku343);
+else u343.addEventListener("click", Clicku343, true);
+function Clicku343(e)
 {
 windowEvent = e;
 
 
 if (true) {
 
-	SetPanelState('u339', 'pd1u339','none','',500,'none','',500);
+	SetPanelState('u340', 'pd1u340','none','',500,'none','',500);
 
 SetGlobalVariableValue('$colorCount', '' + (GetGlobalVariableValue('$colorCount') - GetNum(1)) + '');
 
-SetWidgetRichText('u485', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">' + (GetGlobalVariableValue('$colorCount')) + ' colors selected</span></p>');
+SetWidgetRichText('u486', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">' + (GetGlobalVariableValue('$colorCount')) + ' colors selected</span></p>');
 
 }
 
 }
 
-if (bIE) u342.attachEvent("onmouseout", MouseOutu342);
-else u342.addEventListener("mouseout", MouseOutu342, true);
-function MouseOutu342(e)
+if (bIE) u343.attachEvent("onmouseout", MouseOutu343);
+else u343.addEventListener("mouseout", MouseOutu343, true);
+function MouseOutu343(e)
 {
 windowEvent = e;
 
-if (!IsTrueMouseOut('u342',e)) return;
+if (!IsTrueMouseOut('u343',e)) return;
 if (true) {
 
-	SetPanelState('u339', 'pd2u339','none','',500,'none','',500);
+	SetPanelState('u340', 'pd2u340','none','',500,'none','',500);
 
-SetWidgetRichText('u486', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">&nbsp;</span></p>');
-
-}
+SetWidgetRichText('u487', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">&nbsp;</span></p>');
 
 }
 
-var u343 = document.getElementById('u343');
-gv_vAlignTable['u343'] = 'center';
+}
+
 var u344 = document.getElementById('u344');
-
-if (bIE) u344.attachEvent("onmouseover", MouseOveru344);
-else u344.addEventListener("mouseover", MouseOveru344, true);
-function MouseOveru344(e)
-{
-windowEvent = e;
-
-if (!IsTrueMouseOver('u344',e)) return;
-if (true) {
-
-	SetPanelState('u339', 'pd3u339','none','',500,'none','',500);
-
-SetWidgetRichText('u486', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">Pink</span></p>');
-
-}
-
-}
-
+gv_vAlignTable['u344'] = 'center';
 var u345 = document.getElementById('u345');
-gv_vAlignTable['u345'] = 'center';
+
+if (bIE) u345.attachEvent("onmouseover", MouseOveru345);
+else u345.addEventListener("mouseover", MouseOveru345, true);
+function MouseOveru345(e)
+{
+windowEvent = e;
+
+if (!IsTrueMouseOver('u345',e)) return;
+if (true) {
+
+	SetPanelState('u340', 'pd3u340','none','',500,'none','',500);
+
+SetWidgetRichText('u487', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">Pink</span></p>');
+
+}
+
+}
+
 var u346 = document.getElementById('u346');
-
+gv_vAlignTable['u346'] = 'center';
 var u347 = document.getElementById('u347');
-gv_vAlignTable['u347'] = 'center';
+
 var u348 = document.getElementById('u348');
-
-u348.style.cursor = 'pointer';
-if (bIE) u348.attachEvent("onclick", Clicku348);
-else u348.addEventListener("click", Clicku348, true);
-function Clicku348(e)
-{
-windowEvent = e;
-
-
-if (true) {
-
-	SetPanelState('u339', 'pd3u339','none','',500,'none','',500);
-
-SetGlobalVariableValue('$colorCount', '' + (GetNum(GetGlobalVariableValue('$colorCount')) + GetNum(1)) + '');
-
-SetWidgetRichText('u485', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">' + (GetGlobalVariableValue('$colorCount')) + ' colors selected</span></p>');
-
-}
-
-}
-
-if (bIE) u348.attachEvent("onmouseout", MouseOutu348);
-else u348.addEventListener("mouseout", MouseOutu348, true);
-function MouseOutu348(e)
-{
-windowEvent = e;
-
-if (!IsTrueMouseOut('u348',e)) return;
-if (true) {
-
-	SetPanelState('u339', 'pd0u339','none','',500,'none','',500);
-
-SetWidgetRichText('u486', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">&nbsp;</span></p>');
-
-}
-
-}
-
+gv_vAlignTable['u348'] = 'center';
 var u349 = document.getElementById('u349');
-gv_vAlignTable['u349'] = 'center';
-var u701 = document.getElementById('u701');
-gv_vAlignTable['u701'] = 'center';
-var u702 = document.getElementById('u702');
 
-var u703 = document.getElementById('u703');
-gv_vAlignTable['u703'] = 'center';
-var u704 = document.getElementById('u704');
-
-u704.style.cursor = 'pointer';
-if (bIE) u704.attachEvent("onclick", Clicku704);
-else u704.addEventListener("click", Clicku704, true);
-function Clicku704(e)
+u349.style.cursor = 'pointer';
+if (bIE) u349.attachEvent("onclick", Clicku349);
+else u349.addEventListener("click", Clicku349, true);
+function Clicku349(e)
 {
 windowEvent = e;
 
 
 if (true) {
 
-	SetPanelState('u695', 'pd3u695','none','',500,'none','',500);
+	SetPanelState('u340', 'pd3u340','none','',500,'none','',500);
 
 SetGlobalVariableValue('$colorCount', '' + (GetNum(GetGlobalVariableValue('$colorCount')) + GetNum(1)) + '');
 
-SetWidgetRichText('u485', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">' + (GetGlobalVariableValue('$colorCount')) + ' colors selected</span></p>');
+SetWidgetRichText('u486', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">' + (GetGlobalVariableValue('$colorCount')) + ' colors selected</span></p>');
 
 }
 
 }
 
-if (bIE) u704.attachEvent("onmouseout", MouseOutu704);
-else u704.addEventListener("mouseout", MouseOutu704, true);
-function MouseOutu704(e)
+if (bIE) u349.attachEvent("onmouseout", MouseOutu349);
+else u349.addEventListener("mouseout", MouseOutu349, true);
+function MouseOutu349(e)
 {
 windowEvent = e;
 
-if (!IsTrueMouseOut('u704',e)) return;
+if (!IsTrueMouseOut('u349',e)) return;
 if (true) {
 
-	SetPanelState('u695', 'pd0u695','none','',500,'none','',500);
+	SetPanelState('u340', 'pd0u340','none','',500,'none','',500);
 
-SetWidgetRichText('u486', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">&nbsp;</span></p>');
+SetWidgetRichText('u487', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">&nbsp;</span></p>');
+
+}
+
+}
+
+var u701 = document.getElementById('u701');
+
+if (bIE) u701.attachEvent("onmouseover", MouseOveru701);
+else u701.addEventListener("mouseover", MouseOveru701, true);
+function MouseOveru701(e)
+{
+windowEvent = e;
+
+if (!IsTrueMouseOver('u701',e)) return;
+if (true) {
+
+	SetPanelState('u696', 'pd3u696','none','',500,'none','',500);
+
+SetWidgetRichText('u487', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">Maroon</span></p>');
 
 }
 
 }
 
+var u702 = document.getElementById('u702');
+gv_vAlignTable['u702'] = 'center';
+var u703 = document.getElementById('u703');
+
+var u704 = document.getElementById('u704');
+gv_vAlignTable['u704'] = 'center';
 var u705 = document.getElementById('u705');
-gv_vAlignTable['u705'] = 'center';
-var u706 = document.getElementById('u706');
 
-if (bIE) u706.attachEvent("onmouseover", MouseOveru706);
-else u706.addEventListener("mouseover", MouseOveru706, true);
-function MouseOveru706(e)
+u705.style.cursor = 'pointer';
+if (bIE) u705.attachEvent("onclick", Clicku705);
+else u705.addEventListener("click", Clicku705, true);
+function Clicku705(e)
 {
 windowEvent = e;
 
-if (!IsTrueMouseOver('u706',e)) return;
+
 if (true) {
 
-	SetPanelState('u695', 'pd1u695','none','',500,'none','',500);
+	SetPanelState('u696', 'pd3u696','none','',500,'none','',500);
 
-SetWidgetRichText('u486', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">Maroon</span></p>');
+SetGlobalVariableValue('$colorCount', '' + (GetNum(GetGlobalVariableValue('$colorCount')) + GetNum(1)) + '');
+
+SetWidgetRichText('u486', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">' + (GetGlobalVariableValue('$colorCount')) + ' colors selected</span></p>');
 
 }
 
 }
 
+if (bIE) u705.attachEvent("onmouseout", MouseOutu705);
+else u705.addEventListener("mouseout", MouseOutu705, true);
+function MouseOutu705(e)
+{
+windowEvent = e;
+
+if (!IsTrueMouseOut('u705',e)) return;
+if (true) {
+
+	SetPanelState('u696', 'pd0u696','none','',500,'none','',500);
+
+SetWidgetRichText('u487', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">&nbsp;</span></p>');
+
+}
+
+}
+
+var u706 = document.getElementById('u706');
+gv_vAlignTable['u706'] = 'center';
 var u707 = document.getElementById('u707');
-gv_vAlignTable['u707'] = 'center';
+
+if (bIE) u707.attachEvent("onmouseover", MouseOveru707);
+else u707.addEventListener("mouseover", MouseOveru707, true);
+function MouseOveru707(e)
+{
+windowEvent = e;
+
+if (!IsTrueMouseOver('u707',e)) return;
+if (true) {
+
+	SetPanelState('u696', 'pd1u696','none','',500,'none','',500);
+
+SetWidgetRichText('u487', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">Maroon</span></p>');
+
+}
+
+}
+
 var u708 = document.getElementById('u708');
-gv_vAlignTable['u708'] = 'top';
+gv_vAlignTable['u708'] = 'center';
 var u709 = document.getElementById('u709');
 gv_vAlignTable['u709'] = 'top';
 var u700 = document.getElementById('u700');
-
-if (bIE) u700.attachEvent("onmouseover", MouseOveru700);
-else u700.addEventListener("mouseover", MouseOveru700, true);
-function MouseOveru700(e)
-{
-windowEvent = e;
-
-if (!IsTrueMouseOver('u700',e)) return;
-if (true) {
-
-	SetPanelState('u695', 'pd3u695','none','',500,'none','',500);
-
-SetWidgetRichText('u486', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">Maroon</span></p>');
-
-}
-
-}
-
+gv_vAlignTable['u700'] = 'center';
 var u350 = document.getElementById('u350');
+gv_vAlignTable['u350'] = 'center';
+var u351 = document.getElementById('u351');
 
-if (bIE) u350.attachEvent("onmouseover", MouseOveru350);
-else u350.addEventListener("mouseover", MouseOveru350, true);
-function MouseOveru350(e)
+if (bIE) u351.attachEvent("onmouseover", MouseOveru351);
+else u351.addEventListener("mouseover", MouseOveru351, true);
+function MouseOveru351(e)
 {
 windowEvent = e;
 
-if (!IsTrueMouseOver('u350',e)) return;
+if (!IsTrueMouseOver('u351',e)) return;
 if (true) {
 
-	SetPanelState('u339', 'pd1u339','none','',500,'none','',500);
+	SetPanelState('u340', 'pd1u340','none','',500,'none','',500);
 
-SetWidgetRichText('u486', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">Pink</span></p>');
-
-}
+SetWidgetRichText('u487', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">Pink</span></p>');
 
 }
 
-var u351 = document.getElementById('u351');
-gv_vAlignTable['u351'] = 'center';
+}
+
 var u352 = document.getElementById('u352');
-
+gv_vAlignTable['u352'] = 'center';
 var u353 = document.getElementById('u353');
 
 var u354 = document.getElementById('u354');
-gv_vAlignTable['u354'] = 'center';
-var u355 = document.getElementById('u355');
 
-u355.style.cursor = 'pointer';
-if (bIE) u355.attachEvent("onclick", Clicku355);
-else u355.addEventListener("click", Clicku355, true);
-function Clicku355(e)
+var u355 = document.getElementById('u355');
+gv_vAlignTable['u355'] = 'center';
+var u356 = document.getElementById('u356');
+
+u356.style.cursor = 'pointer';
+if (bIE) u356.attachEvent("onclick", Clicku356);
+else u356.addEventListener("click", Clicku356, true);
+function Clicku356(e)
 {
 windowEvent = e;
 
 
 if (true) {
 
-	SetPanelState('u352', 'pd1u352','none','',500,'none','',500);
+	SetPanelState('u353', 'pd1u353','none','',500,'none','',500);
 
 SetGlobalVariableValue('$colorCount', '' + (GetGlobalVariableValue('$colorCount') - GetNum(1)) + '');
 
-SetWidgetRichText('u485', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">' + (GetGlobalVariableValue('$colorCount')) + ' colors selected</span></p>');
+SetWidgetRichText('u486', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">' + (GetGlobalVariableValue('$colorCount')) + ' colors selected</span></p>');
 
 }
 
 }
 
-if (bIE) u355.attachEvent("onmouseout", MouseOutu355);
-else u355.addEventListener("mouseout", MouseOutu355, true);
-function MouseOutu355(e)
+if (bIE) u356.attachEvent("onmouseout", MouseOutu356);
+else u356.addEventListener("mouseout", MouseOutu356, true);
+function MouseOutu356(e)
 {
 windowEvent = e;
 
-if (!IsTrueMouseOut('u355',e)) return;
+if (!IsTrueMouseOut('u356',e)) return;
 if (true) {
 
-	SetPanelState('u352', 'pd2u352','none','',500,'none','',500);
+	SetPanelState('u353', 'pd2u353','none','',500,'none','',500);
 
-SetWidgetRichText('u486', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">&nbsp;</span></p>');
-
-}
+SetWidgetRichText('u487', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">&nbsp;</span></p>');
 
 }
 
-var u356 = document.getElementById('u356');
-gv_vAlignTable['u356'] = 'center';
+}
+
 var u357 = document.getElementById('u357');
-
-if (bIE) u357.attachEvent("onmouseover", MouseOveru357);
-else u357.addEventListener("mouseover", MouseOveru357, true);
-function MouseOveru357(e)
-{
-windowEvent = e;
-
-if (!IsTrueMouseOver('u357',e)) return;
-if (true) {
-
-	SetPanelState('u352', 'pd3u352','none','',500,'none','',500);
-
-SetWidgetRichText('u486', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">Charity Pink</span></p>');
-
-}
-
-}
-
+gv_vAlignTable['u357'] = 'center';
 var u358 = document.getElementById('u358');
-gv_vAlignTable['u358'] = 'center';
+
+if (bIE) u358.attachEvent("onmouseover", MouseOveru358);
+else u358.addEventListener("mouseover", MouseOveru358, true);
+function MouseOveru358(e)
+{
+windowEvent = e;
+
+if (!IsTrueMouseOver('u358',e)) return;
+if (true) {
+
+	SetPanelState('u353', 'pd3u353','none','',500,'none','',500);
+
+SetWidgetRichText('u487', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">Charity Pink</span></p>');
+
+}
+
+}
+
 var u359 = document.getElementById('u359');
-
+gv_vAlignTable['u359'] = 'center';
 var u711 = document.getElementById('u711');
-gv_vAlignTable['u711'] = 'center';
-var u712 = document.getElementById('u712');
 
-u712.style.cursor = 'pointer';
-if (bIE) u712.attachEvent("onclick", Clicku712);
-else u712.addEventListener("click", Clicku712, true);
-function Clicku712(e)
+u711.style.cursor = 'pointer';
+if (bIE) u711.attachEvent("onclick", Clicku711);
+else u711.addEventListener("click", Clicku711, true);
+function Clicku711(e)
 {
 windowEvent = e;
 
 
+if ((GetGlobalVariableValue('$printOption')) == ('')) {
+
+	SetPanelState('u43', 'pd4u43','none','',500,'none','',500);
+
+}
+else
+if ((GetGlobalVariableValue('$colorCount')) < Number('1')) {
+
+	SetPanelState('u43', 'pd0u43','none','',500,'none','',500);
+
+	SetPanelState('u240', 'pd1u240','none','',500,'none','',500);
+
+}
+else
 if (true) {
 
-	self.location.href="Home.html" + GetQuerystring();
+	self.location.href="Page_3.html" + GetQuerystring();
 
 }
 
 }
-gv_vAlignTable['u712'] = 'top';
+
+var u712 = document.getElementById('u712');
+gv_vAlignTable['u712'] = 'center';
 var u713 = document.getElementById('u713');
 
 u713.style.cursor = 'pointer';
@@ -5671,7 +5848,7 @@ windowEvent = e;
 
 if (true) {
 
-	self.location.href="Page_1.html" + GetQuerystring();
+	self.location.href="Home.html" + GetQuerystring();
 
 }
 
@@ -5679,45 +5856,63 @@ if (true) {
 gv_vAlignTable['u713'] = 'top';
 var u714 = document.getElementById('u714');
 
-var u715 = document.getElementById('u715');
-
-u715.style.cursor = 'pointer';
-if (bIE) u715.attachEvent("onclick", Clicku715);
-else u715.addEventListener("click", Clicku715, true);
-function Clicku715(e)
+u714.style.cursor = 'pointer';
+if (bIE) u714.attachEvent("onclick", Clicku714);
+else u714.addEventListener("click", Clicku714, true);
+function Clicku714(e)
 {
 windowEvent = e;
 
 
-if (((GetCheckState('u26')) == (true)) && ((GetCheckState('u715')) == (true))) {
+if (true) {
+
+	self.location.href="Page_1.html" + GetQuerystring();
+
+}
+
+}
+gv_vAlignTable['u714'] = 'top';
+var u715 = document.getElementById('u715');
+
+var u716 = document.getElementById('u716');
+
+u716.style.cursor = 'pointer';
+if (bIE) u716.attachEvent("onclick", Clicku716);
+else u716.addEventListener("click", Clicku716, true);
+function Clicku716(e)
+{
+windowEvent = e;
+
+
+if (((GetCheckState('u26')) == (true)) && ((GetCheckState('u716')) == (true))) {
 
 SetGlobalVariableValue('$colorCount', '' + (GetNum(GetGlobalVariableValue('$colorCount')) + GetNum(1)) + '');
 
-SetWidgetRichText('u485', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">' + (GetGlobalVariableValue('$colorCount')) + ' colors selected</span></p>');
+SetWidgetRichText('u486', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">' + (GetGlobalVariableValue('$colorCount')) + ' colors selected</span></p>');
 
 SetGlobalVariableValue('$showWhite', 'yes');
 
-SetCheckState('u715', true);
+SetCheckState('u716', true);
 
 	SetPanelState('u13', 'pd1u13','none','',500,'none','',500);
 
-	SetPanelState('u287', 'pd2u287','none','',500,'none','',500);
+	SetPanelState('u288', 'pd2u288','none','',500,'none','',500);
 
 }
 else
-if (((GetCheckState('u715')) == (false)) && ((GetCheckState('u26')) == (true))) {
+if (((GetCheckState('u716')) == (false)) && ((GetCheckState('u26')) == (true))) {
 
 SetGlobalVariableValue('$colorCount', '' + (GetGlobalVariableValue('$colorCount') - GetNum(1)) + '');
 
-SetWidgetRichText('u485', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">' + (GetGlobalVariableValue('$colorCount')) + ' colors selected</span></p>');
+SetWidgetRichText('u486', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">' + (GetGlobalVariableValue('$colorCount')) + ' colors selected</span></p>');
 
 SetGlobalVariableValue('$showWhite', 'no');
 
-SetCheckState('u715', false);
+SetCheckState('u716', false);
 
 	SetPanelState('u13', 'pd0u13','none','',500,'none','',500);
 
-	SetPanelState('u287', 'pd0u287','none','',500,'none','',500);
+	SetPanelState('u288', 'pd0u288','none','',500,'none','',500);
 
 }
 else
@@ -5725,11 +5920,11 @@ if ((GetCheckState('u34')) == (true)) {
 
 	SetPanelState('u13', 'pd1u13','none','',500,'none','',500);
 
-	SetPanelState('u41', 'pd0u41','none','',500,'none','',500);
+	SetPanelState('u43', 'pd0u43','none','',500,'none','',500);
 
-	SetPanelState('u287', 'pd2u287','none','',500,'none','',500);
+	SetPanelState('u288', 'pd2u288','none','',500,'none','',500);
 
-	SetPanelState('u248', 'pd2u248','none','',500,'none','',500);
+	SetPanelState('u249', 'pd2u249','none','',500,'none','',500);
 
 SetGlobalVariableValue('$showWhite', 'yes');
 
@@ -5739,1541 +5934,1296 @@ SetCheckState('u26', true);
 
 }
 else
-if (((GetCheckState('u39')) == (true)) && ((GetCheckState('u715')) == (false))) {
+if (((GetCheckState('u39')) == (true)) && ((GetCheckState('u716')) == (false))) {
 
 	SetPanelState('u13', 'pd0u13','none','',500,'none','',500);
 
-	SetPanelState('u41', 'pd1u41','none','',500,'none','',500);
+	SetPanelState('u43', 'pd1u43','none','',500,'none','',500);
 
-	SetPanelState('u287', 'pd0u287','none','',500,'none','',500);
+	SetPanelState('u288', 'pd0u288','none','',500,'none','',500);
 
 }
 else
-if (((GetCheckState('u39')) == (true)) && ((GetCheckState('u715')) == (true))) {
+if (((GetCheckState('u39')) == (true)) && ((GetCheckState('u716')) == (true))) {
 
 	SetPanelState('u13', 'pd1u13','none','',500,'none','',500);
 
-	SetPanelState('u41', 'pd1u41','none','',500,'none','',500);
+	SetPanelState('u43', 'pd1u43','none','',500,'none','',500);
 
-	SetPanelState('u287', 'pd2u287','none','',500,'none','',500);
-
-}
+	SetPanelState('u288', 'pd2u288','none','',500,'none','',500);
 
 }
 
-var u716 = document.getElementById('u716');
-gv_vAlignTable['u716'] = 'top';
+}
+
 var u710 = document.getElementById('u710');
-
-u710.style.cursor = 'pointer';
-if (bIE) u710.attachEvent("onclick", Clicku710);
-else u710.addEventListener("click", Clicku710, true);
-function Clicku710(e)
-{
-windowEvent = e;
-
-
-if ((GetGlobalVariableValue('$printOption')) == ('')) {
-
-	SetPanelState('u41', 'pd4u41','none','',500,'none','',500);
-
-}
-else
-if ((GetGlobalVariableValue('$colorCount')) < Number('1')) {
-
-	SetPanelState('u41', 'pd0u41','none','',500,'none','',500);
-
-	SetPanelState('u239', 'pd1u239','none','',500,'none','',500);
-
-}
-else
-if (true) {
-
-	self.location.href="Page_3.html" + GetQuerystring();
-
-}
-
-}
-
+gv_vAlignTable['u710'] = 'top';
 var u360 = document.getElementById('u360');
-gv_vAlignTable['u360'] = 'center';
-var u361 = document.getElementById('u361');
 
-u361.style.cursor = 'pointer';
-if (bIE) u361.attachEvent("onclick", Clicku361);
-else u361.addEventListener("click", Clicku361, true);
-function Clicku361(e)
+var u361 = document.getElementById('u361');
+gv_vAlignTable['u361'] = 'center';
+var u362 = document.getElementById('u362');
+
+u362.style.cursor = 'pointer';
+if (bIE) u362.attachEvent("onclick", Clicku362);
+else u362.addEventListener("click", Clicku362, true);
+function Clicku362(e)
 {
 windowEvent = e;
 
 
 if (true) {
 
-	SetPanelState('u352', 'pd3u352','none','',500,'none','',500);
+	SetPanelState('u353', 'pd3u353','none','',500,'none','',500);
 
 SetGlobalVariableValue('$colorCount', '' + (GetNum(GetGlobalVariableValue('$colorCount')) + GetNum(1)) + '');
 
-SetWidgetRichText('u485', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">' + (GetGlobalVariableValue('$colorCount')) + ' colors selected</span></p>');
+SetWidgetRichText('u486', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">' + (GetGlobalVariableValue('$colorCount')) + ' colors selected</span></p>');
 
 }
 
 }
 
-if (bIE) u361.attachEvent("onmouseout", MouseOutu361);
-else u361.addEventListener("mouseout", MouseOutu361, true);
-function MouseOutu361(e)
+if (bIE) u362.attachEvent("onmouseout", MouseOutu362);
+else u362.addEventListener("mouseout", MouseOutu362, true);
+function MouseOutu362(e)
 {
 windowEvent = e;
 
-if (!IsTrueMouseOut('u361',e)) return;
+if (!IsTrueMouseOut('u362',e)) return;
 if (true) {
 
-	SetPanelState('u352', 'pd0u352','none','',500,'none','',500);
+	SetPanelState('u353', 'pd0u353','none','',500,'none','',500);
 
-SetWidgetRichText('u486', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">&nbsp;</span></p>');
-
-}
+SetWidgetRichText('u487', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">&nbsp;</span></p>');
 
 }
 
-var u362 = document.getElementById('u362');
-gv_vAlignTable['u362'] = 'center';
+}
+
 var u363 = document.getElementById('u363');
+gv_vAlignTable['u363'] = 'center';
+var u364 = document.getElementById('u364');
 
-if (bIE) u363.attachEvent("onmouseover", MouseOveru363);
-else u363.addEventListener("mouseover", MouseOveru363, true);
-function MouseOveru363(e)
+if (bIE) u364.attachEvent("onmouseover", MouseOveru364);
+else u364.addEventListener("mouseover", MouseOveru364, true);
+function MouseOveru364(e)
 {
 windowEvent = e;
 
-if (!IsTrueMouseOver('u363',e)) return;
+if (!IsTrueMouseOver('u364',e)) return;
 if (true) {
 
-	SetPanelState('u352', 'pd1u352','none','',500,'none','',500);
+	SetPanelState('u353', 'pd1u353','none','',500,'none','',500);
 
-SetWidgetRichText('u486', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">Charity Pink</span></p>');
-
-}
+SetWidgetRichText('u487', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">Charity Pink</span></p>');
 
 }
 
-var u364 = document.getElementById('u364');
-gv_vAlignTable['u364'] = 'center';
+}
+
 var u365 = document.getElementById('u365');
-
+gv_vAlignTable['u365'] = 'center';
 var u366 = document.getElementById('u366');
 
 var u367 = document.getElementById('u367');
-gv_vAlignTable['u367'] = 'center';
-var u368 = document.getElementById('u368');
 
-u368.style.cursor = 'pointer';
-if (bIE) u368.attachEvent("onclick", Clicku368);
-else u368.addEventListener("click", Clicku368, true);
-function Clicku368(e)
+var u368 = document.getElementById('u368');
+gv_vAlignTable['u368'] = 'center';
+var u369 = document.getElementById('u369');
+
+u369.style.cursor = 'pointer';
+if (bIE) u369.attachEvent("onclick", Clicku369);
+else u369.addEventListener("click", Clicku369, true);
+function Clicku369(e)
 {
 windowEvent = e;
 
 
 if (true) {
 
-	SetPanelState('u365', 'pd1u365','none','',500,'none','',500);
+	SetPanelState('u366', 'pd1u366','none','',500,'none','',500);
 
 SetGlobalVariableValue('$colorCount', '' + (GetGlobalVariableValue('$colorCount') - GetNum(1)) + '');
 
-SetWidgetRichText('u485', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">' + (GetGlobalVariableValue('$colorCount')) + ' colors selected</span></p>');
+SetWidgetRichText('u486', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">' + (GetGlobalVariableValue('$colorCount')) + ' colors selected</span></p>');
 
 }
 
 }
 
-if (bIE) u368.attachEvent("onmouseout", MouseOutu368);
-else u368.addEventListener("mouseout", MouseOutu368, true);
-function MouseOutu368(e)
+if (bIE) u369.attachEvent("onmouseout", MouseOutu369);
+else u369.addEventListener("mouseout", MouseOutu369, true);
+function MouseOutu369(e)
 {
 windowEvent = e;
 
-if (!IsTrueMouseOut('u368',e)) return;
+if (!IsTrueMouseOut('u369',e)) return;
 if (true) {
 
-	SetPanelState('u365', 'pd2u365','none','',500,'none','',500);
+	SetPanelState('u366', 'pd2u366','none','',500,'none','',500);
 
-SetWidgetRichText('u486', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">&nbsp;</span></p>');
-
-}
+SetWidgetRichText('u487', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">&nbsp;</span></p>');
 
 }
 
-var u369 = document.getElementById('u369');
-gv_vAlignTable['u369'] = 'center';
+}
+
 var u103 = document.getElementById('u103');
-
+gv_vAlignTable['u103'] = 'center';
 var u104 = document.getElementById('u104');
+
+u104.style.cursor = 'pointer';
+if (bIE) u104.attachEvent("onclick", Clicku104);
+else u104.addEventListener("click", Clicku104, true);
+function Clicku104(e)
+{
+windowEvent = e;
+
+
+if (true) {
+
+SetWidgetSelected('u104');
+}
+
+}
+
+if (bIE) u104.attachEvent("onmouseover", MouseOveru104);
+else u104.addEventListener("mouseover", MouseOveru104, true);
+function MouseOveru104(e)
+{
+windowEvent = e;
+
+if (!IsTrueMouseOver('u104',e)) return;
+if (true) {
+
+	SetPanelState('u101', 'pd1u101','none','',500,'none','',500);
+
+SetWidgetRichText('u62', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;"> Charity Pink</span></p>');
+
+}
+
+}
+
+if (bIE) u104.attachEvent("onmouseout", MouseOutu104);
+else u104.addEventListener("mouseout", MouseOutu104, true);
+function MouseOutu104(e)
+{
+windowEvent = e;
+
+if (!IsTrueMouseOut('u104',e)) return;
+if (true) {
+
+	SetPanelState('u101', 'pd0u101','none','',500,'none','',500);
+
+SetWidgetRichText('u62', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">&nbsp;</span></p>');
+
+}
+
+}
 
 var u105 = document.getElementById('u105');
 gv_vAlignTable['u105'] = 'center';
 var u106 = document.getElementById('u106');
 
-u106.style.cursor = 'pointer';
-if (bIE) u106.attachEvent("onclick", Clicku106);
-else u106.addEventListener("click", Clicku106, true);
-function Clicku106(e)
-{
-windowEvent = e;
-
-
-if (true) {
-
-SetWidgetSelected('u106');
-}
-
-}
-
-if (bIE) u106.attachEvent("onmouseover", MouseOveru106);
-else u106.addEventListener("mouseover", MouseOveru106, true);
-function MouseOveru106(e)
-{
-windowEvent = e;
-
-if (!IsTrueMouseOver('u106',e)) return;
-if (true) {
-
-	SetPanelState('u103', 'pd1u103','none','',500,'none','',500);
-
-SetWidgetRichText('u59', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;"> Hot Pink</span></p>');
-
-}
-
-}
-
-if (bIE) u106.attachEvent("onmouseout", MouseOutu106);
-else u106.addEventListener("mouseout", MouseOutu106, true);
-function MouseOutu106(e)
-{
-windowEvent = e;
-
-if (!IsTrueMouseOut('u106',e)) return;
-if (true) {
-
-	SetPanelState('u103', 'pd0u103','none','',500,'none','',500);
-
-SetWidgetRichText('u59', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">&nbsp;</span></p>');
-
-}
-
-}
-
 var u107 = document.getElementById('u107');
-gv_vAlignTable['u107'] = 'center';
+
 var u108 = document.getElementById('u108');
-
+gv_vAlignTable['u108'] = 'center';
 var u370 = document.getElementById('u370');
-
-if (bIE) u370.attachEvent("onmouseover", MouseOveru370);
-else u370.addEventListener("mouseover", MouseOveru370, true);
-function MouseOveru370(e)
-{
-windowEvent = e;
-
-if (!IsTrueMouseOver('u370',e)) return;
-if (true) {
-
-	SetPanelState('u365', 'pd3u365','none','',500,'none','',500);
-
-SetWidgetRichText('u486', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">Hot Pink</span></p>');
-
-}
-
-}
-
+gv_vAlignTable['u370'] = 'center';
 var u371 = document.getElementById('u371');
-gv_vAlignTable['u371'] = 'center';
+
+if (bIE) u371.attachEvent("onmouseover", MouseOveru371);
+else u371.addEventListener("mouseover", MouseOveru371, true);
+function MouseOveru371(e)
+{
+windowEvent = e;
+
+if (!IsTrueMouseOver('u371',e)) return;
+if (true) {
+
+	SetPanelState('u366', 'pd3u366','none','',500,'none','',500);
+
+SetWidgetRichText('u487', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">Hot Pink</span></p>');
+
+}
+
+}
+
 var u372 = document.getElementById('u372');
-
+gv_vAlignTable['u372'] = 'center';
 var u373 = document.getElementById('u373');
-gv_vAlignTable['u373'] = 'center';
-var u374 = document.getElementById('u374');
 
-u374.style.cursor = 'pointer';
-if (bIE) u374.attachEvent("onclick", Clicku374);
-else u374.addEventListener("click", Clicku374, true);
-function Clicku374(e)
+var u374 = document.getElementById('u374');
+gv_vAlignTable['u374'] = 'center';
+var u375 = document.getElementById('u375');
+
+u375.style.cursor = 'pointer';
+if (bIE) u375.attachEvent("onclick", Clicku375);
+else u375.addEventListener("click", Clicku375, true);
+function Clicku375(e)
 {
 windowEvent = e;
 
 
 if (true) {
 
-	SetPanelState('u365', 'pd3u365','none','',500,'none','',500);
+	SetPanelState('u366', 'pd3u366','none','',500,'none','',500);
 
 SetGlobalVariableValue('$colorCount', '' + (GetNum(GetGlobalVariableValue('$colorCount')) + GetNum(1)) + '');
 
-SetWidgetRichText('u485', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">' + (GetGlobalVariableValue('$colorCount')) + ' colors selected</span></p>');
+SetWidgetRichText('u486', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">' + (GetGlobalVariableValue('$colorCount')) + ' colors selected</span></p>');
 
 }
 
 }
 
-if (bIE) u374.attachEvent("onmouseout", MouseOutu374);
-else u374.addEventListener("mouseout", MouseOutu374, true);
-function MouseOutu374(e)
+if (bIE) u375.attachEvent("onmouseout", MouseOutu375);
+else u375.addEventListener("mouseout", MouseOutu375, true);
+function MouseOutu375(e)
 {
 windowEvent = e;
 
-if (!IsTrueMouseOut('u374',e)) return;
+if (!IsTrueMouseOut('u375',e)) return;
 if (true) {
 
-	SetPanelState('u365', 'pd0u365','none','',500,'none','',500);
+	SetPanelState('u366', 'pd0u366','none','',500,'none','',500);
 
-SetWidgetRichText('u486', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">&nbsp;</span></p>');
-
-}
+SetWidgetRichText('u487', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">&nbsp;</span></p>');
 
 }
 
-var u375 = document.getElementById('u375');
-gv_vAlignTable['u375'] = 'center';
+}
+
 var u376 = document.getElementById('u376');
+gv_vAlignTable['u376'] = 'center';
+var u377 = document.getElementById('u377');
 
-if (bIE) u376.attachEvent("onmouseover", MouseOveru376);
-else u376.addEventListener("mouseover", MouseOveru376, true);
-function MouseOveru376(e)
+if (bIE) u377.attachEvent("onmouseover", MouseOveru377);
+else u377.addEventListener("mouseover", MouseOveru377, true);
+function MouseOveru377(e)
 {
 windowEvent = e;
 
-if (!IsTrueMouseOver('u376',e)) return;
+if (!IsTrueMouseOver('u377',e)) return;
 if (true) {
 
-	SetPanelState('u365', 'pd1u365','none','',500,'none','',500);
+	SetPanelState('u366', 'pd1u366','none','',500,'none','',500);
 
-SetWidgetRichText('u486', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;"> Hot Pink</span></p>');
-
-}
+SetWidgetRichText('u487', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;"> Hot Pink</span></p>');
 
 }
 
-var u377 = document.getElementById('u377');
-gv_vAlignTable['u377'] = 'center';
+}
+
 var u378 = document.getElementById('u378');
-
+gv_vAlignTable['u378'] = 'center';
 var u379 = document.getElementById('u379');
 
 var u380 = document.getElementById('u380');
-gv_vAlignTable['u380'] = 'center';
-var u381 = document.getElementById('u381');
 
-u381.style.cursor = 'pointer';
-if (bIE) u381.attachEvent("onclick", Clicku381);
-else u381.addEventListener("click", Clicku381, true);
-function Clicku381(e)
+var u381 = document.getElementById('u381');
+gv_vAlignTable['u381'] = 'center';
+var u382 = document.getElementById('u382');
+
+u382.style.cursor = 'pointer';
+if (bIE) u382.attachEvent("onclick", Clicku382);
+else u382.addEventListener("click", Clicku382, true);
+function Clicku382(e)
 {
 windowEvent = e;
 
 
 if (true) {
 
-	SetPanelState('u378', 'pd1u378','none','',500,'none','',500);
+	SetPanelState('u379', 'pd1u379','none','',500,'none','',500);
 
 SetGlobalVariableValue('$colorCount', '' + (GetGlobalVariableValue('$colorCount') - GetNum(1)) + '');
 
-SetWidgetRichText('u485', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">' + (GetGlobalVariableValue('$colorCount')) + ' colors selected</span></p>');
+SetWidgetRichText('u486', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">' + (GetGlobalVariableValue('$colorCount')) + ' colors selected</span></p>');
 
 }
 
 }
 
-if (bIE) u381.attachEvent("onmouseout", MouseOutu381);
-else u381.addEventListener("mouseout", MouseOutu381, true);
-function MouseOutu381(e)
+if (bIE) u382.attachEvent("onmouseout", MouseOutu382);
+else u382.addEventListener("mouseout", MouseOutu382, true);
+function MouseOutu382(e)
 {
 windowEvent = e;
 
-if (!IsTrueMouseOut('u381',e)) return;
+if (!IsTrueMouseOut('u382',e)) return;
 if (true) {
 
-	SetPanelState('u378', 'pd2u378','none','',500,'none','',500);
+	SetPanelState('u379', 'pd2u379','none','',500,'none','',500);
 
-SetWidgetRichText('u486', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">&nbsp;</span></p>');
-
-}
+SetWidgetRichText('u487', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">&nbsp;</span></p>');
 
 }
 
-var u382 = document.getElementById('u382');
-gv_vAlignTable['u382'] = 'center';
+}
+
 var u383 = document.getElementById('u383');
-
-if (bIE) u383.attachEvent("onmouseover", MouseOveru383);
-else u383.addEventListener("mouseover", MouseOveru383, true);
-function MouseOveru383(e)
-{
-windowEvent = e;
-
-if (!IsTrueMouseOver('u383',e)) return;
-if (true) {
-
-	SetPanelState('u378', 'pd3u378','none','',500,'none','',500);
-
-SetWidgetRichText('u486', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">Magenta</span></p>');
-
-}
-
-}
-
+gv_vAlignTable['u383'] = 'center';
 var u384 = document.getElementById('u384');
-gv_vAlignTable['u384'] = 'center';
+
+if (bIE) u384.attachEvent("onmouseover", MouseOveru384);
+else u384.addEventListener("mouseover", MouseOveru384, true);
+function MouseOveru384(e)
+{
+windowEvent = e;
+
+if (!IsTrueMouseOver('u384',e)) return;
+if (true) {
+
+	SetPanelState('u379', 'pd3u379','none','',500,'none','',500);
+
+SetWidgetRichText('u487', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">Magenta</span></p>');
+
+}
+
+}
+
 var u385 = document.getElementById('u385');
-
+gv_vAlignTable['u385'] = 'center';
 var u386 = document.getElementById('u386');
-gv_vAlignTable['u386'] = 'center';
-var u387 = document.getElementById('u387');
 
-u387.style.cursor = 'pointer';
-if (bIE) u387.attachEvent("onclick", Clicku387);
-else u387.addEventListener("click", Clicku387, true);
-function Clicku387(e)
+var u387 = document.getElementById('u387');
+gv_vAlignTable['u387'] = 'center';
+var u388 = document.getElementById('u388');
+
+u388.style.cursor = 'pointer';
+if (bIE) u388.attachEvent("onclick", Clicku388);
+else u388.addEventListener("click", Clicku388, true);
+function Clicku388(e)
 {
 windowEvent = e;
 
 
 if (true) {
 
-	SetPanelState('u378', 'pd3u378','none','',500,'none','',500);
+	SetPanelState('u379', 'pd3u379','none','',500,'none','',500);
 
 SetGlobalVariableValue('$colorCount', '' + (GetNum(GetGlobalVariableValue('$colorCount')) + GetNum(1)) + '');
 
-SetWidgetRichText('u485', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">' + (GetGlobalVariableValue('$colorCount')) + ' colors selected</span></p>');
+SetWidgetRichText('u486', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">' + (GetGlobalVariableValue('$colorCount')) + ' colors selected</span></p>');
 
 }
 
 }
 
-if (bIE) u387.attachEvent("onmouseout", MouseOutu387);
-else u387.addEventListener("mouseout", MouseOutu387, true);
-function MouseOutu387(e)
+if (bIE) u388.attachEvent("onmouseout", MouseOutu388);
+else u388.addEventListener("mouseout", MouseOutu388, true);
+function MouseOutu388(e)
 {
 windowEvent = e;
 
-if (!IsTrueMouseOut('u387',e)) return;
+if (!IsTrueMouseOut('u388',e)) return;
 if (true) {
 
-	SetPanelState('u378', 'pd0u378','none','',500,'none','',500);
+	SetPanelState('u379', 'pd0u379','none','',500,'none','',500);
 
-SetWidgetRichText('u486', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">&nbsp;</span></p>');
-
-}
+SetWidgetRichText('u487', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">&nbsp;</span></p>');
 
 }
 
-var u388 = document.getElementById('u388');
-gv_vAlignTable['u388'] = 'center';
+}
+
 var u389 = document.getElementById('u389');
+gv_vAlignTable['u389'] = 'center';
+var u403 = document.getElementById('u403');
 
-if (bIE) u389.attachEvent("onmouseover", MouseOveru389);
-else u389.addEventListener("mouseover", MouseOveru389, true);
-function MouseOveru389(e)
+if (bIE) u403.attachEvent("onmouseover", MouseOveru403);
+else u403.addEventListener("mouseover", MouseOveru403, true);
+function MouseOveru403(e)
 {
 windowEvent = e;
 
-if (!IsTrueMouseOver('u389',e)) return;
+if (!IsTrueMouseOver('u403',e)) return;
 if (true) {
 
-	SetPanelState('u378', 'pd1u378','none','',500,'none','',500);
+	SetPanelState('u392', 'pd1u392','none','',500,'none','',500);
 
-SetWidgetRichText('u486', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">Magenta</span></p>');
-
-}
+SetWidgetRichText('u487', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">Orange</span></p>');
 
 }
 
-var u403 = document.getElementById('u403');
-gv_vAlignTable['u403'] = 'center';
+}
+
 var u404 = document.getElementById('u404');
-
+gv_vAlignTable['u404'] = 'center';
 var u200 = document.getElementById('u200');
 gv_vAlignTable['u200'] = 'center';
 var u201 = document.getElementById('u201');
 
-u201.style.cursor = 'pointer';
-if (bIE) u201.attachEvent("onclick", Clicku201);
-else u201.addEventListener("click", Clicku201, true);
-function Clicku201(e)
-{
-windowEvent = e;
-
-
-if (true) {
-
-SetWidgetSelected('u201');
-}
-
-}
-
-if (bIE) u201.attachEvent("onmouseover", MouseOveru201);
-else u201.addEventListener("mouseover", MouseOveru201, true);
-function MouseOveru201(e)
-{
-windowEvent = e;
-
-if (!IsTrueMouseOver('u201',e)) return;
-if (true) {
-
-	SetPanelState('u198', 'pd1u198','none','',500,'none','',500);
-
-SetWidgetRichText('u59', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">Blue</span></p>');
-
-}
-
-}
-
-if (bIE) u201.attachEvent("onmouseout", MouseOutu201);
-else u201.addEventListener("mouseout", MouseOutu201, true);
-function MouseOutu201(e)
-{
-windowEvent = e;
-
-if (!IsTrueMouseOut('u201',e)) return;
-if (true) {
-
-	SetPanelState('u198', 'pd0u198','none','',500,'none','',500);
-
-SetWidgetRichText('u59', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">&nbsp;</span></p>');
-
-}
-
-}
-
 var u202 = document.getElementById('u202');
-gv_vAlignTable['u202'] = 'center';
-var u390 = document.getElementById('u390');
-gv_vAlignTable['u390'] = 'center';
-var u391 = document.getElementById('u391');
 
+var u390 = document.getElementById('u390');
+
+if (bIE) u390.attachEvent("onmouseover", MouseOveru390);
+else u390.addEventListener("mouseover", MouseOveru390, true);
+function MouseOveru390(e)
+{
+windowEvent = e;
+
+if (!IsTrueMouseOver('u390',e)) return;
+if (true) {
+
+	SetPanelState('u379', 'pd1u379','none','',500,'none','',500);
+
+SetWidgetRichText('u487', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">Magenta</span></p>');
+
+}
+
+}
+
+var u391 = document.getElementById('u391');
+gv_vAlignTable['u391'] = 'center';
 var u392 = document.getElementById('u392');
 
 var u393 = document.getElementById('u393');
-gv_vAlignTable['u393'] = 'center';
-var u394 = document.getElementById('u394');
 
-u394.style.cursor = 'pointer';
-if (bIE) u394.attachEvent("onclick", Clicku394);
-else u394.addEventListener("click", Clicku394, true);
-function Clicku394(e)
+var u394 = document.getElementById('u394');
+gv_vAlignTable['u394'] = 'center';
+var u395 = document.getElementById('u395');
+
+u395.style.cursor = 'pointer';
+if (bIE) u395.attachEvent("onclick", Clicku395);
+else u395.addEventListener("click", Clicku395, true);
+function Clicku395(e)
 {
 windowEvent = e;
 
 
 if (true) {
 
-	SetPanelState('u391', 'pd1u391','none','',500,'none','',500);
+	SetPanelState('u392', 'pd1u392','none','',500,'none','',500);
 
 SetGlobalVariableValue('$colorCount', '' + (GetGlobalVariableValue('$colorCount') - GetNum(1)) + '');
 
-SetWidgetRichText('u485', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">' + (GetGlobalVariableValue('$colorCount')) + ' colors selected</span></p>');
+SetWidgetRichText('u486', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">' + (GetGlobalVariableValue('$colorCount')) + ' colors selected</span></p>');
 
 }
 
 }
 
-if (bIE) u394.attachEvent("onmouseout", MouseOutu394);
-else u394.addEventListener("mouseout", MouseOutu394, true);
-function MouseOutu394(e)
+if (bIE) u395.attachEvent("onmouseout", MouseOutu395);
+else u395.addEventListener("mouseout", MouseOutu395, true);
+function MouseOutu395(e)
 {
 windowEvent = e;
 
-if (!IsTrueMouseOut('u394',e)) return;
+if (!IsTrueMouseOut('u395',e)) return;
 if (true) {
 
-	SetPanelState('u391', 'pd2u391','none','',500,'none','',500);
+	SetPanelState('u392', 'pd2u392','none','',500,'none','',500);
 
-SetWidgetRichText('u486', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">&nbsp;</span></p>');
-
-}
+SetWidgetRichText('u487', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">&nbsp;</span></p>');
 
 }
 
-var u395 = document.getElementById('u395');
-gv_vAlignTable['u395'] = 'center';
+}
+
 var u396 = document.getElementById('u396');
+gv_vAlignTable['u396'] = 'center';
+var u397 = document.getElementById('u397');
 
-if (bIE) u396.attachEvent("onmouseover", MouseOveru396);
-else u396.addEventListener("mouseover", MouseOveru396, true);
-function MouseOveru396(e)
+if (bIE) u397.attachEvent("onmouseover", MouseOveru397);
+else u397.addEventListener("mouseover", MouseOveru397, true);
+function MouseOveru397(e)
 {
 windowEvent = e;
 
-if (!IsTrueMouseOver('u396',e)) return;
+if (!IsTrueMouseOver('u397',e)) return;
 if (true) {
 
-	SetPanelState('u391', 'pd3u391','none','',500,'none','',500);
+	SetPanelState('u392', 'pd3u392','none','',500,'none','',500);
 
-SetWidgetRichText('u486', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">Orange</span></p>');
-
-}
+SetWidgetRichText('u487', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">Orange</span></p>');
 
 }
 
-var u397 = document.getElementById('u397');
-gv_vAlignTable['u397'] = 'center';
+}
+
 var u398 = document.getElementById('u398');
-
+gv_vAlignTable['u398'] = 'center';
 var u399 = document.getElementById('u399');
-gv_vAlignTable['u399'] = 'center';
+
 var u592 = document.getElementById('u592');
 
 var u593 = document.getElementById('u593');
-gv_vAlignTable['u593'] = 'center';
-var u594 = document.getElementById('u594');
 
-u594.style.cursor = 'pointer';
-if (bIE) u594.attachEvent("onclick", Clicku594);
-else u594.addEventListener("click", Clicku594, true);
-function Clicku594(e)
+var u594 = document.getElementById('u594');
+gv_vAlignTable['u594'] = 'center';
+var u595 = document.getElementById('u595');
+
+u595.style.cursor = 'pointer';
+if (bIE) u595.attachEvent("onclick", Clicku595);
+else u595.addEventListener("click", Clicku595, true);
+function Clicku595(e)
 {
 windowEvent = e;
 
 
 if (true) {
 
-	SetPanelState('u591', 'pd1u591','none','',500,'none','',500);
+	SetPanelState('u592', 'pd1u592','none','',500,'none','',500);
 
 SetGlobalVariableValue('$colorCount', '' + (GetGlobalVariableValue('$colorCount') - GetNum(1)) + '');
 
-SetWidgetRichText('u485', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">' + (GetGlobalVariableValue('$colorCount')) + ' colors selected</span></p>');
+SetWidgetRichText('u486', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">' + (GetGlobalVariableValue('$colorCount')) + ' colors selected</span></p>');
 
 }
 
 }
 
-if (bIE) u594.attachEvent("onmouseout", MouseOutu594);
-else u594.addEventListener("mouseout", MouseOutu594, true);
-function MouseOutu594(e)
+if (bIE) u595.attachEvent("onmouseout", MouseOutu595);
+else u595.addEventListener("mouseout", MouseOutu595, true);
+function MouseOutu595(e)
 {
 windowEvent = e;
 
-if (!IsTrueMouseOut('u594',e)) return;
+if (!IsTrueMouseOut('u595',e)) return;
 if (true) {
 
-	SetPanelState('u591', 'pd2u591','none','',500,'none','',500);
+	SetPanelState('u592', 'pd2u592','none','',500,'none','',500);
 
-SetWidgetRichText('u486', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">&nbsp;</span></p>');
-
-}
+SetWidgetRichText('u487', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">&nbsp;</span></p>');
 
 }
 
-var u595 = document.getElementById('u595');
-gv_vAlignTable['u595'] = 'center';
+}
+
 var u596 = document.getElementById('u596');
-
-if (bIE) u596.attachEvent("onmouseover", MouseOveru596);
-else u596.addEventListener("mouseover", MouseOveru596, true);
-function MouseOveru596(e)
-{
-windowEvent = e;
-
-if (!IsTrueMouseOver('u596',e)) return;
-if (true) {
-
-	SetPanelState('u591', 'pd3u591','none','',500,'none','',500);
-
-SetWidgetRichText('u486', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">Navy</span></p>');
-
-}
-
-}
-
+gv_vAlignTable['u596'] = 'center';
 var u210 = document.getElementById('u210');
 gv_vAlignTable['u210'] = 'center';
 var u211 = document.getElementById('u211');
 
-u211.style.cursor = 'pointer';
-if (bIE) u211.attachEvent("onclick", Clicku211);
-else u211.addEventListener("click", Clicku211, true);
-function Clicku211(e)
-{
-windowEvent = e;
-
-
-if (true) {
-
-SetWidgetSelected('u211');
-}
-
-}
-
-if (bIE) u211.attachEvent("onmouseover", MouseOveru211);
-else u211.addEventListener("mouseover", MouseOveru211, true);
-function MouseOveru211(e)
-{
-windowEvent = e;
-
-if (!IsTrueMouseOver('u211',e)) return;
-if (true) {
-
-	SetPanelState('u208', 'pd1u208','none','',500,'none','',500);
-
-SetWidgetRichText('u59', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">Turquoise</span></p>');
-
-}
-
-}
-
-if (bIE) u211.attachEvent("onmouseout", MouseOutu211);
-else u211.addEventListener("mouseout", MouseOutu211, true);
-function MouseOutu211(e)
-{
-windowEvent = e;
-
-if (!IsTrueMouseOut('u211',e)) return;
-if (true) {
-
-	SetPanelState('u208', 'pd1u208','none','',500,'none','',500);
-
-SetWidgetRichText('u59', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">&nbsp;</span></p>');
-
-}
-
-}
-
 var u212 = document.getElementById('u212');
-gv_vAlignTable['u212'] = 'center';
-var u213 = document.getElementById('u213');
 
+var u213 = document.getElementById('u213');
+gv_vAlignTable['u213'] = 'center';
 var u214 = document.getElementById('u214');
+
+u214.style.cursor = 'pointer';
+if (bIE) u214.attachEvent("onclick", Clicku214);
+else u214.addEventListener("click", Clicku214, true);
+function Clicku214(e)
+{
+windowEvent = e;
+
+
+if (true) {
+
+SetWidgetSelected('u214');
+}
+
+}
+
+if (bIE) u214.attachEvent("onmouseover", MouseOveru214);
+else u214.addEventListener("mouseover", MouseOveru214, true);
+function MouseOveru214(e)
+{
+windowEvent = e;
+
+if (!IsTrueMouseOver('u214',e)) return;
+if (true) {
+
+	SetPanelState('u211', 'pd1u211','none','',500,'none','',500);
+
+SetWidgetRichText('u62', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">Turquoise</span></p>');
+
+}
+
+}
+
+if (bIE) u214.attachEvent("onmouseout", MouseOutu214);
+else u214.addEventListener("mouseout", MouseOutu214, true);
+function MouseOutu214(e)
+{
+windowEvent = e;
+
+if (!IsTrueMouseOut('u214',e)) return;
+if (true) {
+
+	SetPanelState('u211', 'pd1u211','none','',500,'none','',500);
+
+SetWidgetRichText('u62', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">&nbsp;</span></p>');
+
+}
+
+}
 
 var u215 = document.getElementById('u215');
 gv_vAlignTable['u215'] = 'center';
 var u216 = document.getElementById('u216');
 
-u216.style.cursor = 'pointer';
-if (bIE) u216.attachEvent("onclick", Clicku216);
-else u216.addEventListener("click", Clicku216, true);
-function Clicku216(e)
-{
-windowEvent = e;
-
-
-if (true) {
-
-SetWidgetSelected('u216');
-}
-
-}
-
-if (bIE) u216.attachEvent("onmouseover", MouseOveru216);
-else u216.addEventListener("mouseover", MouseOveru216, true);
-function MouseOveru216(e)
-{
-windowEvent = e;
-
-if (!IsTrueMouseOver('u216',e)) return;
-if (true) {
-
-	SetPanelState('u213', 'pd1u213','none','',500,'none','',500);
-
-SetWidgetRichText('u59', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;"> Dark Purple</span></p>');
-
-}
-
-}
-
-if (bIE) u216.attachEvent("onmouseout", MouseOutu216);
-else u216.addEventListener("mouseout", MouseOutu216, true);
-function MouseOutu216(e)
-{
-windowEvent = e;
-
-if (!IsTrueMouseOut('u216',e)) return;
-if (true) {
-
-	SetPanelState('u213', 'pd0u213','none','',500,'none','',500);
-
-SetWidgetRichText('u59', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">&nbsp;</span></p>');
-
-}
-
-}
-
 var u217 = document.getElementById('u217');
-gv_vAlignTable['u217'] = 'center';
-var u218 = document.getElementById('u218');
 
+var u218 = document.getElementById('u218');
+gv_vAlignTable['u218'] = 'center';
 var u219 = document.getElementById('u219');
+
+u219.style.cursor = 'pointer';
+if (bIE) u219.attachEvent("onclick", Clicku219);
+else u219.addEventListener("click", Clicku219, true);
+function Clicku219(e)
+{
+windowEvent = e;
+
+
+if (true) {
+
+SetWidgetSelected('u219');
+}
+
+}
+
+if (bIE) u219.attachEvent("onmouseover", MouseOveru219);
+else u219.addEventListener("mouseover", MouseOveru219, true);
+function MouseOveru219(e)
+{
+windowEvent = e;
+
+if (!IsTrueMouseOver('u219',e)) return;
+if (true) {
+
+	SetPanelState('u216', 'pd1u216','none','',500,'none','',500);
+
+SetWidgetRichText('u62', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;"> Dark Purple</span></p>');
+
+}
+
+}
+
+if (bIE) u219.attachEvent("onmouseout", MouseOutu219);
+else u219.addEventListener("mouseout", MouseOutu219, true);
+function MouseOutu219(e)
+{
+windowEvent = e;
+
+if (!IsTrueMouseOut('u219',e)) return;
+if (true) {
+
+	SetPanelState('u216', 'pd0u216','none','',500,'none','',500);
+
+SetWidgetRichText('u62', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">&nbsp;</span></p>');
+
+}
+
+}
 
 var u140 = document.getElementById('u140');
 gv_vAlignTable['u140'] = 'center';
 var u429 = document.getElementById('u429');
-gv_vAlignTable['u429'] = 'center';
+
+if (bIE) u429.attachEvent("onmouseover", MouseOveru429);
+else u429.addEventListener("mouseover", MouseOveru429, true);
+function MouseOveru429(e)
+{
+windowEvent = e;
+
+if (!IsTrueMouseOver('u429',e)) return;
+if (true) {
+
+	SetPanelState('u418', 'pd1u418','none','',500,'none','',500);
+
+SetWidgetRichText('u487', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">Athletic Gold</span></p>');
+
+}
+
+}
+
 var u220 = document.getElementById('u220');
 gv_vAlignTable['u220'] = 'center';
 var u221 = document.getElementById('u221');
 
-u221.style.cursor = 'pointer';
-if (bIE) u221.attachEvent("onclick", Clicku221);
-else u221.addEventListener("click", Clicku221, true);
-function Clicku221(e)
-{
-windowEvent = e;
-
-
-if (true) {
-
-SetWidgetSelected('u221');
-}
-
-}
-
-if (bIE) u221.attachEvent("onmouseover", MouseOveru221);
-else u221.addEventListener("mouseover", MouseOveru221, true);
-function MouseOveru221(e)
-{
-windowEvent = e;
-
-if (!IsTrueMouseOver('u221',e)) return;
-if (true) {
-
-	SetPanelState('u218', 'pd1u218','none','',500,'none','',500);
-
-SetWidgetRichText('u59', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;"> Bright Purple</span></p>');
-
-}
-
-}
-
-if (bIE) u221.attachEvent("onmouseout", MouseOutu221);
-else u221.addEventListener("mouseout", MouseOutu221, true);
-function MouseOutu221(e)
-{
-windowEvent = e;
-
-if (!IsTrueMouseOut('u221',e)) return;
-if (true) {
-
-	SetPanelState('u218', 'pd0u218','none','',500,'none','',500);
-
-SetWidgetRichText('u59', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">&nbsp;</span></p>');
-
-}
-
-}
-
 var u222 = document.getElementById('u222');
-gv_vAlignTable['u222'] = 'center';
-var u223 = document.getElementById('u223');
 
+var u223 = document.getElementById('u223');
+gv_vAlignTable['u223'] = 'center';
 var u224 = document.getElementById('u224');
+
+u224.style.cursor = 'pointer';
+if (bIE) u224.attachEvent("onclick", Clicku224);
+else u224.addEventListener("click", Clicku224, true);
+function Clicku224(e)
+{
+windowEvent = e;
+
+
+if (true) {
+
+SetWidgetSelected('u224');
+}
+
+}
+
+if (bIE) u224.attachEvent("onmouseover", MouseOveru224);
+else u224.addEventListener("mouseover", MouseOveru224, true);
+function MouseOveru224(e)
+{
+windowEvent = e;
+
+if (!IsTrueMouseOver('u224',e)) return;
+if (true) {
+
+	SetPanelState('u221', 'pd1u221','none','',500,'none','',500);
+
+SetWidgetRichText('u62', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;"> Bright Purple</span></p>');
+
+}
+
+}
+
+if (bIE) u224.attachEvent("onmouseout", MouseOutu224);
+else u224.addEventListener("mouseout", MouseOutu224, true);
+function MouseOutu224(e)
+{
+windowEvent = e;
+
+if (!IsTrueMouseOut('u224',e)) return;
+if (true) {
+
+	SetPanelState('u221', 'pd0u221','none','',500,'none','',500);
+
+SetWidgetRichText('u62', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">&nbsp;</span></p>');
+
+}
+
+}
 
 var u225 = document.getElementById('u225');
 gv_vAlignTable['u225'] = 'center';
 var u226 = document.getElementById('u226');
 
-u226.style.cursor = 'pointer';
-if (bIE) u226.attachEvent("onclick", Clicku226);
-else u226.addEventListener("click", Clicku226, true);
-function Clicku226(e)
-{
-windowEvent = e;
-
-
-if (true) {
-
-SetWidgetSelected('u226');
-}
-
-}
-
-if (bIE) u226.attachEvent("onmouseover", MouseOveru226);
-else u226.addEventListener("mouseover", MouseOveru226, true);
-function MouseOveru226(e)
-{
-windowEvent = e;
-
-if (!IsTrueMouseOver('u226',e)) return;
-if (true) {
-
-	SetPanelState('u223', 'pd1u223','none','',500,'none','',500);
-
-SetWidgetRichText('u59', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">Light Purple</span></p>');
-
-}
-
-}
-
-if (bIE) u226.attachEvent("onmouseout", MouseOutu226);
-else u226.addEventListener("mouseout", MouseOutu226, true);
-function MouseOutu226(e)
-{
-windowEvent = e;
-
-if (!IsTrueMouseOut('u226',e)) return;
-if (true) {
-
-	SetPanelState('u223', 'pd0u223','none','',500,'none','',500);
-
-SetWidgetRichText('u59', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">&nbsp;</span></p>');
-
-}
-
-}
-
 var u227 = document.getElementById('u227');
-gv_vAlignTable['u227'] = 'center';
-var u228 = document.getElementById('u228');
 
+var u228 = document.getElementById('u228');
+gv_vAlignTable['u228'] = 'center';
 var u229 = document.getElementById('u229');
+
+u229.style.cursor = 'pointer';
+if (bIE) u229.attachEvent("onclick", Clicku229);
+else u229.addEventListener("click", Clicku229, true);
+function Clicku229(e)
+{
+windowEvent = e;
+
+
+if (true) {
+
+SetWidgetSelected('u229');
+}
+
+}
+
+if (bIE) u229.attachEvent("onmouseover", MouseOveru229);
+else u229.addEventListener("mouseover", MouseOveru229, true);
+function MouseOveru229(e)
+{
+windowEvent = e;
+
+if (!IsTrueMouseOver('u229',e)) return;
+if (true) {
+
+	SetPanelState('u226', 'pd1u226','none','',500,'none','',500);
+
+SetWidgetRichText('u62', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">Light Purple</span></p>');
+
+}
+
+}
+
+if (bIE) u229.attachEvent("onmouseout", MouseOutu229);
+else u229.addEventListener("mouseout", MouseOutu229, true);
+function MouseOutu229(e)
+{
+windowEvent = e;
+
+if (!IsTrueMouseOut('u229',e)) return;
+if (true) {
+
+	SetPanelState('u226', 'pd0u226','none','',500,'none','',500);
+
+SetWidgetRichText('u62', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">&nbsp;</span></p>');
+
+}
+
+}
 
 var u150 = document.getElementById('u150');
 gv_vAlignTable['u150'] = 'center';
 var u151 = document.getElementById('u151');
 
-u151.style.cursor = 'pointer';
-if (bIE) u151.attachEvent("onclick", Clicku151);
-else u151.addEventListener("click", Clicku151, true);
-function Clicku151(e)
-{
-windowEvent = e;
-
-
-if (true) {
-
-SetWidgetSelected('u151');
-}
-
-}
-
-if (bIE) u151.attachEvent("onmouseover", MouseOveru151);
-else u151.addEventListener("mouseover", MouseOveru151, true);
-function MouseOveru151(e)
-{
-windowEvent = e;
-
-if (!IsTrueMouseOver('u151',e)) return;
-if (true) {
-
-	SetPanelState('u148', 'pd1u148','none','',500,'none','',500);
-
-SetWidgetRichText('u59', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">Gold</span></p>');
-
-}
-
-}
-
-if (bIE) u151.attachEvent("onmouseout", MouseOutu151);
-else u151.addEventListener("mouseout", MouseOutu151, true);
-function MouseOutu151(e)
-{
-windowEvent = e;
-
-if (!IsTrueMouseOut('u151',e)) return;
-if (true) {
-
-	SetPanelState('u148', 'pd0u148','none','',500,'none','',500);
-
-SetWidgetRichText('u59', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">&nbsp;</span></p>');
-
-}
-
-}
-
 var u152 = document.getElementById('u152');
-gv_vAlignTable['u152'] = 'center';
+
 var u230 = document.getElementById('u230');
 gv_vAlignTable['u230'] = 'center';
 var u231 = document.getElementById('u231');
 
-u231.style.cursor = 'pointer';
-if (bIE) u231.attachEvent("onclick", Clicku231);
-else u231.addEventListener("click", Clicku231, true);
-function Clicku231(e)
-{
-windowEvent = e;
-
-
-if (true) {
-
-SetWidgetSelected('u231');
-}
-
-}
-
-if (bIE) u231.attachEvent("onmouseover", MouseOveru231);
-else u231.addEventListener("mouseover", MouseOveru231, true);
-function MouseOveru231(e)
-{
-windowEvent = e;
-
-if (!IsTrueMouseOver('u231',e)) return;
-if (true) {
-
-	SetPanelState('u228', 'pd1u228','none','',500,'none','',500);
-
-SetWidgetRichText('u59', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">Maroon</span></p>');
-
-}
-
-}
-
-if (bIE) u231.attachEvent("onmouseout", MouseOutu231);
-else u231.addEventListener("mouseout", MouseOutu231, true);
-function MouseOutu231(e)
-{
-windowEvent = e;
-
-if (!IsTrueMouseOut('u231',e)) return;
-if (true) {
-
-	SetPanelState('u228', 'pd0u228','none','',500,'none','',500);
-
-SetWidgetRichText('u59', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">&nbsp;</span></p>');
-
-}
-
-}
-
 var u232 = document.getElementById('u232');
-gv_vAlignTable['u232'] = 'center';
+
 var u233 = document.getElementById('u233');
-gv_vAlignTable['u233'] = 'top';
+gv_vAlignTable['u233'] = 'center';
 var u234 = document.getElementById('u234');
-gv_vAlignTable['u234'] = 'top';
+
+u234.style.cursor = 'pointer';
+if (bIE) u234.attachEvent("onclick", Clicku234);
+else u234.addEventListener("click", Clicku234, true);
+function Clicku234(e)
+{
+windowEvent = e;
+
+
+if (true) {
+
+SetWidgetSelected('u234');
+}
+
+}
+
+if (bIE) u234.attachEvent("onmouseover", MouseOveru234);
+else u234.addEventListener("mouseover", MouseOveru234, true);
+function MouseOveru234(e)
+{
+windowEvent = e;
+
+if (!IsTrueMouseOver('u234',e)) return;
+if (true) {
+
+	SetPanelState('u231', 'pd1u231','none','',500,'none','',500);
+
+SetWidgetRichText('u62', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">Maroon</span></p>');
+
+}
+
+}
+
+if (bIE) u234.attachEvent("onmouseout", MouseOutu234);
+else u234.addEventListener("mouseout", MouseOutu234, true);
+function MouseOutu234(e)
+{
+windowEvent = e;
+
+if (!IsTrueMouseOut('u234',e)) return;
+if (true) {
+
+	SetPanelState('u231', 'pd0u231','none','',500,'none','',500);
+
+SetWidgetRichText('u62', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">&nbsp;</span></p>');
+
+}
+
+}
+
 var u235 = document.getElementById('u235');
-gv_vAlignTable['u235'] = 'top';
+gv_vAlignTable['u235'] = 'center';
 var u236 = document.getElementById('u236');
 gv_vAlignTable['u236'] = 'top';
 var u237 = document.getElementById('u237');
-
-u237.style.cursor = 'pointer';
-if (bIE) u237.attachEvent("onclick", Clicku237);
-else u237.addEventListener("click", Clicku237, true);
-function Clicku237(e)
-{
-windowEvent = e;
-
-
-if (true) {
-
-	SetPanelState('u41', 'pd3u41','none','',500,'none','',500);
-
-}
-
-}
-
+gv_vAlignTable['u237'] = 'top';
 var u238 = document.getElementById('u238');
 gv_vAlignTable['u238'] = 'top';
 var u239 = document.getElementById('u239');
 
+u239.style.cursor = 'pointer';
+if (bIE) u239.attachEvent("onclick", Clicku239);
+else u239.addEventListener("click", Clicku239, true);
+function Clicku239(e)
+{
+windowEvent = e;
+
+
+if (true) {
+
+	SetPanelState('u43', 'pd3u43','none','',500,'none','',500);
+
+}
+
+}
+
 var u134 = document.getElementById('u134');
+
+u134.style.cursor = 'pointer';
+if (bIE) u134.attachEvent("onclick", Clicku134);
+else u134.addEventListener("click", Clicku134, true);
+function Clicku134(e)
+{
+windowEvent = e;
+
+
+if (true) {
+
+SetWidgetSelected('u134');
+}
+
+}
+
+if (bIE) u134.attachEvent("onmouseover", MouseOveru134);
+else u134.addEventListener("mouseover", MouseOveru134, true);
+function MouseOveru134(e)
+{
+windowEvent = e;
+
+if (!IsTrueMouseOver('u134',e)) return;
+if (true) {
+
+	SetPanelState('u131', 'pd1u131','none','',500,'none','',500);
+
+SetWidgetRichText('u62', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">Tan</span></p>');
+
+}
+
+}
+
+if (bIE) u134.attachEvent("onmouseout", MouseOutu134);
+else u134.addEventListener("mouseout", MouseOutu134, true);
+function MouseOutu134(e)
+{
+windowEvent = e;
+
+if (!IsTrueMouseOut('u134',e)) return;
+if (true) {
+
+	SetPanelState('u131', 'pd0u131','none','',500,'none','',500);
+
+SetWidgetRichText('u62', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">&nbsp;</span></p>');
+
+}
+
+}
 
 var u160 = document.getElementById('u160');
 gv_vAlignTable['u160'] = 'center';
 var u161 = document.getElementById('u161');
 
-u161.style.cursor = 'pointer';
-if (bIE) u161.attachEvent("onclick", Clicku161);
-else u161.addEventListener("click", Clicku161, true);
-function Clicku161(e)
-{
-windowEvent = e;
-
-
-if (true) {
-
-SetWidgetSelected('u161');
-}
-
-}
-
-if (bIE) u161.attachEvent("onmouseover", MouseOveru161);
-else u161.addEventListener("mouseover", MouseOveru161, true);
-function MouseOveru161(e)
-{
-windowEvent = e;
-
-if (!IsTrueMouseOver('u161',e)) return;
-if (true) {
-
-	SetPanelState('u158', 'pd1u158','none','',500,'none','',500);
-
-SetWidgetRichText('u59', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;"> Lemon</span></p>');
-
-}
-
-}
-
-if (bIE) u161.attachEvent("onmouseout", MouseOutu161);
-else u161.addEventListener("mouseout", MouseOutu161, true);
-function MouseOutu161(e)
-{
-windowEvent = e;
-
-if (!IsTrueMouseOut('u161',e)) return;
-if (true) {
-
-	SetPanelState('u158', 'pd1u158','none','',500,'none','',500);
-
-SetWidgetRichText('u59', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">&nbsp;</span></p>');
-
-}
-
-}
-
 var u162 = document.getElementById('u162');
-gv_vAlignTable['u162'] = 'center';
-var u163 = document.getElementById('u163');
 
+var u163 = document.getElementById('u163');
+gv_vAlignTable['u163'] = 'center';
 var u240 = document.getElementById('u240');
 
 var u241 = document.getElementById('u241');
-gv_vAlignTable['u241'] = 'center';
+
 var u242 = document.getElementById('u242');
-gv_vAlignTable['u242'] = 'top';
+gv_vAlignTable['u242'] = 'center';
 var u243 = document.getElementById('u243');
 gv_vAlignTable['u243'] = 'top';
 var u244 = document.getElementById('u244');
-
+gv_vAlignTable['u244'] = 'top';
 var u245 = document.getElementById('u245');
-gv_vAlignTable['u245'] = 'center';
+
 var u246 = document.getElementById('u246');
-gv_vAlignTable['u246'] = 'top';
+gv_vAlignTable['u246'] = 'center';
 var u247 = document.getElementById('u247');
 gv_vAlignTable['u247'] = 'top';
 var u248 = document.getElementById('u248');
-
+gv_vAlignTable['u248'] = 'top';
 var u600 = document.getElementById('u600');
+gv_vAlignTable['u600'] = 'center';
+var u601 = document.getElementById('u601');
 
-u600.style.cursor = 'pointer';
-if (bIE) u600.attachEvent("onclick", Clicku600);
-else u600.addEventListener("click", Clicku600, true);
-function Clicku600(e)
+u601.style.cursor = 'pointer';
+if (bIE) u601.attachEvent("onclick", Clicku601);
+else u601.addEventListener("click", Clicku601, true);
+function Clicku601(e)
 {
 windowEvent = e;
 
 
 if (true) {
 
-	SetPanelState('u591', 'pd3u591','none','',500,'none','',500);
+	SetPanelState('u592', 'pd3u592','none','',500,'none','',500);
 
 SetGlobalVariableValue('$colorCount', '' + (GetNum(GetGlobalVariableValue('$colorCount')) + GetNum(1)) + '');
 
-SetWidgetRichText('u485', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">' + (GetGlobalVariableValue('$colorCount')) + ' colors selected</span></p>');
+SetWidgetRichText('u486', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">' + (GetGlobalVariableValue('$colorCount')) + ' colors selected</span></p>');
 
 }
 
 }
 
-if (bIE) u600.attachEvent("onmouseout", MouseOutu600);
-else u600.addEventListener("mouseout", MouseOutu600, true);
-function MouseOutu600(e)
+if (bIE) u601.attachEvent("onmouseout", MouseOutu601);
+else u601.addEventListener("mouseout", MouseOutu601, true);
+function MouseOutu601(e)
 {
 windowEvent = e;
 
-if (!IsTrueMouseOut('u600',e)) return;
+if (!IsTrueMouseOut('u601',e)) return;
 if (true) {
 
-	SetPanelState('u591', 'pd0u591','none','',500,'none','',500);
+	SetPanelState('u592', 'pd0u592','none','',500,'none','',500);
 
-SetWidgetRichText('u486', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">&nbsp;</span></p>');
-
-}
+SetWidgetRichText('u487', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">&nbsp;</span></p>');
 
 }
 
-var u601 = document.getElementById('u601');
-gv_vAlignTable['u601'] = 'center';
+}
+
 var u602 = document.getElementById('u602');
+gv_vAlignTable['u602'] = 'center';
+var u603 = document.getElementById('u603');
 
-if (bIE) u602.attachEvent("onmouseover", MouseOveru602);
-else u602.addEventListener("mouseover", MouseOveru602, true);
-function MouseOveru602(e)
+if (bIE) u603.attachEvent("onmouseover", MouseOveru603);
+else u603.addEventListener("mouseover", MouseOveru603, true);
+function MouseOveru603(e)
 {
 windowEvent = e;
 
-if (!IsTrueMouseOver('u602',e)) return;
+if (!IsTrueMouseOver('u603',e)) return;
 if (true) {
 
-	SetPanelState('u591', 'pd1u591','none','',500,'none','',500);
+	SetPanelState('u592', 'pd1u592','none','',500,'none','',500);
 
-SetWidgetRichText('u486', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">Navy</span></p>');
-
-}
+SetWidgetRichText('u487', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">Navy</span></p>');
 
 }
 
-var u603 = document.getElementById('u603');
-gv_vAlignTable['u603'] = 'center';
+}
+
 var u604 = document.getElementById('u604');
-
+gv_vAlignTable['u604'] = 'center';
 var u605 = document.getElementById('u605');
 
 var u606 = document.getElementById('u606');
-gv_vAlignTable['u606'] = 'center';
-var u607 = document.getElementById('u607');
 
-u607.style.cursor = 'pointer';
-if (bIE) u607.attachEvent("onclick", Clicku607);
-else u607.addEventListener("click", Clicku607, true);
-function Clicku607(e)
+var u607 = document.getElementById('u607');
+gv_vAlignTable['u607'] = 'center';
+var u608 = document.getElementById('u608');
+
+u608.style.cursor = 'pointer';
+if (bIE) u608.attachEvent("onclick", Clicku608);
+else u608.addEventListener("click", Clicku608, true);
+function Clicku608(e)
 {
 windowEvent = e;
 
 
 if (true) {
 
-	SetPanelState('u604', 'pd1u604','none','',500,'none','',500);
+	SetPanelState('u605', 'pd1u605','none','',500,'none','',500);
 
 SetGlobalVariableValue('$colorCount', '' + (GetGlobalVariableValue('$colorCount') - GetNum(1)) + '');
 
-SetWidgetRichText('u485', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">' + (GetGlobalVariableValue('$colorCount')) + ' colors selected</span></p>');
+SetWidgetRichText('u486', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">' + (GetGlobalVariableValue('$colorCount')) + ' colors selected</span></p>');
 
 }
 
 }
 
-if (bIE) u607.attachEvent("onmouseout", MouseOutu607);
-else u607.addEventListener("mouseout", MouseOutu607, true);
-function MouseOutu607(e)
+if (bIE) u608.attachEvent("onmouseout", MouseOutu608);
+else u608.addEventListener("mouseout", MouseOutu608, true);
+function MouseOutu608(e)
 {
 windowEvent = e;
 
-if (!IsTrueMouseOut('u607',e)) return;
+if (!IsTrueMouseOut('u608',e)) return;
 if (true) {
 
-	SetPanelState('u604', 'pd2u604','none','',500,'none','',500);
+	SetPanelState('u605', 'pd2u605','none','',500,'none','',500);
 
-SetWidgetRichText('u486', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">&nbsp;</span></p>');
-
-}
+SetWidgetRichText('u487', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">&nbsp;</span></p>');
 
 }
 
-var u608 = document.getElementById('u608');
-gv_vAlignTable['u608'] = 'center';
+}
+
 var u609 = document.getElementById('u609');
-
-if (bIE) u609.attachEvent("onmouseover", MouseOveru609);
-else u609.addEventListener("mouseover", MouseOveru609, true);
-function MouseOveru609(e)
-{
-windowEvent = e;
-
-if (!IsTrueMouseOver('u609',e)) return;
-if (true) {
-
-	SetPanelState('u604', 'pd3u604','none','',500,'none','',500);
-
-SetWidgetRichText('u486', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">Royal</span></p>');
-
-}
-
-}
-
+gv_vAlignTable['u609'] = 'center';
 var u141 = document.getElementById('u141');
-
-u141.style.cursor = 'pointer';
-if (bIE) u141.attachEvent("onclick", Clicku141);
-else u141.addEventListener("click", Clicku141, true);
-function Clicku141(e)
-{
-windowEvent = e;
-
-
-if (true) {
-
-SetWidgetSelected('u141');
-}
-
-}
-
-if (bIE) u141.attachEvent("onmouseover", MouseOveru141);
-else u141.addEventListener("mouseover", MouseOveru141, true);
-function MouseOveru141(e)
-{
-windowEvent = e;
-
-if (!IsTrueMouseOver('u141',e)) return;
-if (true) {
-
-	SetPanelState('u138', 'pd1u138','none','',500,'none','',500);
-
-SetWidgetRichText('u59', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;"> Old Gold</span></p>');
-
-}
-
-}
-
-if (bIE) u141.attachEvent("onmouseout", MouseOutu141);
-else u141.addEventListener("mouseout", MouseOutu141, true);
-function MouseOutu141(e)
-{
-windowEvent = e;
-
-if (!IsTrueMouseOut('u141',e)) return;
-if (true) {
-
-	SetPanelState('u138', 'pd0u138','none','',500,'none','',500);
-
-SetWidgetRichText('u59', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">&nbsp;</span></p>');
-
-}
-
-}
 
 var u170 = document.getElementById('u170');
 gv_vAlignTable['u170'] = 'center';
 var u171 = document.getElementById('u171');
 
-u171.style.cursor = 'pointer';
-if (bIE) u171.attachEvent("onclick", Clicku171);
-else u171.addEventListener("click", Clicku171, true);
-function Clicku171(e)
-{
-windowEvent = e;
-
-
-if (true) {
-
-SetWidgetSelected('u171');
-}
-
-}
-
-if (bIE) u171.attachEvent("onmouseover", MouseOveru171);
-else u171.addEventListener("mouseover", MouseOveru171, true);
-function MouseOveru171(e)
-{
-windowEvent = e;
-
-if (!IsTrueMouseOver('u171',e)) return;
-if (true) {
-
-	SetPanelState('u168', 'pd1u168','none','',500,'none','',500);
-
-SetWidgetRichText('u59', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">Kelly</span></p>');
-
-}
-
-}
-
-if (bIE) u171.attachEvent("onmouseout", MouseOutu171);
-else u171.addEventListener("mouseout", MouseOutu171, true);
-function MouseOutu171(e)
-{
-windowEvent = e;
-
-if (!IsTrueMouseOut('u171',e)) return;
-if (true) {
-
-	SetPanelState('u168', 'pd0u168','none','',500,'none','',500);
-
-SetWidgetRichText('u59', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">&nbsp;</span></p>');
-
-}
-
-}
-
 var u172 = document.getElementById('u172');
-gv_vAlignTable['u172'] = 'center';
-var u250 = document.getElementById('u250');
-gv_vAlignTable['u250'] = 'center';
-var u251 = document.getElementById('u251');
 
-u251.style.cursor = 'pointer';
-if (bIE) u251.attachEvent("onclick", Clicku251);
-else u251.addEventListener("click", Clicku251, true);
-function Clicku251(e)
+var u250 = document.getElementById('u250');
+
+var u251 = document.getElementById('u251');
+gv_vAlignTable['u251'] = 'center';
+var u252 = document.getElementById('u252');
+
+u252.style.cursor = 'pointer';
+if (bIE) u252.attachEvent("onclick", Clicku252);
+else u252.addEventListener("click", Clicku252, true);
+function Clicku252(e)
 {
 windowEvent = e;
 
 
 if (true) {
 
-	SetPanelState('u248', 'pd1u248','none','',500,'none','',500);
+	SetPanelState('u249', 'pd1u249','none','',500,'none','',500);
 
 SetGlobalVariableValue('$colorCount', '' + (GetGlobalVariableValue('$colorCount') - GetNum(1)) + '');
 
-SetWidgetRichText('u485', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">' + (GetGlobalVariableValue('$colorCount')) + ' colors selected</span></p>');
+SetWidgetRichText('u486', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">' + (GetGlobalVariableValue('$colorCount')) + ' colors selected</span></p>');
 
 }
 
 }
 
-if (bIE) u251.attachEvent("onmouseout", MouseOutu251);
-else u251.addEventListener("mouseout", MouseOutu251, true);
-function MouseOutu251(e)
+if (bIE) u252.attachEvent("onmouseout", MouseOutu252);
+else u252.addEventListener("mouseout", MouseOutu252, true);
+function MouseOutu252(e)
 {
 windowEvent = e;
 
-if (!IsTrueMouseOut('u251',e)) return;
+if (!IsTrueMouseOut('u252',e)) return;
 if (true) {
 
-	SetPanelState('u248', 'pd2u248','none','',500,'none','',500);
+	SetPanelState('u249', 'pd2u249','none','',500,'none','',500);
 
-SetWidgetRichText('u486', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">&nbsp;</span></p>');
-
-}
+SetWidgetRichText('u487', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">&nbsp;</span></p>');
 
 }
 
-var u252 = document.getElementById('u252');
-gv_vAlignTable['u252'] = 'center';
+}
+
 var u253 = document.getElementById('u253');
-
-if (bIE) u253.attachEvent("onmouseover", MouseOveru253);
-else u253.addEventListener("mouseover", MouseOveru253, true);
-function MouseOveru253(e)
-{
-windowEvent = e;
-
-if (!IsTrueMouseOver('u253',e)) return;
-if (true) {
-
-	SetPanelState('u248', 'pd3u248','none','',500,'none','',500);
-
-SetWidgetRichText('u486', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">Black</span></p>');
-
-}
-
-}
-
+gv_vAlignTable['u253'] = 'center';
 var u254 = document.getElementById('u254');
-gv_vAlignTable['u254'] = 'center';
+
+if (bIE) u254.attachEvent("onmouseover", MouseOveru254);
+else u254.addEventListener("mouseover", MouseOveru254, true);
+function MouseOveru254(e)
+{
+windowEvent = e;
+
+if (!IsTrueMouseOver('u254',e)) return;
+if (true) {
+
+	SetPanelState('u249', 'pd3u249','none','',500,'none','',500);
+
+SetWidgetRichText('u487', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">Black</span></p>');
+
+}
+
+}
+
 var u255 = document.getElementById('u255');
-
+gv_vAlignTable['u255'] = 'center';
 var u256 = document.getElementById('u256');
-gv_vAlignTable['u256'] = 'center';
+
 var u257 = document.getElementById('u257');
-
-u257.style.cursor = 'pointer';
-if (bIE) u257.attachEvent("onclick", Clicku257);
-else u257.addEventListener("click", Clicku257, true);
-function Clicku257(e)
-{
-windowEvent = e;
-
-
-if (true) {
-
-	SetPanelState('u248', 'pd3u248','none','',500,'none','',500);
-
-SetGlobalVariableValue('$colorCount', '' + (GetNum(GetGlobalVariableValue('$colorCount')) + GetNum(1)) + '');
-
-SetWidgetRichText('u485', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">' + (GetGlobalVariableValue('$colorCount')) + ' colors selected</span></p>');
-
-}
-
-}
-
-if (bIE) u257.attachEvent("onmouseout", MouseOutu257);
-else u257.addEventListener("mouseout", MouseOutu257, true);
-function MouseOutu257(e)
-{
-windowEvent = e;
-
-if (!IsTrueMouseOut('u257',e)) return;
-if (true) {
-
-	SetPanelState('u248', 'pd0u248','none','',500,'none','',500);
-
-SetWidgetRichText('u486', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">&nbsp;</span></p>');
-
-}
-
-}
-
+gv_vAlignTable['u257'] = 'center';
 var u258 = document.getElementById('u258');
-gv_vAlignTable['u258'] = 'center';
-var u259 = document.getElementById('u259');
 
-if (bIE) u259.attachEvent("onmouseover", MouseOveru259);
-else u259.addEventListener("mouseover", MouseOveru259, true);
-function MouseOveru259(e)
-{
-windowEvent = e;
-
-if (!IsTrueMouseOver('u259',e)) return;
-if (true) {
-
-	SetPanelState('u248', 'pd1u248','none','',500,'none','',500);
-
-SetWidgetRichText('u486', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;"> Black</span></p>');
-
-}
-
-}
-
-var u611 = document.getElementById('u611');
-
-var u612 = document.getElementById('u612');
-gv_vAlignTable['u612'] = 'center';
-var u613 = document.getElementById('u613');
-
-u613.style.cursor = 'pointer';
-if (bIE) u613.attachEvent("onclick", Clicku613);
-else u613.addEventListener("click", Clicku613, true);
-function Clicku613(e)
+u258.style.cursor = 'pointer';
+if (bIE) u258.attachEvent("onclick", Clicku258);
+else u258.addEventListener("click", Clicku258, true);
+function Clicku258(e)
 {
 windowEvent = e;
 
 
 if (true) {
 
-	SetPanelState('u604', 'pd3u604','none','',500,'none','',500);
+	SetPanelState('u249', 'pd3u249','none','',500,'none','',500);
 
 SetGlobalVariableValue('$colorCount', '' + (GetNum(GetGlobalVariableValue('$colorCount')) + GetNum(1)) + '');
 
-SetWidgetRichText('u485', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">' + (GetGlobalVariableValue('$colorCount')) + ' colors selected</span></p>');
+SetWidgetRichText('u486', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">' + (GetGlobalVariableValue('$colorCount')) + ' colors selected</span></p>');
 
 }
 
 }
 
-if (bIE) u613.attachEvent("onmouseout", MouseOutu613);
-else u613.addEventListener("mouseout", MouseOutu613, true);
-function MouseOutu613(e)
+if (bIE) u258.attachEvent("onmouseout", MouseOutu258);
+else u258.addEventListener("mouseout", MouseOutu258, true);
+function MouseOutu258(e)
 {
 windowEvent = e;
 
-if (!IsTrueMouseOut('u613',e)) return;
+if (!IsTrueMouseOut('u258',e)) return;
 if (true) {
 
-	SetPanelState('u604', 'pd0u604','none','',500,'none','',500);
+	SetPanelState('u249', 'pd0u249','none','',500,'none','',500);
 
-SetWidgetRichText('u486', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">&nbsp;</span></p>');
-
-}
+SetWidgetRichText('u487', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">&nbsp;</span></p>');
 
 }
 
+}
+
+var u259 = document.getElementById('u259');
+gv_vAlignTable['u259'] = 'center';
+var u611 = document.getElementById('u611');
+gv_vAlignTable['u611'] = 'center';
+var u612 = document.getElementById('u612');
+
+var u613 = document.getElementById('u613');
+gv_vAlignTable['u613'] = 'center';
 var u614 = document.getElementById('u614');
-gv_vAlignTable['u614'] = 'center';
-var u615 = document.getElementById('u615');
 
-if (bIE) u615.attachEvent("onmouseover", MouseOveru615);
-else u615.addEventListener("mouseover", MouseOveru615, true);
-function MouseOveru615(e)
+u614.style.cursor = 'pointer';
+if (bIE) u614.attachEvent("onclick", Clicku614);
+else u614.addEventListener("click", Clicku614, true);
+function Clicku614(e)
 {
 windowEvent = e;
 
-if (!IsTrueMouseOver('u615',e)) return;
+
 if (true) {
 
-	SetPanelState('u604', 'pd1u604','none','',500,'none','',500);
+	SetPanelState('u605', 'pd3u605','none','',500,'none','',500);
 
-SetWidgetRichText('u486', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">Royal</span></p>');
+SetGlobalVariableValue('$colorCount', '' + (GetNum(GetGlobalVariableValue('$colorCount')) + GetNum(1)) + '');
+
+SetWidgetRichText('u486', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">' + (GetGlobalVariableValue('$colorCount')) + ' colors selected</span></p>');
 
 }
 
 }
 
+if (bIE) u614.attachEvent("onmouseout", MouseOutu614);
+else u614.addEventListener("mouseout", MouseOutu614, true);
+function MouseOutu614(e)
+{
+windowEvent = e;
+
+if (!IsTrueMouseOut('u614',e)) return;
+if (true) {
+
+	SetPanelState('u605', 'pd0u605','none','',500,'none','',500);
+
+SetWidgetRichText('u487', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">&nbsp;</span></p>');
+
+}
+
+}
+
+var u615 = document.getElementById('u615');
+gv_vAlignTable['u615'] = 'center';
 var u616 = document.getElementById('u616');
-gv_vAlignTable['u616'] = 'center';
-var u617 = document.getElementById('u617');
 
+if (bIE) u616.attachEvent("onmouseover", MouseOveru616);
+else u616.addEventListener("mouseover", MouseOveru616, true);
+function MouseOveru616(e)
+{
+windowEvent = e;
+
+if (!IsTrueMouseOver('u616',e)) return;
+if (true) {
+
+	SetPanelState('u605', 'pd1u605','none','',500,'none','',500);
+
+SetWidgetRichText('u487', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">Royal</span></p>');
+
+}
+
+}
+
+var u617 = document.getElementById('u617');
+gv_vAlignTable['u617'] = 'center';
 var u618 = document.getElementById('u618');
 
 var u619 = document.getElementById('u619');
-gv_vAlignTable['u619'] = 'center';
+
 var u0 = document.getElementById('u0');
 
 var u1 = document.getElementById('u1');
@@ -7293,166 +7243,220 @@ var u7 = document.getElementById('u7');
 var u8 = document.getElementById('u8');
 gv_vAlignTable['u8'] = 'center';
 var u260 = document.getElementById('u260');
-gv_vAlignTable['u260'] = 'center';
-var u261 = document.getElementById('u261');
 
+if (bIE) u260.attachEvent("onmouseover", MouseOveru260);
+else u260.addEventListener("mouseover", MouseOveru260, true);
+function MouseOveru260(e)
+{
+windowEvent = e;
+
+if (!IsTrueMouseOver('u260',e)) return;
+if (true) {
+
+	SetPanelState('u249', 'pd1u249','none','',500,'none','',500);
+
+SetWidgetRichText('u487', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;"> Black</span></p>');
+
+}
+
+}
+
+var u261 = document.getElementById('u261');
+gv_vAlignTable['u261'] = 'center';
 var u262 = document.getElementById('u262');
 
 var u263 = document.getElementById('u263');
-gv_vAlignTable['u263'] = 'center';
-var u264 = document.getElementById('u264');
 
-u264.style.cursor = 'pointer';
-if (bIE) u264.attachEvent("onclick", Clicku264);
-else u264.addEventListener("click", Clicku264, true);
-function Clicku264(e)
+var u264 = document.getElementById('u264');
+gv_vAlignTable['u264'] = 'center';
+var u265 = document.getElementById('u265');
+
+u265.style.cursor = 'pointer';
+if (bIE) u265.attachEvent("onclick", Clicku265);
+else u265.addEventListener("click", Clicku265, true);
+function Clicku265(e)
 {
 windowEvent = e;
 
 
 if (true) {
 
-	SetPanelState('u261', 'pd1u261','none','',500,'none','',500);
+	SetPanelState('u262', 'pd1u262','none','',500,'none','',500);
 
 SetGlobalVariableValue('$colorCount', '' + (GetGlobalVariableValue('$colorCount') - GetNum(1)) + '');
 
-SetWidgetRichText('u485', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">' + (GetGlobalVariableValue('$colorCount')) + ' colors selected</span></p>');
+SetWidgetRichText('u486', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">' + (GetGlobalVariableValue('$colorCount')) + ' colors selected</span></p>');
 
 }
 
 }
 
-if (bIE) u264.attachEvent("onmouseout", MouseOutu264);
-else u264.addEventListener("mouseout", MouseOutu264, true);
-function MouseOutu264(e)
+if (bIE) u265.attachEvent("onmouseout", MouseOutu265);
+else u265.addEventListener("mouseout", MouseOutu265, true);
+function MouseOutu265(e)
 {
 windowEvent = e;
 
-if (!IsTrueMouseOut('u264',e)) return;
+if (!IsTrueMouseOut('u265',e)) return;
 if (true) {
 
-	SetPanelState('u261', 'pd2u261','none','',500,'none','',500);
+	SetPanelState('u262', 'pd2u262','none','',500,'none','',500);
 
-SetWidgetRichText('u486', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">&nbsp;</span></p>');
-
-}
+SetWidgetRichText('u487', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">&nbsp;</span></p>');
 
 }
 
-var u265 = document.getElementById('u265');
-gv_vAlignTable['u265'] = 'center';
+}
+
 var u266 = document.getElementById('u266');
-
-if (bIE) u266.attachEvent("onmouseover", MouseOveru266);
-else u266.addEventListener("mouseover", MouseOveru266, true);
-function MouseOveru266(e)
-{
-windowEvent = e;
-
-if (!IsTrueMouseOver('u266',e)) return;
-if (true) {
-
-	SetPanelState('u261', 'pd3u261','none','',500,'none','',500);
-
-SetWidgetRichText('u486', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">Light Grey</span></p>');
-
-}
-
-}
-
+gv_vAlignTable['u266'] = 'center';
 var u267 = document.getElementById('u267');
-gv_vAlignTable['u267'] = 'center';
+
+if (bIE) u267.attachEvent("onmouseover", MouseOveru267);
+else u267.addEventListener("mouseover", MouseOveru267, true);
+function MouseOveru267(e)
+{
+windowEvent = e;
+
+if (!IsTrueMouseOver('u267',e)) return;
+if (true) {
+
+	SetPanelState('u262', 'pd3u262','none','',500,'none','',500);
+
+SetWidgetRichText('u487', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">Light Grey</span></p>');
+
+}
+
+}
+
 var u268 = document.getElementById('u268');
-
+gv_vAlignTable['u268'] = 'center';
 var u269 = document.getElementById('u269');
-gv_vAlignTable['u269'] = 'center';
+
 var u621 = document.getElementById('u621');
-gv_vAlignTable['u621'] = 'center';
+
+u621.style.cursor = 'pointer';
+if (bIE) u621.attachEvent("onclick", Clicku621);
+else u621.addEventListener("click", Clicku621, true);
+function Clicku621(e)
+{
+windowEvent = e;
+
+
+if ((GetGlobalVariableValue('$colorCount')) == ('1')) {
+
+	SetPanelState('u618', 'pd1u618','none','',500,'none','',500);
+
+SetGlobalVariableValue('$colorCount', '' + (GetGlobalVariableValue('$colorCount') - GetNum(1)) + '');
+
+SetWidgetRichText('u486', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">' + (GetGlobalVariableValue('$colorCount')) + ' colors selected</span></p>');
+
+}
+
+}
+
+if (bIE) u621.attachEvent("onmouseout", MouseOutu621);
+else u621.addEventListener("mouseout", MouseOutu621, true);
+function MouseOutu621(e)
+{
+windowEvent = e;
+
+if (!IsTrueMouseOut('u621',e)) return;
+if (true) {
+
+	SetPanelState('u618', 'pd2u618','none','',500,'none','',500);
+
+SetWidgetRichText('u487', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">&nbsp;</span></p>');
+
+}
+
+}
+
 var u622 = document.getElementById('u622');
-
-if (bIE) u622.attachEvent("onmouseover", MouseOveru622);
-else u622.addEventListener("mouseover", MouseOveru622, true);
-function MouseOveru622(e)
-{
-windowEvent = e;
-
-if (!IsTrueMouseOver('u622',e)) return;
-if (true) {
-
-	SetPanelState('u617', 'pd3u617','none','',500,'none','',500);
-
-SetWidgetRichText('u486', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">Blue</span></p>');
-
-}
-
-}
-
+gv_vAlignTable['u622'] = 'center';
 var u623 = document.getElementById('u623');
-gv_vAlignTable['u623'] = 'center';
+
+if (bIE) u623.attachEvent("onmouseover", MouseOveru623);
+else u623.addEventListener("mouseover", MouseOveru623, true);
+function MouseOveru623(e)
+{
+windowEvent = e;
+
+if (!IsTrueMouseOver('u623',e)) return;
+if (true) {
+
+	SetPanelState('u618', 'pd3u618','none','',500,'none','',500);
+
+SetWidgetRichText('u487', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">Blue</span></p>');
+
+}
+
+}
+
 var u624 = document.getElementById('u624');
-
+gv_vAlignTable['u624'] = 'center';
 var u625 = document.getElementById('u625');
-gv_vAlignTable['u625'] = 'center';
-var u626 = document.getElementById('u626');
 
-u626.style.cursor = 'pointer';
-if (bIE) u626.attachEvent("onclick", Clicku626);
-else u626.addEventListener("click", Clicku626, true);
-function Clicku626(e)
+var u626 = document.getElementById('u626');
+gv_vAlignTable['u626'] = 'center';
+var u627 = document.getElementById('u627');
+
+u627.style.cursor = 'pointer';
+if (bIE) u627.attachEvent("onclick", Clicku627);
+else u627.addEventListener("click", Clicku627, true);
+function Clicku627(e)
 {
 windowEvent = e;
 
 
 if (true) {
 
-	SetPanelState('u617', 'pd3u617','none','',500,'none','',500);
+	SetPanelState('u618', 'pd3u618','none','',500,'none','',500);
 
 SetGlobalVariableValue('$colorCount', '' + (GetNum(GetGlobalVariableValue('$colorCount')) + GetNum(1)) + '');
 
-SetWidgetRichText('u485', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">' + (GetGlobalVariableValue('$colorCount')) + ' colors selected</span></p>');
+SetWidgetRichText('u486', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">' + (GetGlobalVariableValue('$colorCount')) + ' colors selected</span></p>');
 
 }
 
 }
 
-if (bIE) u626.attachEvent("onmouseout", MouseOutu626);
-else u626.addEventListener("mouseout", MouseOutu626, true);
-function MouseOutu626(e)
+if (bIE) u627.attachEvent("onmouseout", MouseOutu627);
+else u627.addEventListener("mouseout", MouseOutu627, true);
+function MouseOutu627(e)
 {
 windowEvent = e;
 
-if (!IsTrueMouseOut('u626',e)) return;
+if (!IsTrueMouseOut('u627',e)) return;
 if (true) {
 
-	SetPanelState('u617', 'pd0u617','none','',500,'none','',500);
+	SetPanelState('u618', 'pd0u618','none','',500,'none','',500);
 
-SetWidgetRichText('u486', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">&nbsp;</span></p>');
-
-}
+SetWidgetRichText('u487', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">&nbsp;</span></p>');
 
 }
 
-var u627 = document.getElementById('u627');
-gv_vAlignTable['u627'] = 'center';
+}
+
 var u628 = document.getElementById('u628');
+gv_vAlignTable['u628'] = 'center';
+var u629 = document.getElementById('u629');
 
-if (bIE) u628.attachEvent("onmouseover", MouseOveru628);
-else u628.addEventListener("mouseover", MouseOveru628, true);
-function MouseOveru628(e)
+if (bIE) u629.attachEvent("onmouseover", MouseOveru629);
+else u629.addEventListener("mouseover", MouseOveru629, true);
+function MouseOveru629(e)
 {
 windowEvent = e;
 
-if (!IsTrueMouseOver('u628',e)) return;
+if (!IsTrueMouseOver('u629',e)) return;
 if (true) {
 
-	SetPanelState('u617', 'pd1u617','none','',500,'none','',500);
+	SetPanelState('u618', 'pd1u618','none','',500,'none','',500);
 
-SetWidgetRichText('u486', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">Blue</span></p>');
-
-}
+SetWidgetRichText('u487', '<p style="text-align:left;"><span style="font-family:Helvetica;font-size:10px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">Blue</span></p>');
 
 }
 
-var u629 = document.getElementById('u629');
-gv_vAlignTable['u629'] = 'center';
+}
+
 if (window.OnLoad) OnLoad();
